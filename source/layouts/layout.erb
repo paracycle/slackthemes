@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+
+    <link href="/stylesheets/rollup-client_core.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/rollup-client_primary.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/rollup-client_general.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/rollup-client_secondary.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/libs/lato-1.css" rel="stylesheet" type="text/css">
+
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div ng-app="theme" ng-controller='ThemeController'
+         ng-init="theme = '<%= data.themes.first[:colors] %>'">
+        <style type="text/css" id="sidebar_theme_css">
+            /* Column Background */
+            #col_channels_bg,
+            #col_channels {
+                background: {{ column_bg }};
+            }
+            #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner {
+                border-color: {{ column_bg }};
+            }
+
+            /* Menu Background */
+            #team_menu,
+            #user_menu {
+                background: {{ menu_bg }};
+                color: {{ text_color }};
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            }
+            #team_menu {
+                border-bottom-color: {{ menu_bg }};
+            }
+            #user_menu {
+                border-top-color: {{ menu_bg }};
+            }
+
+            /* Active Item */
+            #col_channels ul li.channel.active a.channel_name,
+            #col_channels ul li.group.active a.group_name,
+            #col_channels ul li.member.active a.im_name {
+                background: {{ active_item }};
+                opacity: 1;
+                color: {{ active_item_text }} !important;
+            }
+            #col_channels.channels_list_holder ul li.channel.active .unread_highlight, #col_channels.channels_list_holder ul li.member.active .unread_highlight, #col_channels.channels_list_holder ul li.group.active .unread_highlight {
+                color: {{ active_item }};
+            }
+
+            /* Hovered Item */
+            .channels_list_holder ul li a:hover,
+            #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_bar {
+                background: {{ hover_item }};
+            }
+
+            /* Text Color */
+            .channels_list_holder ul li a,
+            .channels_list_holder h2,
+            .list_more,
+            #team_menu i,
+            #user_menu i,
+            .channels_list_holder ul li.channel.active a.channel_name .prefix,
+            .channels_list_holder ul li.group.active a.group_name .prefix,
+            #current_user_name,
+            .channels_list_holder ul li.unread .prefix,
+            .channels_list_holder ul li.member .im_close,
+            .channels_list_holder ul li.group .group_close {
+                color: {{ text_color }} !important;
+                opacity: 0.6;
+            }
+            .channels_list_holder ul li.channel.active a.channel_name .prefix,
+            .channels_list_holder ul li.group.active a.group_name .prefix {
+                color: {{ active_item_text }} !important;
+            }
+            .list_more:hover {
+                color: {{ text_color }} !important;
+                border-bottom-color: {{ text_color }};
+            }
+
+            .channels_list_holder ul li.unread a,
+            #current_user_name,
+            .channels_list_holder ul li.member .im_close,
+            .channels_list_holder ul li.group .group_close {
+                opacity: 1;
+            }
+
+            #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner {
+                background: {{ text_color }};
+                opacity: 0.7;
+            }
+
+            /* Presence */
+            #im-list .presence.active i.presence_icon,
+            #starred-list .presence.active i.presence_icon,
+            .slackbot_icon {
+                color: {{ active_presence }};
+                opacity: 1;
+            }
+            #im-list li.member.active .presence.active i.presence_icon,
+            #starred-list li.member.active .presence.active i.presence_icon,
+            #im-list li.member.active .slackbot_icon,
+            #starred-list li.member.active .slackbot_icon {
+                color: {{ active_item_text }} !important;
+            }
+
+            /* Override for Hoth Theme presence dot on selected item. Fix Bug #7154 */
+            .sidebar_theme_hoth_theme #im-list li.member.active .presence.active i.presence_icon,
+            .sidebar_theme_hoth_theme #starred-list li.member.active .presence.active i.presence_icon,
+            .sidebar_theme_hoth_theme #im-list li.member.active .slackbot_icon,
+            .sidebar_theme_hoth_theme #starred-list li.member.active .slackbot_icon {
+                color: {{ active_presence }} !important;
+            }
+
+            #im-list li.member.active .presence.away i.presence_icon,
+            #starred-list li.member.active .presence.away i.presence_icon {
+                color: {{ active_item_text }} !important;
+                opacity: 0.3;
+            }
+            #im-list .presence.away,
+            #starred-list .presence.away {
+                color: {{ text_color }};
+                opacity: 0.3;
+            }
+
+            /* Badge + Mentions bar */
+            .channels_list_holder .unread_highlight,
+            #channel_scroll_up.unseen_have_mentions,
+            #channel_scroll_down.unseen_have_mentions,
+            #omnibox .omnibox_item .unread_highlight_cnt {
+                background: {{ mention_badge }};
+            }
+
+            /* No text shadows */
+            #col_channels a,
+            #team_menu,
+            #user_menu,
+            #loading_team_menu_bg,
+            #loading_user_menu_bg {
+                text-shadow: none !important;
+            }
+        </style>
+        <div id="client-ui" class="container-fluid sidebar_theme_hoth_theme">
+            <div id="header" class="">
+                <div id="channel_header">
+
+                    <div id="team_menu">
+                        <span id="team_name" class="overflow_ellipsis right_padding">Slack Themes</span>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+
+                    <h2 id="active_channel_name" class="overflow_ellipsis" data-original-title="" title="">
+                        <span class="name ">
+                            <span class="prefix">#</span>
+                            general
+                        </span>
+                        <i id="channel_actions" class="fa fa-chevron-down"></i>
+                    </h2>
+                </div>
+
+                <div id="search_container">
+                </div>
+            </div>
+
+            <div id="footer" style="bottom: 0px;">
+            </div>
+
+            <div id="client_body">
+                <div id="col_messages">
+                    <div class="row-fluid">
+                        <div id="col_channels" class="show_presence channels_list_holder no_just_unreads">
+                            <div id="monkey_scroll_wrapper_for_channels_scroller" class="monkey_scroll_wrapper ">
+                                <div class="monkey_scroll_hider" style="width: 203px;">
+                                    <div id="channels_scroller" class="monkey_scroller" style="height: 813px; visibility: visible; width: 220px;">
+                                        <div id="channels" class="section_holder">
+                                            <h2 id="channels_header" class="hoverable overflow_ellipsis">Channels</h2>
+                                            <ul id="channel-list">
+                                                <li class="channel active ">
+                                                    <a class="channel_name">
+                                                        <span class="unread_highlight">8</span>
+                                                        <span class="overflow_ellipsis">
+                                                            <span class="prefix">#</span> general
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="channel unread">
+                                                    <a class="channel_name">
+                                                        <span class="unread_highlight">3</span>
+                                                        <span class="overflow_ellipsis">
+                                                            <span class="prefix">#</span> random
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <a class="channel-list-create list_more">Create a channel...</a>
+                                            </ul>
+                                            <div class="clear_both"></div>
+                                        </div>
+
+                                        <div id="direct_messages" class="section_holder">
+                                            <h2 id="direct_messages_header" class="hoverable overflow_ellipsis">Direct Messages</h2>
+                                            <ul id="im-list">
+                                                <li class="member_USLACKBOT member  cursor_pointer">
+                                                    <a class="im_name nuc color_USLACKBOT" data-member-id="USLACKBOT">
+                                                        <i class="fa fa-times-circle im_close"></i>
+                                                        <span class="unread_highlight_USLACKBOT unread_highlight hidden">0</span>
+                                                        <span class="overflow_ellipsis">
+                                                                <i class="fa fa-heart slackbot_icon"></i>
+                                                                slackbot
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="member away  cursor_pointer">
+                                                    <a class="im_name nuc">
+                                                        <i class="fa fa-times-circle im_close"></i>
+                                                        <span class="unread_highlight hidden">0</span>
+                                                        <span class="overflow_ellipsis">
+                                                                <span class="presence away" title="away"><i class="fa fa-circle presence_icon"></i></span>
+                                                                jack
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="member cursor_pointer unread">
+                                                    <a class="im_name nuc">
+                                                        <i class="fa fa-times-circle im_close"></i>
+                                                        <span class="unread_highlight">10</span>
+                                                        <span class="overflow_ellipsis">
+                                                                <span class="presence active" title="active"><i class="fa fa-circle presence_icon"></i></span>
+                                                                jane
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="member cursor_pointer">
+                                                    <a class="im_name nuc">
+                                                        <i class="fa fa-times-circle im_close"></i>
+                                                        <span class="unread_highlight hidden">0</span>
+                                                        <span class="overflow_ellipsis">
+                                                                <span class="presence active" title="active"><i class="fa fa-circle presence_icon"></i></span>
+                                                                hanna
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="clear_both"></div>
+                                            <a id="im_list_more" class="list_more hidden"></a>
+                                        </div>
+
+                                        <div id="groups" class="section_holder">
+                                            <h2 id="groups_header" class="hoverable overflow_ellipsis">Private Groups</h2>
+                                            <ul id="group-list"></ul>
+                                            <div class="clear_both"></div>
+                                            <a id="group_list_more" class="list_more">New private group...</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="user_menu" style="bottom: 0px;">
+                                <div id="current_user_avatar">
+                                    <span class="member_image thumb_48" style="background-image: url('/images/profile.jpg')"></span>
+                                </div>
+                                <span id="current_user_name" class="overflow_ellipsis">paracycle</span>
+                                <img id="connection_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABmFBMVEUAAAD////////////////////////////////////2+/LR5bKw1Hmfy1KUxz2VyD2izVKz1nnS5rP////A3JuOw0qKwkCNxD+QxT6Sxj6Txz6SxUnC3Jv1+fGXx2GDvkCGwECIwUCLwj+PxD6PxT+JwUCFwECZyGD2+vGSxWF9vEGAvkGDv0CMwz+Wx2GPw2F4ukJ7u0J+vUGBvkGHwUB8u0KSxGG31pp0uEN3uUJ5u0KFv0CCv0B6u0K415p5uU1yt0N/vUF1uEN8u0zG3bFttURwtkR5ukLH3rGWxnlqtERutUR2uUOZx3l6uVZos0VvtkRxt0Nzt0N8ulVisUVlskVns0VzuENmskVfsEVps0VztlZer0VhsEVjsUVstER1t1aOwXhcrkZdr0VgsEaQwnm/2a9YrUZbrka/2rDz+PFhr09XrEZksE6pzplUq0ZVrEZarUaqzpl0tWJRq0dWrEZ1tmJztWJOqUdSq0dxtGJMqEdNqUdQqkdytWKmzJhXrFBKqEdZrU+716+GvXhjr1dIp0hkr1dYtVOVAAAAFHRSTlMAV8/v/wCH+x/n////////////9kvBHZAAAAG7SURBVHgBvdOxjtNAEIDhGe/MZO3sxVaiIJkiSNdQUPJOeQlqXoCCIg/EU9BQHRKg5CT7ErzrHTa+aBOqaxC/tdLK+2kbj+H/hoWhlCmQr0HeyYxyM8mvkWHKoAfBS6cBWEeYugAzf4QGp1SV8DvU/ZjBdN7iud6hdnOTdl+TuALyrUPEwfdu3nc1ipr9AwdIFZPysJylRDfa6cZL2rfgMd9QjO8R0Y+/u7sa4LHZz4wN/MXEyw1hbK1VZdV7PZ1OyufzktsxXADCW5EkXq06Paan02Uoo3kHmAEzJ8HBN6v5qlkqaxTmCdAzQK8Noi6rXwCrJyutepUMAARnXS++3cvm2xvftR0PzAyQAXtwdNChifvFHppBdR003IDCIg6JDOse4DX8WIdo1TwfpaUgqWC9c4eqqg5HF20QZdAMmDlasdHWkrKR03J0A4iIXRTrpba29laiY8YMyOyMKYkXroyROZZuwVTyztAFJPmZKBGq+FxFVBr5BHr7ubd3GICfAM+88qDHHYe/BmbbIAaGKU/Fz10emDxyHxBhgJTg+DGP3O3QbltMBkd92F2H9sWxB772wo9z2z8FfwDHWbdKLDfq1AAAAABJRU5ErkJggg==" class="" style="opacity: 1;">
+                                <span id="connection_status">online</span>
+                                <i class="fa fa-chevron-up"></i>
+                            </div>
+
+                    </div>
+
+                    <div id="messages_container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="new_prefs_dialog" class="modal hide fade in" aria-hidden="false">
+        <div class="modal-header">
+            <a class="btn dialog_go btn_small float_right">Done</a>
+            <h3>Select a sidebar theme to preview</h3>
+        </div>
+        <div class="modal-body" style="overflow-y: auto;">
+            <div id="prefs_themes" class="dialog_tab_pane active">
+                <%= yield %>
+            </div>
+        </div>
+            <div class="modal-footer">
+                <div id="prefs_themes_customize" class="clear_both" style="padding: 1rem 2rem 1rem 1.5rem;">
+    <!--                 <p class="bold clear_both small_bottom_margin">Custom Theme</p>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="column_bg" data-hex="#F8F8FA" style="background-color: #F8F8FA;"></span>
+                        <input type="text" name="color_column_bg_hex" class="color_hex monospace" value="#F8F8FA" maxlength="7"><br>
+                        <span class="input_note">Column BG</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="menu_bg" data-hex="#F8F8FA" style="background-color: #F8F8FA;"></span>
+                        <input type="text" name="color_menu_bg_hex" class="color_hex monospace" value="#F8F8FA" maxlength="7"><br>
+                        <span class="input_note">Menu BG</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="active_item" data-hex="#CAD1D9" style="background-color: #CAD1D9;"></span>
+                        <input type="text" name="color_active_item_hex" class="color_hex monospace" value="#CAD1D9" maxlength="7"><br>
+                        <span class="input_note">Active Item</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="active_item_text" data-hex="#FFFFFF" style="background-color: rgb(255, 255, 255);"></span>
+                        <input type="text" name="color_active_item_text_hex" class="color_hex monospace" value="#FFFFFF" maxlength="7"><br>
+                        <span class="input_note">Active Item Text</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="hover_item" data-hex="#FFFFFF" style="background-color: #FFFFFF;"></span>
+                        <input type="text" name="color_hover_item_hex" class="color_hex monospace" value="#FFFFFF" maxlength="7"><br>
+                        <span class="input_note">Hover Item</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="text_color" data-hex="#383F45" style="background-color: #383F45;"></span>
+                        <input type="text" name="color_text_color_hex" class="color_hex monospace" value="#383F45" maxlength="7"><br>
+                        <span class="input_note">Text Color</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="active_presence" data-hex="#60D156" style="background-color: #60D156;"></span>
+                        <input type="text" name="color_active_presence_hex" class="color_hex monospace" value="#60D156" maxlength="7"><br>
+                        <span class="input_note">Active Presence</span>
+                    </div>
+
+                    <div class="input-prepend">
+                        <span class="add-on color_swatch" data-theme-element="badge" data-hex="#FF8669" style="background-color: #FF8669;"></span>
+                        <input type="text" name="color_badge_hex" class="color_hex monospace" value="#FF8669" maxlength="7"><br>
+                        <span class="input_note">Mention Badge</span>
+                    </div> -->
+
+                    <p class="input_note no_bottom_margin">Copy and paste these values to your <strong>Slack</strong> settings <strong>Sidebar Theme</strong> section:</p>
+                    <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="theme">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
