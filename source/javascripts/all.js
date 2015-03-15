@@ -1,7 +1,7 @@
 //= require_tree .
 
 angular.module('theme', [])
-    .controller('ThemeController', function($scope) {
+    .controller('ThemeController', ['$scope', function($scope) {
        $scope.$watch(
             function() { return $scope.theme; },
             function(theme) {
@@ -15,4 +15,4 @@ angular.module('theme', [])
                 $scope.active_presence = parts[6];
                 $scope.mention_badge = parts[7];
         });
-    });
+    }]);
