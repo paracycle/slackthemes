@@ -5,15 +5,12 @@ class ScreenshotGenerator < ::Middleman::Extension
 
   def initialize(app, options_hash={}, &block)
     super
-    app.before_build do |builder|
+    app.before_build do
       Screenshot.prepare
 
       themes.each do |theme|
         Screenshot.new(theme).generate_theme_image
       end
-
-      puts "Hello World"
-      # builder.run './my_deploy_script.sh'
     end
   end
 end
