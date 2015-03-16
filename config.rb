@@ -1,3 +1,4 @@
+require 'lib/screenshot_generator'
 ###
 # Compass
 ###
@@ -55,6 +56,8 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  activate :screenshot_generator
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 

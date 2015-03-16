@@ -3,8 +3,9 @@ title: Slack Themes
 ---
 
 <% data.themes.each do |theme| %>
-<label class="radio theme_label">
-    <img src="<%= theme[:image_url] %>" class="theme_thumb"><br>
+<% theme_slug = theme[:name].parameterize.underscore %>
+<label class="radio theme_label theme_<%= theme[:name].parameterize.underscore %>">
+    <img src="/images/theme/<%= theme_slug %>.png" class="theme_thumb"><br>
     <input name="sidebar_theme_rd" type="radio" value="<%= theme[:colors] %>" ng-model="theme" ng-change="setTheme()"> <%= theme[:name] %>
 </label>
 <% end %>
