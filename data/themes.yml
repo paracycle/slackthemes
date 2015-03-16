@@ -35,6 +35,9 @@
   :name: 'Ochin'
   :colors: '#303E4D,#2C3849,#6698C8,#FFFFFF,#4A5664,#FFFFFF,#94E864,#78AF8F'
 -
+  :name: 'Polygon'
+  :colors: '#C10048,#920A3D,#2E0002,#FFFFFF,#610A29,#FFFFFF,#FFFFFF,#610A29'
+-
   :name: 'Solarized'
   :colors: '#FDF6E3,#EEE8D5,#93A1A1,#FDF6E3,#EEE8D5,#657B83,#2AA198,#DC322F'
 -
@@ -53,6 +56,9 @@
   :name: 'Tron'
   :colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB'
 -
+  :name: 'Yosemite iTunes'
+  :colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242'
+-
   :name: 'WameIn'
   :colors: '#BB6A76,#AD5B67,#62B791,#FFFFFF,#A5516A,#FFFFFF,#68F798,#694464'
 -
@@ -61,3 +67,72 @@
 -
   :name: 'Work Hard'
   :colors: '#4D5250,#444A47,#D39B46,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668'
+-
+  :name: 'Terminal'
+  :colors: '#101010,#000000,#FFFFFF,#000000,#A0A0A0,#FFFFFF,#00A400,#5858FE'
+-
+  :name: 'MADSOFT'
+  :colors: '#4A3A55,#3A2A45,#8A7A95,#FFFFFF,#2A1A35,#FFFFFF,#22CC88,#CC2288'
+-
+  :name: 'Slack White'
+  :colors: '#FFFFFF,#FFFFFF,#FFFFFF,#2288CC,#2288CC,#454449,#93CC93,#2288CC'
+-
+  :name: 'Facebook'
+  :colors: '#4E69A2,#38528B,#38528B,#FFFFFF,#38528B,#FFFFFF,#1FAD38,#CD2323'
+-
+  :name: 'Wedgies'
+  :colors: '#222222,#333333,#3F96CA,#F9F9F9,#4A5664,#FFFFFF,#3F96CA,#EFC000'
+-
+  :name: 'Kimbie'
+  :colors: '#F3E3CD,#F3E3CD,#F3951D,#DA3D61,#F26328,#183E1C,#DA3D61,#F26328'
+-
+  :name: 'Watermelon'
+  :colors: '#2B7164,#2B7164,#51A050,#EC2262,#CECCB2,#032342,#DA3D61,#CECCB2'
+-
+  :name: 'Spring Tree'
+  :colors: '#EB4D5C,#EB4D5C,#A6D6A1,#3C3865,#3C3865,#FFFFFF,#3C3865,#F18E2C'
+-
+  :name: 'Makers'
+  :colors: '#663399,#592D86,#8F6DB0,#FFFFFF,#3E313C,#FFFFFF,#FFFFFF,#EB4D5C'
+-
+  :name: 'Bourbon'
+  :colors: '#CF7C44,#CF7C44,#E89A6B,#F7DB72,#FBEDD4,#FFFAFC,#92406A,#92406A'
+-
+  :name: 'Latte'
+  :colors: '#C17F46,#C17F46,#CFA677,#DCBF98,#FBEDD4,#EFEFEF,#EAECF1,#EAECF1'
+-
+  :name: 'Starbucks'
+  :colors: '#0A6242,#0A6242,#3D3935,#BC7E3B,#BC7E3B,#F7F7F7,#3D3935,#3D3935'
+-
+  :name: 'Kill Bill'
+  :colors: '#FDE13A,#FDE13A,#000000,#E72D25,#FFF09E,#000000,#E72D25,#E72D25'
+-
+  :name: 'Railway Clock'
+  :colors: '#FFFFFF,#FFFFFF,#E0E0E0,#E1382F,#F2F2F2,#050505,#E1382F,#E1382F'
+-
+  :name: 'Film Noir'
+  :colors: '#101010,#101010,#D3D3CA,#BB313E,#424242,#F0F0E6,#BB313E,#BB313E'
+-
+  :name: 'Twitter'
+  :colors: '#55ACEE,#55ACEE,#E1E8ED,#292F33,#ADDCFF,#F5F8FA,#E1E8ED,#E1E8ED'
+-
+  :name: 'Dropbox'
+  :colors: '#007EE5,#007EE5,#47525D,#FFFFFF,#7B8994,#FFFFFF,#47525D,#47525D'
+-
+  :name: 'Spotify'
+  :colors: '#1A1919,#1A1919,#EDEBE6,#7DBA4A,#4F4D4D,#FFFFFF,#7DBA4A,#7DBA4A'
+-
+  :name: 'Light Blue'
+  :colors: '#89A1AB,#7D949E,#FFFFFF,#748991,#748991,#FFFFFF,#B3FF00,#748991'
+-
+  :name: 'Gartland'
+  :colors: '#404040,#696969,#FFD200,#000000,#000000,#FFFFFF,#00703C,#EF4C23'
+-
+  :name: 'Phone Box'
+  :colors: '#003D67,#003D67,#FFFFFF,#003D67,#00548C,#FFFFFF,#0099FF,#006752'
+-
+  :name: 'Sky Blue'
+  :colors: '#A5C0CC,#62A5BF,#1A91BD,#F5F5F5,#BAD8E3,#170317,#38978D,#EB4D5C'
+-
+  :name: 'Goodstuff FM'
+  :colors: '#292D36,#000000,#DA5647,#FFFFFF,#333644,#FFFFFF,#57AFBD,#DA5647 '
