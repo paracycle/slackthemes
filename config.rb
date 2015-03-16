@@ -74,6 +74,15 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = 'UA-60794054-1'
+
+  # Tracking in development environment (default = true)
+  ga.development = false
+end
+
+
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings

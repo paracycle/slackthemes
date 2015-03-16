@@ -22,6 +22,8 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <%= google_analytics_universal_tag %>
+
     <div ng-app="theme" ng-controller='ThemeController'
          ng-init="theme = '<%= data.themes.first[:colors] %>'">
         <style type="text/css" id="sidebar_theme_css">
