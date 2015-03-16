@@ -23,32 +23,36 @@ class Screenshot
     @theme = theme
   end
 
-  def generate_theme_image
+  def generate_theme_image(builder)
     if File.exist? target_file
-      puts "Image for theme #{theme.name} already exists"
+      builder.say_status :exists, target_file, :blue
       return
     end
 
-    puts "Generating image for theme #{theme.name}"
+    builder.say_status :generating, target_file, :green
+
     visit '/'
     within ".theme_#{theme.slug}" do
       choose 'sidebar_theme_rd'
     end
     sleep 1
 
-    file = Tempfile.new([theme.slug, ".png"])
-    begin
-      page.save_screenshot(file.path, full: true)
-
-      MiniMagick::Tool::Convert.new do |convert|
-        convert << file.path
-        convert.crop '220x220+0+0'
-        convert << target_file
-      end
-    ensure
-      file.close
-      file.unlink
+    create_thumbnail do |path|
+      page.save_screenshot(path, full: true)
     end
+  end
+
+  def create_thumbnail
+    file = Tempfile.new([theme.slug, ".png"])
+    yield(file.path)
+    MiniMagick::Tool::Convert.new do |convert|
+      convert << file.path
+      convert.crop '220x220+0+0'
+      convert << target_file
+    end
+  ensure
+    file.close
+    file.unlink
   end
 
   def target_file
