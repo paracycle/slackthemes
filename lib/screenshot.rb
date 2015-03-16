@@ -20,10 +20,7 @@ class Screenshot
   end
 
   def initialize(theme)
-    @theme = OpenStruct.new(theme.merge(
-      slug: theme[:name].parameterize.underscore,
-      digest: Digest::MD5.new.hexdigest(theme[:colors])
-    ))
+    @theme = theme
   end
 
   def generate_theme_image

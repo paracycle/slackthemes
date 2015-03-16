@@ -1,4 +1,5 @@
 require 'lib/screenshot_generator'
+require 'ostruct'
 ###
 # Compass
 ###
@@ -90,4 +91,15 @@ activate :deploy do |deploy|
   # deploy.branch   = 'custom-branch' # default: gh-pages
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+end
+
+helpers do
+  def themes
+    data.themes.sort_by { |theme| theme[:name] }.map do |theme|
+        OpenStruct.new(theme.merge(
+            slug: theme[:name].parameterize.underscore,
+            digest: Digest::MD5.new.hexdigest(theme[:colors])
+        ))
+    end
+  end
 end

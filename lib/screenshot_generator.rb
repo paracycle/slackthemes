@@ -7,10 +7,11 @@ class ScreenshotGenerator < ::Middleman::Extension
     super
     app.before_build do |builder|
       Screenshot.prepare
-      data = YAML.load_file('data/themes.yml')
-      data.each do |theme|
+
+      themes.each do |theme|
         Screenshot.new(theme).generate_theme_image
       end
+
       puts "Hello World"
       # builder.run './my_deploy_script.sh'
     end
