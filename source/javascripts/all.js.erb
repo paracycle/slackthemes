@@ -1,0 +1,48 @@
+//= require_tree .
+
+var app = angular.module('theme', ['ui.router']);
+
+app.config(['$stateProvider',
+    function($stateProvider) {
+        $stateProvider
+            .state('theme', {
+                url: "/{slug}",
+                controller: 'ThemeController'
+            });
+    }]);
+
+app.controller('ThemeController', ['$scope', '$stateParams', '$state',
+    function($scope, $stateParams, $state) {
+        var colors = {
+          <%= themes.map do |theme|
+            "'#{theme.slug}': '#{theme.colors}'"
+          end.join ",\n" %>
+        };
+
+        $scope.$on('$stateChangeSuccess', function() {
+          $scope.slug = $stateParams.slug;
+        });
+
+        $scope.$watch('slug', function(slug) {
+            if (!slug) {
+                return;
+            }
+            $scope.colors = colors[$scope.slug]
+            $state.go('theme', { slug: slug });
+        });
+
+        $scope.$watch('colors', function(colors) {
+            if (!colors) {
+                return;
+            }
+            var parts = colors.split(',');
+            $scope.column_bg = parts[0];
+            $scope.menu_bg = parts[1];
+            $scope.active_item = parts[2];
+            $scope.active_item_text = parts[3];
+            $scope.hover_item = parts[4];
+            $scope.text_color = parts[5];
+            $scope.active_presence = parts[6];
+            $scope.mention_badge = parts[7];
+        });
+    }]);

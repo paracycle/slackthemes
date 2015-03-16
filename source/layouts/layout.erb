@@ -10,6 +10,7 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
 
     <link href="/stylesheets/rollup-client_core.css" rel="stylesheet" type="text/css">
     <link href="/stylesheets/rollup-client_primary.css" rel="stylesheet" type="text/css">
@@ -24,8 +25,7 @@
   <body class="<%= page_classes %>">
     <%= google_analytics_universal_tag %>
 
-    <div ng-app="theme" ng-controller='ThemeController'
-         ng-init="theme = '<%= data.themes.first[:colors] %>'">
+    <div ng-app="theme" ng-controller='ThemeController'>
         <style type="text/css" id="sidebar_theme_css">
             /* Column Background */
             #col_channels_bg,
@@ -353,7 +353,7 @@
                     </div> -->
 
                     <p class="input_note no_bottom_margin">Copy and paste these values to your <strong>Slack</strong> settings <strong>Sidebar Theme</strong> section:</p>
-                    <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="theme">
+                    <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="colors">
                 </div>
             </div>
         </div>
