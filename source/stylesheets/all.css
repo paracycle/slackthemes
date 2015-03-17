@@ -18,3 +18,10 @@
 input#sidebar_theme_custom {
   width: 100% !important;
 }
+#special_formatting_text {
+  font-size: 0.8em !important;
+  opacity: 1 !important;
+}
+#team_menu,#user_menu {
+    text-decoration: none;
+}
