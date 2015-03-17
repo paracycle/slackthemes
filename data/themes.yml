@@ -148,3 +148,6 @@
 -
   :name: 'Product Hunt'
   :colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669'
+-
+  :name: 'Reddit'
+  :colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500'
