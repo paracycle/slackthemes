@@ -151,3 +151,6 @@
 -
   :name: 'Myplanet'
   :colors: '#232323,#000000,#f05a28,#000000,#000000,#FFFFFF,#f05a28,#f05a28'
+-
+  :name: 'Reddit'
+  :colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500'
