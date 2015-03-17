@@ -1,8 +1,6 @@
 require 'lib/screenshot'
 
 class ScreenshotGenerator < ::Middleman::Extension
-  include Capybara::DSL
-
   def initialize(app, options_hash={}, &block)
     super
     app.before_build do |builder|
