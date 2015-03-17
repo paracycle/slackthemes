@@ -142,3 +142,9 @@
 -
   :name: 'Brinjal'
   :colors: '#4F2F4C,#452842,#8C5888,#FFFFFF,#3E313C,#FFFFFF,#00FFB7,#DE4C0D'
+-
+  :name: 'Put.io'
+  :colors: '#FFFFFF,#FDCE45,#FDCE45,#0F1216,#ECEEF2,#0F1216,#1FAE7D,#1FAE7D'
+-
+  :name: 'Product Hunt'
+  :colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669'
