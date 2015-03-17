@@ -15,3 +15,6 @@
     width: 100px;
     height: 125px;
 }
+input#sidebar_theme_custom {
+  width: 100% !important;
+}
