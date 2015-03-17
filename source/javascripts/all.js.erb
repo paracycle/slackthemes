@@ -2,13 +2,17 @@
 
 var app = angular.module('theme', ['ui.router']);
 
-app.config(['$stateProvider',
-    function($stateProvider) {
+app.config(['$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('theme', {
-                url: "/{slug}",
-                controller: 'ThemeController'
+                url: "/:slug",
+                controller: 'ThemeController',
+                params: {
+                    slug: { value: '<%= themes.first.slug %>' }
+                }
             });
+        $urlRouterProvider.otherwise('/<%= themes.first.slug %>');
     }]);
 
 app.controller('ThemeController', ['$scope', '$stateParams', '$state',
