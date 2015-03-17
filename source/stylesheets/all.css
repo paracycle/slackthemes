@@ -25,3 +25,6 @@ input#sidebar_theme_custom {
 #team_menu,#user_menu {
     text-decoration: none;
 }
+#col_channels {
+    height: 100vh !important;
+}
