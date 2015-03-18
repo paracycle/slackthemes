@@ -172,3 +172,6 @@
 -
   :name: 'Social Tables Blue'
   :colors: '#494949,#65A0D6,#49C6B7,#FFFFFF,#898B8F,#FFFFFF,#9ECD75,#E6615D'
+-
+  :name: 'Grooveshark'
+  :colors: '#181d27,#fd6540,#393f40,#f1f2f4,#393f40,#f1f2f4,#f1f2f4,#fd6540'
