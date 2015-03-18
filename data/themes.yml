@@ -154,3 +154,6 @@
 -
   :name: 'Reddit'
   :colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500'
+  
+  :name: 'Zeplin'
+  :colors: '#F5F5F5,#FFFFFF,#FDBD39,#FFFFFF,#FECF33,#574751,#A4BF36,#EE6723'
