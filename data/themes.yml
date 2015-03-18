@@ -10,6 +10,9 @@
 -
   :name: 'Base16 Tomorrow Night'
   :colors: '#191A1C,#282A2E,#B6BC68,#FFFFFF,#363B41,#959896,#80A2BE,#C26161'
+- 
+  :name: 'Big Red'
+  :colors: '#754242,#BD3737,#9C4444,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668'
 -
   :name: 'Citrus'
   :colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900'
