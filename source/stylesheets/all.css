@@ -28,3 +28,9 @@ input#sidebar_theme_custom {
 #col_channels {
     height: 100vh !important;
 }
+#col_messages *, #team_menu, #user_menu {
+    -moz-transition: color 200ms, background-color 200ms, border 200ms !important;
+    -o-transition: color 200ms, background-color 200ms, border 200ms !important;
+    -webkit-transition: color 200ms, background-color 200ms, border 200ms !important;
+    transition: color 200ms, background-color 200ms, border 200ms !important
+}
