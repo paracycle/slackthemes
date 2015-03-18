@@ -35,6 +35,9 @@
   :name: 'Monument'
   :colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340'
 -
+  :name: 'Netflix'
+  :colors: '#1F1C18,#8E0E00,#8E0E00,#FFFFFF,#A1A09F,#FFFFFF,#B01D0C,#8E0E00'
+-
   :name: 'Ochin'
   :colors: '#303E4D,#2C3849,#6698C8,#FFFFFF,#4A5664,#FFFFFF,#94E864,#78AF8F'
 -
