@@ -26,6 +26,9 @@
   :name: 'DigitalOcean'
   :colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B'
 -
+  :name: 'Haunter'
+  :colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962'
+-
   :name: 'Hoth'
   :colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669'
 -
