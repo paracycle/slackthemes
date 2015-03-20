@@ -184,3 +184,6 @@
 -
   :name: 'Deep Blue'
   :colors: '#0074B2,#0083CA,#00A2FF,#FFFFFF,#00A5FF,#FFFFFF,#03EEFF,#00CCC2'
+-
+  :name: 'Grooveshark'
+  :colors: '#181D27,#FD6540,#393F40,#F1F2F4,#393F40,#F1F2F4,#F1F2F4,#FD6540'
