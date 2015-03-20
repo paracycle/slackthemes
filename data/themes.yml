@@ -187,3 +187,6 @@
 -
   :name: 'Grooveshark'
   :colors: '#181D27,#FD6540,#393F40,#F1F2F4,#393F40,#F1F2F4,#F1F2F4,#FD6540'
+-
+  :name: 'The Changelog'
+  :colors: '#2B2D2D,#4A4C4D,#428BCA,#FFFFFF,#428BCA,#FFFFFF,#67D044,#DE495B'
