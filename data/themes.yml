@@ -53,6 +53,9 @@
   :name: 'Solarized'
   :colors: '#FDF6E3,#EEE8D5,#93A1A1,#FDF6E3,#EEE8D5,#657B83,#2AA198,#DC322F'
 -
+  :name: 'Saiku Analytics'
+  :colors: '#AE1817,#AE1817,#232323,#FFFFFF,#999999,#FFFFFF,#333333,#232323'
+-
   :name: 'Solarized Dark'
   :colors: '#073642,#002B36,#B58900,#FDF6E3,#CB4B16,#FDF6E3,#2AA198,#DC322F'
 -
