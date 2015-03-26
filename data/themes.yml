@@ -193,3 +193,6 @@
 -
   :name: 'The Changelog'
   :colors: '#2B2D2D,#4A4C4D,#428BCA,#FFFFFF,#428BCA,#FFFFFF,#67D044,#DE495B'
+-
+  :name: 'SocialSign.in'
+  :colors: '#112539,#112539,#2DA89C,#FFFFFF,#004365,#FFFFFF,#2DEBAE,#2DEBAE'
