@@ -1,5 +1,8 @@
 require 'lib/screenshot_generator'
 require 'ostruct'
+require 'dotenv'
+Dotenv.load
+
 ###
 # Compass
 ###
@@ -77,7 +80,7 @@ end
 
 activate :google_analytics do |ga|
   # Property ID (default = nil)
-  ga.tracking_id = 'UA-60794054-1'
+  ga.tracking_id = ENV['ANALYTICS_ID']
 
   # Tracking in development environment (default = true)
   ga.development = false

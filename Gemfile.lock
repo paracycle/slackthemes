@@ -34,6 +34,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    dotenv (0.9.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -167,6 +168,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  dotenv
   middleman (~> 3.3.10)
   middleman-deploy (~> 1.0)
   middleman-google-analytics
