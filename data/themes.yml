@@ -196,3 +196,13 @@
 -
   :name: 'SocialSign.in'
   :colors: '#112539,#112539,#2DA89C,#FFFFFF,#004365,#FFFFFF,#2DEBAE,#2DEBAE'
+-
+  :name: 'Peter Sellers'
+  :colors: '#0D2D4F,#0A2440,#639DD4,#FFFFFF,#3E6796,#FFFFFF,#94E864,#5990CF'
+-
+  :name: 'Danny Torrence'
+  :colors: '#751C01,#5C1500,#FFFFFF,#751C01,#AD2A02,#FFFFFF,#FFFFFF,#AD2A02'
+-
+  :name: 'Douglas Rain'
+  :colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F'
+-
