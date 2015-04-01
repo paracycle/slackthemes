@@ -24,14 +24,14 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state',
         };
 
         $scope.$on('$stateChangeSuccess', function() {
-          $scope.slug = $stateParams.slug;
+            $scope.slug = $stateParams.slug;
         });
 
         $scope.$watch('slug', function(slug) {
             if (!slug) {
                 return;
             }
-            $scope.colors = colors[$scope.slug]
+            $scope.colors = colors[$scope.slug];
             $state.go('theme', { slug: slug });
         });
 
