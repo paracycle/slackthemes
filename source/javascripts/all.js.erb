@@ -15,9 +15,9 @@ app.config(['$stateProvider', '$urlRouterProvider',
         $urlRouterProvider.otherwise('/<%= themes.first.slug %>');
     }]);
 
-app.controller('ThemeController', ['$scope', '$stateParams', '$state',
-    function($scope, $stateParams, $state) {
-        var colors = {
+app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$location',
+    function($scope, $stateParams, $state, $location) {
+        var themes = {
           <%= themes.map do |theme|
             "'#{theme.slug}': '#{theme.colors}'"
           end.join ",\n" %>
@@ -31,7 +31,14 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state',
             if (!slug) {
                 return;
             }
-            $scope.colors = colors[$scope.slug];
+            if (slug === 'custom') {
+                $scope.colors = $location.hash().split(',').map(function(part) {
+                    return '#' + part;
+                }).join(',');
+
+                return;
+            }
+            $scope.colors = themes[$scope.slug];
             $state.go('theme', { slug: slug });
         });
 
@@ -48,5 +55,17 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state',
             $scope.text_color = parts[5];
             $scope.active_presence = parts[6];
             $scope.mention_badge = parts[7];
+
+            function updateHash() {
+                $location.hash(parts.map(function(part) {
+                    return part.replace('#', '');
+                }));
+            }
+
+            if ($scope.slug === 'custom') {
+                updateHash();
+            } else if (colors !== themes[$scope.slug]) {
+                $state.go('theme', { slug: 'custom' }).then(updateHash);
+            }
         });
     }]);
