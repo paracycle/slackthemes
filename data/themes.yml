@@ -50,6 +50,9 @@
   :name: 'Polygon'
   :colors: '#C10048,#920A3D,#2E0002,#FFFFFF,#610A29,#FFFFFF,#FFFFFF,#610A29'
 -
+  :name: 'Polymer'
+  :colors: '#1F2036,#7986CB,#FE528C,#FFFFFF,#606BA2,#FFFFFF,#2DEBAE,#FE528C'
+-
   :name: 'Solarized'
   :colors: '#FDF6E3,#EEE8D5,#93A1A1,#FDF6E3,#EEE8D5,#657B83,#2AA198,#DC322F'
 -
