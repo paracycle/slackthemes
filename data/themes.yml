@@ -208,3 +208,6 @@
 -
   :name: 'Douglas Rain'
   :colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F'
+-
+  :name: 'Github Activity Graph'
+  :colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823'
