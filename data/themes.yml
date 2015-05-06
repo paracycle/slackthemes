@@ -208,3 +208,12 @@
 -
   :name: 'Douglas Rain'
   :colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F'
+-
+  :name: 'Retro Monochrome Terminal'
+  :colors: '#000000,#000000,#006600,#00ff00,#00ff00,#00ff00,#ff0000,#ff0000'
+-
+  :name: 'EGA'
+  :colors: '#0000AA,#00AAAA,#FF55FF,#FFFFFF,#00AAAA,#FFFFFF,#C0C0C0,#FF00FF'
+-
+  :name: 'AmigaOS 1.3'
+  :colors: '#0050A0,#000020,#F08000,#FFFFFF,#F08000,#FFFFFF,#F08000,#F08000'
