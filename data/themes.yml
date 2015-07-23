@@ -208,3 +208,6 @@
 -
   :name: 'Douglas Rain'
   :colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F'
+-
+  :name: 'Space Gray'
+  :colors: '#303E4D,#2C3849,#B04C58,#FFFFFF,#4A5664,#B3B8C4,#94E864,#78AF8F'
