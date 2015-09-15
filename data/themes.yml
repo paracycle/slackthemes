@@ -208,3 +208,9 @@
 -
   :name: 'Douglas Rain'
   :colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F'
+-
+  :name: 'Uber Light'
+  :colors: '#F2F2F4,#E6E6E9,#1FBAD6,#FFFFFF,#C0C0C8,#151525,#1FBAD6,#4CC8DE'
+-
+  :name: 'Uber Dark'
+  :colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE'
