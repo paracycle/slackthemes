@@ -208,3 +208,9 @@
 -
   :name: 'Douglas Rain'
   :colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F'
+-
+  :name: 'Ingress Enlightened'
+  :colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#02BF02,#F1C248'
+-
+  :name: 'Ingress Resistence'
+  :colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#0492D0,#F1C248'
