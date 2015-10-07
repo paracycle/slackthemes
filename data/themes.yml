@@ -74,6 +74,9 @@
   :name: 'Tron'
   :colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB'
 -
+  :name: 'Uber'
+  :colors: '#09091A,#09091A,#1FBAD6,#FFFFFF,#1FBAD6,#FFFFFF,#1FBAD6,#1FBAD6'
+-
   :name: 'Yosemite iTunes'
   :colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242'
 -
