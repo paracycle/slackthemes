@@ -223,3 +223,11 @@
 -
   :name: 'Github Activity Graph'
   :colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823'
+  :name: 'Retro Monochrome Terminal'
+  :colors: '#000000,#000000,#006600,#00ff00,#00ff00,#00ff00,#ff0000,#ff0000'
+-
+  :name: 'EGA'
+  :colors: '#0000AA,#00AAAA,#FF55FF,#FFFFFF,#00AAAA,#FFFFFF,#C0C0C0,#FF00FF'
+-
+  :name: 'AmigaOS 1.3'
+  :colors: '#0050A0,#000020,#F08000,#FFFFFF,#F08000,#FFFFFF,#F08000,#F08000'
