@@ -254,3 +254,8 @@
   :colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE'
   :name: 'xUnit.net'
   :colors: '#162C16,#444A47,#663333,#FFFFFF,#995050,#FFFFFF,#E0E066,#DB6668'
+  :name: 'Ingress Enlightened'
+  :colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#02BF02,#F1C248'
+-
+  :name: 'Ingress Resistence'
+  :colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#0492D0,#F1C248'
