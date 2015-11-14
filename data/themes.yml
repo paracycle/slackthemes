@@ -217,3 +217,9 @@
 -
   :name: 'plug.dj'
   :colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E'
+-
+  :name: 'Oktavilla'
+  :colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD'  
+-
+  :name: 'Github Activity Graph'
+  :colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823'
