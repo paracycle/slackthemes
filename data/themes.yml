@@ -218,9 +218,6 @@
   :name: 'FC Bayern München'
   :colors: '#B51929,#B51929,#23408E,#BCA26F,#025277,#FFFFFF,#E5D3A0,#B7B6B7'
 -
-  :name: 'Oktavilla'
-  :colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD'  
--
   :name: 'plug.dj'
   :colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E'
 -
@@ -229,6 +226,7 @@
 -
   :name: 'Github Activity Graph'
   :colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823'
+-
   :name: 'Retro Monochrome Terminal'
   :colors: '#000000,#000000,#006600,#00ff00,#00ff00,#00ff00,#ff0000,#ff0000'
 -
@@ -240,29 +238,36 @@
 -
   :name: 'DD'
   :colors: '#222222,#111111,#111111,#66AADD,#555555,#EEEEEE,#66DD66,#DD666D'
-
+-
   :name: 'Gotham'
   :colors: '#0A0F14,#10151B,#265360,#D4EBE9,#D26939,#9BD1CE,#EDB54B,#C33027'
+-
   :name: 'Hip'
   :colors: '#F5F5F5,#CCCCCC,#3873AE,#FFFFFF,#E9E9E9,#000000,#69AA4E,#999999'
+-
   :name: 'Space Gray'
   :colors: '#303E4D,#2C3849,#B04C58,#FFFFFF,#4A5664,#B3B8C4,#94E864,#78AF8F'
 - 
   :name: 'Slack.com'
   :colors: '#573D82,#453068,#3FBA91,#FFFFFF,#453068,#FFFFFF,#3FBA91,#FF3E88'
+-
   :name: 'Uber Light'
   :colors: '#F2F2F4,#E6E6E9,#1FBAD6,#FFFFFF,#C0C0C8,#151525,#1FBAD6,#4CC8DE'
 -
   :name: 'Uber Dark'
   :colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE'
+-
   :name: 'xUnit.net'
   :colors: '#162C16,#444A47,#663333,#FFFFFF,#995050,#FFFFFF,#E0E066,#DB6668'
+-
   :name: 'Ingress Enlightened'
   :colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#02BF02,#F1C248'
 -
   :name: 'Ingress Resistence'
   :colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#0492D0,#F1C248'
+-
   :name: 'Beaver Builders'
   :colors: '#F7941E,#FFB963,#FFB963,#110000,#F5A849,#110000,#3D0000,#507DAA'
+-
   :name: 'Afterglow'
-  :colours: '#2F2C2F,#252525,#A36B31,#D2D6D6,#5C6380,#DEDEDE,#ADBA4E,#DB6668'
+  :colors: '#2F2C2F,#252525,#A36B31,#D2D6D6,#5C6380,#DEDEDE,#ADBA4E,#DB6668'
