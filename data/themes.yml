@@ -20,6 +20,9 @@
   :name: 'Choco Mint'
   :colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D'
 -
+  :name: 'Cobalt2'
+  :colors: '#193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400'
+-
   :name: 'Dracula'
   :colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555'
 -
