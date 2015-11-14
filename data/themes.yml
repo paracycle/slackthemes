@@ -214,3 +214,6 @@
 -
   :name: 'Oktavilla'
   :colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD'  
+-
+  :name: 'plug.dj'
+  :colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E'
