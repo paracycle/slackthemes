@@ -247,3 +247,8 @@
 - 
   :name: 'Slack.com'
   :colors: '#573D82,#453068,#3FBA91,#FFFFFF,#453068,#FFFFFF,#3FBA91,#FF3E88'
+  :name: 'Uber Light'
+  :colors: '#F2F2F4,#E6E6E9,#1FBAD6,#FFFFFF,#C0C0C8,#151525,#1FBAD6,#4CC8DE'
+-
+  :name: 'Uber Dark'
+  :colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE'
