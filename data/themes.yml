@@ -252,3 +252,5 @@
 -
   :name: 'Uber Dark'
   :colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE'
+  :name: 'xUnit.net'
+  :colors: '#162C16,#444A47,#663333,#FFFFFF,#995050,#FFFFFF,#E0E066,#DB6668'
