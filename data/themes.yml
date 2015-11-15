@@ -222,7 +222,7 @@
   :colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E'
 -
   :name: 'Oktavilla'
-  :colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD'  
+  :colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD'
 -
   :name: 'Github Activity Graph'
   :colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823'
@@ -247,7 +247,7 @@
 -
   :name: 'Space Gray'
   :colors: '#303E4D,#2C3849,#B04C58,#FFFFFF,#4A5664,#B3B8C4,#94E864,#78AF8F'
-- 
+-
   :name: 'Slack.com'
   :colors: '#573D82,#453068,#3FBA91,#FFFFFF,#453068,#FFFFFF,#3FBA91,#FF3E88'
 -
@@ -271,3 +271,6 @@
 -
   :name: 'Afterglow'
   :colors: '#2F2C2F,#252525,#A36B31,#D2D6D6,#5C6380,#DEDEDE,#ADBA4E,#DB6668'
+-
+  :name: 'Hot Dog Stand'
+  :colors: '#C0441C,#91282A,#F79F66,#FFFFFF,#91282A,#FFFFFF,#F79F66,#F15340'
