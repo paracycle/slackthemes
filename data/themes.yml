@@ -271,3 +271,6 @@
 -
   :name: 'Afterglow'
   :colors: '#2F2C2F,#252525,#A36B31,#D2D6D6,#5C6380,#DEDEDE,#ADBA4E,#DB6668'
+-
+  :name: 'FreshBooks'
+  :colors: '#0D83DD,#0064BE,#86C620,#FFFFFF,#648C0F,#FFFFFF,#9DFF00,#86C620'
