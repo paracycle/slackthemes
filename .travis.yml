@@ -3,6 +3,9 @@ rvm:
 - 2.2.2
 sudo: false
 cache: bundler
+env:
+  # Google Analytics ID
+  secure: "TyGjoHZ4bhNed1k4ZvWxNmSrve+yTr+jlFx8MqvJoK+A5bZMq/CYkXajO96tKN0ZiJmF6Rm5/sn9kk00pwnjBw/FOkIKcen5Q+7R0zKYuBodM5q8uUDuqrJQDVJaPQ3BH15JGJR7oB/QoJR80iugGJcjvnF8CO3oCaiFcZWxOVg="
 before_install:
   - mkdir travis-phantomjs
   - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
