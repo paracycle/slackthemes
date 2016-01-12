@@ -80,7 +80,7 @@ end
 
 activate :google_analytics do |ga|
   # Property ID (default = nil)
-  ga.tracking_id = ENV['ANALYTICS_ID']
+  ga.tracking_id = ENV['ANALYTICS_ID'] || 'TEST_GA_TRACKING_ID'
 
   # Tracking in development environment (default = true)
   ga.development = false
@@ -94,7 +94,7 @@ activate :deploy do |deploy|
   # deploy.branch   = 'custom-branch' # default: gh-pages
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
-end
+end if ENV['ANALYTICS_ID']
 
 helpers do
   def themes
