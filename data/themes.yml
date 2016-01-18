@@ -5,6 +5,7 @@
 - { colors: '#754242,#BD3737,#9C4444,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Big Red' }
 - { colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900', name: 'Citrus' }
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
+- { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
 - { colors: '#193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400', name: 'Cobalt2' }
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
 - { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
