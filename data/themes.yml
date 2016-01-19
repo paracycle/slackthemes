@@ -98,3 +98,4 @@
 - { colors: '#0D83DD,#0064BE,#86C620,#FFFFFF,#648C0F,#FFFFFF,#9DFF00,#86C620', name: 'FreshBooks' }
 - { colors: '#278F0D,#19780C,#070708,#FFFFFF,#19780C,#FFFFFF,#F7FF00,#FF8669', name: 'Mean Green' }
 - { colors: '#B51815,#A51815,#FFFFFF,#B51815,#FF1815,#FFD21F,#FFE21F,#FF5555', name: 'Kansas City Chiefs' }
+- { colors: '#181818,#202020,#99CB3F,#FFFFFF,#202020,#FFFFFF,#99CB3F,#F7124E', name: 'Drund' }
