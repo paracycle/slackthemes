@@ -100,3 +100,16 @@
 - { colors: '#B51815,#A51815,#FFFFFF,#B51815,#FF1815,#FFD21F,#FFE21F,#FF5555', name: 'Kansas City Chiefs' }
 - { colors: '#181818,#202020,#99CB3F,#FFFFFF,#202020,#FFFFFF,#99CB3F,#F7124E', name: 'Drund' }
 - { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#EF5350', name: 'Material Blue Grey' }
+- { colors: '#D32F2F,#B71C1C,#B71C1C,#FFFFFF,#B71C1C,#FFFFFF,#B2FF59,#EF9A9A', name: 'Material Red' }
+- { colors: '#E91E63,#C2185B,#C2185B,#FFFFFF,#C2185B,#FFFFFF,#B2FF59,#F48FB1', name: 'Material Pink' }
+- { colors: '#9C27B0,#7B1FA2,#7B1FA2,#FFFFFF,#7B1FA2,#FFFFFF,#B2FF59,#CE93D8', name: 'Material Purple' }
+- { colors: '#673AB7,#512DA8,#7B1FA2,#FFFFFF,#512DA8,#FFFFFF,#B2FF59,#B39DDB', name: 'Material Deep Purple' }
+- { colors: '#3F51B5,#303F9F,#303F9F,#FFFFFF,#303F9F,#FFFFFF,#B2FF59,#9FA8DA', name: 'Material Indigo' }
+- { colors: '#2196F3,#1976D2,#1976D2,#FFFFFF,#1976D2,#FFFFFF,#B2FF59,#90CAF9', name: 'Material Blue' }
+- { colors: '#03A9F4,#0288D1,#0288D1,#FFFFFF,#0288D1,#FFFFFF,#B2FF59,#81D4FA', name: 'Material Light Blue' }
+- { colors: '#4CAF50,#388E3C,#388E3C,#FFFFFF,#388E3C,#FFFFFF,#B2FF59,#A5D6A7', name: 'Material Green' }
+- { colors: '#8BC34A,#689F38,#689F38,#FFFFFF,#689F38,#FFFFFF,#B2FF59,#C5E1A5', name: 'Material Light Green' }
+- { colors: '#FFEB3B,#FBC02D,#FBC02D,#616161,#FBC02D,#616161,#B2FF59,#FBC02D', name: 'Material Yellow' }
+- { colors: '#FFC107,#FFA000,#FFA000,#757575,#FFA000,#757575,#B2FF59,#FFA000', name: 'Material Amber' }
+- { colors: '#FF5722,#E64A19,#E64A19,#ffffff,#E64A19,#ffffff,#B2FF59,#FFAB91', name: 'Material Deep Orange' }
+- { colors: '#795548,#5D4037,#5D4037,#ffffff,#5D4037,#ffffff,#B2FF59,#BCAAA4', name: 'Material Brown' }
