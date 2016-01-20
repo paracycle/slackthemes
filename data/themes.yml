@@ -100,3 +100,4 @@
 - { colors: '#B51815,#A51815,#FFFFFF,#B51815,#FF1815,#FFD21F,#FFE21F,#FF5555', name: 'Kansas City Chiefs' }
 - { colors: '#181818,#202020,#99CB3F,#FFFFFF,#202020,#FFFFFF,#99CB3F,#F7124E', name: 'Drund' }
 - { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#EF5350', name: 'Material Blue Grey' }
+- { colors: '#FF9800,#F57C00,#F57C00,#ffffff,#F57C00,#ffffff,#B2FF59,#FFCC80', name: 'Material Orange' }
