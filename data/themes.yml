@@ -109,7 +109,7 @@
 - { colors: '#212121,#424242,#4CAF50,#FFFFFF,#4CAF50,#FFFFFF,#4CAF50,#4CAF50', name: 'Material Design Green' }
 - { colors: '#212121,#424242,#CDDC39,#212121,#CDDC39,#FFFFFF,#CDDC39,#CDDC39', name: 'Material Design Lime' }
 - { colors: '#212121,#424242,#FFEB3B,#212121,#FFEB3B,#FFFFFF,#FFEB3B,#FFEB3B', name: 'Material Design Yellow' }
-- { colors: '#212121,#424242,#FFC107,#212121,#FFC107,#FFFFFF,#FFC107,#FFEB3B', name: 'Material Design Amber' }
+- { colors: '#212121,#424242,#FFC107,#212121,#FFC107,#FFFFFF,#FFC107,#FFC107', name: 'Material Design Amber' }
 - { colors: '#212121,#424242,#FF9800,#212121,#FF9800,#FFFFFF,#FF9800,#FF9800', name: 'Material Design Orange' }
 - { colors: '#212121,#424242,#FF5722,#FFFFFF,#FF5722,#FFFFFF,#FF5722,#FF5722', name: 'Material Design Deep Orange' }
 - { colors: '#212121,#424242,#795548,#FFFFFF,#795548,#FFFFFF,#795548,#795548', name: 'Material Design Brown' }
