@@ -111,5 +111,6 @@
 - { colors: '#8BC34A,#689F38,#689F38,#FFFFFF,#689F38,#FFFFFF,#B2FF59,#C5E1A5', name: 'Material Light Green' }
 - { colors: '#FFEB3B,#FBC02D,#FBC02D,#616161,#FBC02D,#616161,#B2FF59,#FBC02D', name: 'Material Yellow' }
 - { colors: '#FFC107,#FFA000,#FFA000,#757575,#FFA000,#757575,#B2FF59,#FFA000', name: 'Material Amber' }
+- { colors: '#FF9800,#F57C00,#F57C00,#ffffff,#F57C00,#ffffff,#B2FF59,#FFCC80', name: 'Material Orange' }
 - { colors: '#FF5722,#E64A19,#E64A19,#ffffff,#E64A19,#ffffff,#B2FF59,#FFAB91', name: 'Material Deep Orange' }
 - { colors: '#795548,#5D4037,#5D4037,#ffffff,#5D4037,#ffffff,#B2FF59,#BCAAA4', name: 'Material Brown' }
