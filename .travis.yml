@@ -3,9 +3,6 @@ rvm:
   - 2.1.0
 sudo: false
 cache: bundler
-env:
-  global:
-    - GITHUB_USERNAME="wopian"
 before_install:
   - mkdir travis-phantomjs
   - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
