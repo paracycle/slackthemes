@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/wopian/material-slackthemes.svg?branch=master)](https://travis-ci.org/wopian/material-slackthemes)
 
-A fork of the amazing [Slack Themes](https://github.com/paracycle/slackthemes) project offering 100% Material complient themes.
+A fork of the amazing [Slack Themes](https://github.com/paracycle/slackthemes) project offering 100% Material complient themes for [Slack](https://slack.com) teams.
 
 ###How to contribute?
 
