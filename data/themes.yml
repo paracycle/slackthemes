@@ -17,6 +17,7 @@
 - { colors: '#795548,#5D4037,#5D4037,#ffffff,#5D4037,#ffffff,#B2FF59,#BCAAA4', name: 'Brown' }
 - { colors: '#9E9E9E,#616161,#616161,#ffffff,#616161,#ffffff,#B2FF59,#616161', name: 'Grey' }
 - { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#B0BEC5', name: 'Blue Grey' }
+- { colors: '#FFFFFF,#EEEEEE,#EEEEEE,#616161,#EEEEEE,#616161,#B2FF59,#616161', name: 'White' }
 - { colors: '#212121,#212121,#F44336,#FFFFFF,#F44336,#FFFFFF,#F44336,#F44336', name: 'Red Dark' }
 - { colors: '#212121,#212121,#E91E63,#FFFFFF,#E91E63,#FFFFFF,#E91E63,#E91E63', name: 'Pink Dark' }
 - { colors: '#212121,#212121,#9C27B0,#FFFFFF,#9C27B0,#FFFFFF,#9C27B0,#9C27B0', name: 'Purple Dark' }
