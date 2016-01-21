@@ -1,14 +1,14 @@
-- { colors: '#212121,#212121,#F44336,#FFFFFF,#F44336,#FFFFFF,#F44336,#F44336', name: 'Material Dark Red' }
-- { colors: '#212121,#212121,#E91E63,#FFFFFF,#E91E63,#FFFFFF,#E91E63,#E91E63', name: 'Material Dark Pink' }
-- { colors: '#212121,#212121,#9C27B0,#FFFFFF,#9C27B0,#FFFFFF,#9C27B0,#9C27B0', name: 'Material Dark Purple' }
-- { colors: '#212121,#212121,#3F51B5,#FFFFFF,#3F51B5,#FFFFFF,#3F51B5,#3F51B5', name: 'Material Dark Indigo' }
-- { colors: '#212121,#212121,#2196F3,#FFFFFF,#2196F3,#FFFFFF,#2196F3,#2196F3', name: 'Material Dark Blue' }
-- { colors: '#212121,#212121,#009688,#FFFFFF,#009688,#FFFFFF,#009688,#009688', name: 'Material Dark Teal' }
-- { colors: '#212121,#212121,#4CAF50,#FFFFFF,#4CAF50,#FFFFFF,#4CAF50,#4CAF50', name: 'Material Dark Green' }
-- { colors: '#212121,#212121,#CDDC39,#212121,#CDDC39,#FFFFFF,#CDDC39,#CDDC39', name: 'Material Dark Lime' }
-- { colors: '#212121,#212121,#FFEB3B,#212121,#FFEB3B,#FFFFFF,#FFEB3B,#FFEB3B', name: 'Material Dark Yellow' }
-- { colors: '#212121,#212121,#FFC107,#212121,#FFC107,#FFFFFF,#FFC107,#FFC107', name: 'Material Dark Amber' }
-- { colors: '#212121,#212121,#FF9800,#212121,#FF9800,#FFFFFF,#FF9800,#FF9800', name: 'Material Dark Orange' }
-- { colors: '#212121,#212121,#FF5722,#FFFFFF,#FF5722,#FFFFFF,#FF5722,#FF5722', name: 'Material Dark Deep Orange' }
-- { colors: '#212121,#212121,#795548,#FFFFFF,#795548,#FFFFFF,#795548,#795548', name: 'Material Dark Brown' }
-- { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Material Dark Blue Grey' }
+- { colors: '#212121,#212121,#F44336,#FFFFFF,#F44336,#FFFFFF,#F44336,#F44336', name: 'Red Dark' }
+- { colors: '#212121,#212121,#E91E63,#FFFFFF,#E91E63,#FFFFFF,#E91E63,#E91E63', name: 'Pink Dark' }
+- { colors: '#212121,#212121,#9C27B0,#FFFFFF,#9C27B0,#FFFFFF,#9C27B0,#9C27B0', name: 'Purple Dark' }
+- { colors: '#212121,#212121,#3F51B5,#FFFFFF,#3F51B5,#FFFFFF,#3F51B5,#3F51B5', name: 'Indigo Dark' }
+- { colors: '#212121,#212121,#2196F3,#FFFFFF,#2196F3,#FFFFFF,#2196F3,#2196F3', name: 'Blue Dark' }
+- { colors: '#212121,#212121,#009688,#FFFFFF,#009688,#FFFFFF,#009688,#009688', name: 'Teal Dark' }
+- { colors: '#212121,#212121,#4CAF50,#FFFFFF,#4CAF50,#FFFFFF,#4CAF50,#4CAF50', name: 'Green Dark' }
+- { colors: '#212121,#212121,#CDDC39,#212121,#CDDC39,#FFFFFF,#CDDC39,#CDDC39', name: 'Lime Dark' }
+- { colors: '#212121,#212121,#FFEB3B,#212121,#FFEB3B,#FFFFFF,#FFEB3B,#FFEB3B', name: 'Yellow Dark' }
+- { colors: '#212121,#212121,#FFC107,#212121,#FFC107,#FFFFFF,#FFC107,#FFC107', name: 'Amber Dark' }
+- { colors: '#212121,#212121,#FF9800,#212121,#FF9800,#FFFFFF,#FF9800,#FF9800', name: 'Orange Dark' }
+- { colors: '#212121,#212121,#FF5722,#FFFFFF,#FF5722,#FFFFFF,#FF5722,#FF5722', name: 'Deep Orange Dark' }
+- { colors: '#212121,#212121,#795548,#FFFFFF,#795548,#FFFFFF,#795548,#795548', name: 'Brown Dark' }
+- { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Blue Grey Dark' }
