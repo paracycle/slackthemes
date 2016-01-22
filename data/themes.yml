@@ -101,3 +101,5 @@
 - { colors: '#181818,#202020,#99CB3F,#FFFFFF,#202020,#FFFFFF,#99CB3F,#F7124E', name: 'Drund' }
 - { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#EF5350', name: 'Material Blue Grey' }
 - { colors: '#3F51B5,#303F9F,#303F9F,#FFFFFF,#303F9F,#FFFFFF,#B2FF59,#9FA8DA', name: 'Material Indigo' }
+- { colors: '#212121,#212121,#3F51B5,#FFFFFF,#3F51B5,#FFFFFF,#3F51B5,#3F51B5', name: 'Material Dark Indigo' }
+- { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Material Dark Blue Grey' }
