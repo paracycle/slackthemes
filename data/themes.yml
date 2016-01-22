@@ -1,102 +1,41 @@
-- { colors: '#4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C', name: 'Aubergine' }
-- { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#515151,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
-- { colors: '#393939,#2D2D2D,#F2777A,#FFFFFF,#515151,#D3D0C8,#99CC99,#66CCCC', name: 'Base16 Eighties Dark' }
-- { colors: '#191A1C,#282A2E,#B6BC68,#FFFFFF,#363B41,#959896,#80A2BE,#C26161', name: 'Base16 Tomorrow Night' }
-- { colors: '#754242,#BD3737,#9C4444,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Big Red' }
-- { colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900', name: 'Citrus' }
-- { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
-- { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
-- { colors: '#193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400', name: 'Cobalt2' }
-- { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
-- { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
-- { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
-- { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
-- { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
-- { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
-- { colors: '#222222,#2F2F2F,#F92772,#FFFFFF,#A6E22D,#FFFFFF,#66D9EF,#BE84F2', name: 'Monokai' }
-- { colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'Monument' }
-- { colors: '#1F1C18,#8E0E00,#8E0E00,#FFFFFF,#A1A09F,#FFFFFF,#B01D0C,#8E0E00', name: 'Netflix' }
-- { colors: '#303E4D,#2C3849,#6698C8,#FFFFFF,#4A5664,#FFFFFF,#94E864,#78AF8F', name: 'Ochin' }
-- { colors: '#C10048,#920A3D,#2E0002,#FFFFFF,#610A29,#FFFFFF,#FFFFFF,#610A29', name: 'Polygon' }
-- { colors: '#1F2036,#7986CB,#FE528C,#FFFFFF,#606BA2,#FFFFFF,#2DEBAE,#FE528C', name: 'Polymer' }
-- { colors: '#F6F6F6,#EEEEEE,#FA3649,#FFFFFF,#FFFFFF,#000000,#60D156,#FA3649', name: 'PouchDB' }
-- { colors: '#FDF6E3,#EEE8D5,#93A1A1,#FDF6E3,#EEE8D5,#657B83,#2AA198,#DC322F', name: 'Solarized' }
-- { colors: '#AE1817,#AE1817,#232323,#FFFFFF,#999999,#FFFFFF,#333333,#232323', name: 'Saiku Analytics' }
-- { colors: '#073642,#002B36,#B58900,#FDF6E3,#CB4B16,#FDF6E3,#2AA198,#DC322F', name: 'Solarized Dark' }
-- { colors: '#293134,#2F393C,#293134,#93C763,#2F393C,#81969A,#EC7600,#EC7600', name: 'Son of Obsidian' }
-- { colors: '#000000,#A51C24,#FFFFFF,#0320FF,#A5A5A5,#FFFFFF,#FFFFFF,#FFFF00', name: 'Stark Contrast' }
-- { colors: '#B300B3,#23A61C,#FFFFFF,#C400FF,#FF2EFF,#000000,#F7FF00,#F7FF00', name: 'Summer Craze' }
-- { colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
-- { colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242', name: 'Yosemite iTunes' }
-- { colors: '#BB6A76,#AD5B67,#62B791,#FFFFFF,#A5516A,#FFFFFF,#68F798,#694464', name: 'WameIn' }
-- { colors: '#E3DAE6,#B49FC2,#5A30B0,#FDF6E3,#EEE8D5,#594275,#B358BF,#BD72CC', name: 'Wegman' }
-- { colors: '#4D5250,#444A47,#D39B46,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Work Hard' }
-- { colors: '#101010,#000000,#FFFFFF,#000000,#A0A0A0,#FFFFFF,#00A400,#5858FE', name: 'Terminal' }
-- { colors: '#4A3A55,#3A2A45,#8A7A95,#FFFFFF,#2A1A35,#FFFFFF,#22CC88,#CC2288', name: 'MADSOFT' }
-- { colors: '#FFFFFF,#FFFFFF,#FFFFFF,#2288CC,#2288CC,#454449,#93CC93,#2288CC', name: 'Slack White' }
-- { colors: '#4E69A2,#38528B,#38528B,#FFFFFF,#38528B,#FFFFFF,#1FAD38,#CD2323', name: 'Facebook' }
-- { colors: '#222222,#333333,#3F96CA,#F9F9F9,#4A5664,#FFFFFF,#3F96CA,#EFC000', name: 'Wedgies' }
-- { colors: '#F3E3CD,#F3E3CD,#F3951D,#DA3D61,#F26328,#183E1C,#DA3D61,#F26328', name: 'Kimbie' }
-- { colors: '#2B7164,#2B7164,#51A050,#EC2262,#CECCB2,#032342,#DA3D61,#CECCB2', name: 'Watermelon' }
-- { colors: '#EB4D5C,#EB4D5C,#A6D6A1,#3C3865,#3C3865,#FFFFFF,#3C3865,#F18E2C', name: 'Spring Tree' }
-- { colors: '#663399,#592D86,#8F6DB0,#FFFFFF,#3E313C,#FFFFFF,#FFFFFF,#EB4D5C', name: 'Makers' }
-- { colors: '#CF7C44,#CF7C44,#E89A6B,#F7DB72,#FBEDD4,#FFFAFC,#92406A,#92406A', name: 'Bourbon' }
-- { colors: '#C17F46,#C17F46,#CFA677,#DCBF98,#FBEDD4,#EFEFEF,#EAECF1,#EAECF1', name: 'Latte' }
-- { colors: '#0A6242,#0A6242,#3D3935,#BC7E3B,#BC7E3B,#F7F7F7,#3D3935,#3D3935', name: 'Starbucks' }
-- { colors: '#FDE13A,#FDE13A,#000000,#E72D25,#FFF09E,#000000,#E72D25,#E72D25', name: 'Kill Bill' }
-- { colors: '#FFFFFF,#FFFFFF,#E0E0E0,#E1382F,#F2F2F2,#050505,#E1382F,#E1382F', name: 'Railway Clock' }
-- { colors: '#101010,#101010,#D3D3CA,#BB313E,#424242,#F0F0E6,#BB313E,#BB313E', name: 'Film Noir' }
-- { colors: '#55ACEE,#55ACEE,#E1E8ED,#292F33,#ADDCFF,#F5F8FA,#E1E8ED,#E1E8ED', name: 'Twitter' }
-- { colors: '#007EE5,#007EE5,#47525D,#FFFFFF,#7B8994,#FFFFFF,#47525D,#47525D', name: 'Dropbox' }
-- { colors: '#1A1919,#1A1919,#EDEBE6,#7DBA4A,#4F4D4D,#FFFFFF,#7DBA4A,#7DBA4A', name: 'Spotify' }
-- { colors: '#89A1AB,#7D949E,#FFFFFF,#748991,#748991,#FFFFFF,#B3FF00,#748991', name: 'Light Blue' }
-- { colors: '#404040,#696969,#FFD200,#000000,#000000,#FFFFFF,#00703C,#EF4C23', name: 'Gartland' }
-- { colors: '#003D67,#003D67,#FFFFFF,#003D67,#00548C,#FFFFFF,#0099FF,#006752', name: 'Phone Box' }
-- { colors: '#A5C0CC,#62A5BF,#1A91BD,#F5F5F5,#BAD8E3,#170317,#38978D,#EB4D5C', name: 'Sky Blue' }
-- { colors: '#292D36,#000000,#DA5647,#FFFFFF,#333644,#FFFFFF,#57AFBD,#DA5647', name: 'Goodstuff FM' }
-- { colors: '#4F2F4C,#452842,#8C5888,#FFFFFF,#3E313C,#FFFFFF,#D0FF00,#889100', name: 'Solanum' }
-- { colors: '#4F2F4C,#452842,#8C5888,#FFFFFF,#3E313C,#FFFFFF,#00FFB7,#DE4C0D', name: 'Brinjal' }
-- { colors: '#FFFFFF,#FDCE45,#FDCE45,#0F1216,#ECEEF2,#0F1216,#1FAE7D,#1FAE7D', name: 'Put.io' }
-- { colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669', name: 'Product Hunt' }
-- { colors: '#232323,#000000,#f05a28,#000000,#000000,#FFFFFF,#f05a28,#f05a28', name: 'Myplanet' }
-- { colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500', name: 'Reddit' }
-- { colors: '#FFFFFF,#CC181E,#CC181E,#FFFFFF,#444444,#0D0D0D,#CC181E,#E04A4D', name: 'Youtube' }
-- { colors: '#F5F5F5,#FFFFFF,#FDBD39,#FFFFFF,#FECF33,#574751,#A4BF36,#EE6723', name: 'Zeplin' }
-- { colors: '#494949,#CB5599,#49C6B7,#FFFFFF,#898B8F,#FFFFFF,#9ECD75,#E6615D', name: 'Social Tables Pink' }
-- { colors: '#494949,#65A0D6,#49C6B7,#FFFFFF,#898B8F,#FFFFFF,#9ECD75,#E6615D', name: 'Social Tables Blue' }
-- { colors: '#0074B2,#0083CA,#B26500,#FFFFFF,#00A5FF,#FFFFFF,#FF9000,#FF9000', name: 'Luizalabs' }
-- { colors: '#0074B2,#0083CA,#00A2FF,#FFFFFF,#00A5FF,#FFFFFF,#03EEFF,#00CCC2', name: 'Deep Blue' }
-- { colors: '#181D27,#FD6540,#393F40,#F1F2F4,#393F40,#F1F2F4,#F1F2F4,#FD6540', name: 'Grooveshark' }
-- { colors: '#2B2D2D,#4A4C4D,#428BCA,#FFFFFF,#428BCA,#FFFFFF,#67D044,#DE495B', name: 'The Changelog' }
-- { colors: '#112539,#112539,#2DA89C,#FFFFFF,#004365,#FFFFFF,#2DEBAE,#2DEBAE', name: 'SocialSign.in' }
-- { colors: '#0D2D4F,#0A2440,#639DD4,#FFFFFF,#3E6796,#FFFFFF,#94E864,#5990CF', name: 'Peter Sellers' }
-- { colors: '#751C01,#5C1500,#FFFFFF,#751C01,#AD2A02,#FFFFFF,#FFFFFF,#AD2A02', name: 'Danny Torrence' }
-- { colors: '#EDECEB,#E3E3E3,#DA552F,#FFFFFF,#D6D6D6,#534540,#DA552F,#DA552F', name: 'Douglas Rain' }
-- { colors: '#B51929,#B51929,#23408E,#BCA26F,#025277,#FFFFFF,#E5D3A0,#B7B6B7', name: 'FC Bayern München' }
-- { colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E', name: 'plug.dj' }
-- { colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD', name: 'Oktavilla' }
-- { colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823', name: 'Github Activity Graph' }
-- { colors: '#000000,#000000,#006600,#00ff00,#00ff00,#00ff00,#ff0000,#ff0000', name: 'Retro Monochrome Terminal' }
-- { colors: '#0000AA,#00AAAA,#FF55FF,#FFFFFF,#00AAAA,#FFFFFF,#C0C0C0,#FF00FF', name: 'EGA' }
-- { colors: '#0050A0,#000020,#F08000,#FFFFFF,#F08000,#FFFFFF,#F08000,#F08000', name: 'AmigaOS 1.3' }
-- { colors: '#222222,#111111,#111111,#66AADD,#555555,#EEEEEE,#66DD66,#DD666D', name: 'DD' }
-- { colors: '#0A0F14,#10151B,#265360,#D4EBE9,#D26939,#9BD1CE,#EDB54B,#C33027', name: 'Gotham' }
-- { colors: '#F5F5F5,#CCCCCC,#3873AE,#FFFFFF,#E9E9E9,#000000,#69AA4E,#999999', name: 'Hip' }
-- { colors: '#303E4D,#2C3849,#B04C58,#FFFFFF,#4A5664,#B3B8C4,#94E864,#78AF8F', name: 'Space Gray' }
-- { colors: '#573D82,#453068,#3FBA91,#FFFFFF,#453068,#FFFFFF,#3FBA91,#FF3E88', name: 'Slack.com' }
-- { colors: '#F2F2F4,#E6E6E9,#1FBAD6,#FFFFFF,#C0C0C8,#151525,#1FBAD6,#4CC8DE', name: 'Uber Light' }
-- { colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE', name: 'Uber Dark' }
-- { colors: '#162C16,#444A47,#663333,#FFFFFF,#995050,#FFFFFF,#E0E066,#DB6668', name: 'xUnit.net' }
-- { colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#02BF02,#F1C248', name: 'Ingress Enlightened' }
-- { colors: '#000E0F,#000E0F,#393218,#F1C248,#006D77,#34EAF5,#0492D0,#F1C248', name: 'Ingress Resistence' }
-- { colors: '#F7941E,#FFB963,#FFB963,#110000,#F5A849,#110000,#3D0000,#507DAA', name: 'Beaver Builders' }
-- { colors: '#2F2C2F,#252525,#A36B31,#D2D6D6,#5C6380,#DEDEDE,#ADBA4E,#DB6668', name: 'Afterglow' }
-- { colors: '#C0441C,#91282A,#F79F66,#FFFFFF,#91282A,#FFFFFF,#F79F66,#F15340', name: 'Hot Dog Stand' }
-- { colors: '#FFFFFF,#C0C0C0,#001F7E,#FFFFFF,#C0C0C0,#000000,#001F7E,#C0C0C0', name: 'Windows 3.1' }
-- { colors: '#327C7E,#001F7E,#001F7E,#FFFFFF,#001F7E,#FFFFFF,#C0C0C0,#C0C0C0', name: 'Windows 95' }
-- { colors: '#F0EDE0,#0054E3,#0054E3,#FFFFFF,#0054E3,#000000,#ED6D3A,#ED6D3A', name: 'Windows XP' }
-- { colors: '#0D83DD,#0064BE,#86C620,#FFFFFF,#648C0F,#FFFFFF,#9DFF00,#86C620', name: 'FreshBooks' }
-- { colors: '#278F0D,#19780C,#070708,#FFFFFF,#19780C,#FFFFFF,#F7FF00,#FF8669', name: 'Mean Green' }
-- { colors: '#B51815,#A51815,#FFFFFF,#B51815,#FF1815,#FFD21F,#FFE21F,#FF5555', name: 'Kansas City Chiefs' }
-- { colors: '#181818,#202020,#99CB3F,#FFFFFF,#202020,#FFFFFF,#99CB3F,#F7124E', name: 'Drund' }
-- { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#EF5350', name: 'Material Blue Grey' }
+- { colors: '#D32F2F,#B71C1C,#B71C1C,#FFFFFF,#B71C1C,#FFFFFF,#B2FF59,#EF9A9A', name: 'Red' }
+- { colors: '#E91E63,#C2185B,#C2185B,#FFFFFF,#C2185B,#FFFFFF,#B2FF59,#F48FB1', name: 'Pink' }
+- { colors: '#9C27B0,#7B1FA2,#7B1FA2,#FFFFFF,#7B1FA2,#FFFFFF,#B2FF59,#CE93D8', name: 'Purple' }
+- { colors: '#673AB7,#512DA8,#7B1FA2,#FFFFFF,#512DA8,#FFFFFF,#B2FF59,#B39DDB', name: 'Deep Purple' }
+- { colors: '#3F51B5,#303F9F,#303F9F,#FFFFFF,#303F9F,#FFFFFF,#B2FF59,#9FA8DA', name: 'Indigo' }
+- { colors: '#2196F3,#1976D2,#1976D2,#FFFFFF,#1976D2,#FFFFFF,#B2FF59,#90CAF9', name: 'Blue' }
+- { colors: '#03A9F4,#0288D1,#0288D1,#FFFFFF,#0288D1,#FFFFFF,#B2FF59,#81D4FA', name: 'Light Blue' }
+- { colors: '#00BCD4,#0097A7,#0097A7,#FFFFFF,#00796B,#FFFFFF,#B2FF59,#80DEEA', name: 'Cyan' }
+- { colors: '#009688,#00796B,#00796B,#FFFFFF,#00796B,#FFFFFF,#B2FF59,#80CBC4', name: 'Teal' }
+- { colors: '#4CAF50,#388E3C,#388E3C,#FFFFFF,#388E3C,#FFFFFF,#B2FF59,#A5D6A7', name: 'Green' }
+- { colors: '#8BC34A,#689F38,#689F38,#FFFFFF,#689F38,#FFFFFF,#B2FF59,#C5E1A5', name: 'Light Green' }
+- { colors: '#CDDC39,#AFB42B,#AFB42B,#616161,#AFB42B,#616161,#B2FF59,#616161', name: 'Lime' }
+- { colors: '#FFEB3B,#FBC02D,#FBC02D,#616161,#FBC02D,#616161,#B2FF59,#FBC02D', name: 'Yellow' }
+- { colors: '#FFC107,#FFA000,#FFA000,#757575,#FFA000,#757575,#B2FF59,#FFA000', name: 'Amber' }
+- { colors: '#FF9800,#F57C00,#F57C00,#ffffff,#F57C00,#ffffff,#B2FF59,#FFCC80', name: 'Orange' }
+- { colors: '#FF5722,#E64A19,#E64A19,#ffffff,#E64A19,#ffffff,#B2FF59,#FFAB91', name: 'Deep Orange' }
+- { colors: '#795548,#5D4037,#5D4037,#ffffff,#5D4037,#ffffff,#B2FF59,#BCAAA4', name: 'Brown' }
+- { colors: '#9E9E9E,#616161,#616161,#ffffff,#616161,#ffffff,#B2FF59,#616161', name: 'Grey' }
+- { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#B0BEC5', name: 'Blue Grey' }
+- { colors: '#FFFFFF,#EEEEEE,#EEEEEE,#616161,#EEEEEE,#616161,#B2FF59,#616161', name: 'White' }
+- { colors: '#212121,#212121,#F44336,#FFFFFF,#F44336,#FFFFFF,#F44336,#F44336', name: 'Red Dark' }
+- { colors: '#212121,#212121,#E91E63,#FFFFFF,#E91E63,#FFFFFF,#E91E63,#E91E63', name: 'Pink Dark' }
+- { colors: '#212121,#212121,#9C27B0,#FFFFFF,#9C27B0,#FFFFFF,#9C27B0,#9C27B0', name: 'Purple Dark' }
+- { colors: '#212121,#212121,#673AB7,#FFFFFF,#673AB7,#FFFFFF,#673AB7,#673AB7', name: 'Deep Purple Dark' }
+- { colors: '#212121,#212121,#3F51B5,#FFFFFF,#3F51B5,#FFFFFF,#3F51B5,#3F51B5', name: 'Indigo Dark' }
+- { colors: '#212121,#212121,#2196F3,#FFFFFF,#2196F3,#FFFFFF,#2196F3,#2196F3', name: 'Blue Dark' }
+- { colors: '#212121,#212121,#03A9F4,#FFFFFF,#03A9F4,#FFFFFF,#03A9F4,#03A9F4', name: 'Light Blue Dark' }
+- { colors: '#212121,#212121,#00BCD4,#FFFFFF,#00BCD4,#FFFFFF,#00BCD4,#00BCD4', name: 'Cyan Dark' }
+- { colors: '#212121,#212121,#009688,#FFFFFF,#009688,#FFFFFF,#009688,#009688', name: 'Teal Dark' }
+- { colors: '#212121,#212121,#4CAF50,#FFFFFF,#4CAF50,#FFFFFF,#4CAF50,#4CAF50', name: 'Green Dark' }
+- { colors: '#212121,#212121,#8BC34A,#FFFFFF,#8BC34A,#FFFFFF,#4CAF50,#8BC34A', name: 'Light Green Dark' }
+- { colors: '#212121,#212121,#CDDC39,#212121,#CDDC39,#FFFFFF,#CDDC39,#CDDC39', name: 'Lime Dark' }
+- { colors: '#212121,#212121,#FFEB3B,#212121,#FFEB3B,#FFFFFF,#FFEB3B,#FFEB3B', name: 'Yellow Dark' }
+- { colors: '#212121,#212121,#FFC107,#212121,#FFC107,#FFFFFF,#FFC107,#FFC107', name: 'Amber Dark' }
+- { colors: '#212121,#212121,#FF9800,#212121,#FF9800,#FFFFFF,#FF9800,#FF9800', name: 'Orange Dark' }
+- { colors: '#212121,#212121,#FF5722,#FFFFFF,#FF5722,#FFFFFF,#FF5722,#FF5722', name: 'Deep Orange Dark' }
+- { colors: '#212121,#212121,#795548,#FFFFFF,#795548,#FFFFFF,#795548,#795548', name: 'Brown Dark' }
+- { colors: '#212121,#212121,#9E9E9E,#212121,#9E9E9E,#FFFFFF,#9E9E9E,#9E9E9E', name: 'Grey Dark' }
+- { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Blue Grey Dark' }
+- { colors: '#212121,#212121,#FFFFFF,#212121,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF', name: 'White Dark' }
+- { colors: '#212121,#212121,#E57373,#212121,#E57373,#ffffff,#E57373,#E57373', name: 'Red 300' }
