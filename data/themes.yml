@@ -38,3 +38,4 @@
 - { colors: '#212121,#212121,#9E9E9E,#212121,#9E9E9E,#FFFFFF,#9E9E9E,#9E9E9E', name: 'Grey Dark' }
 - { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Blue Grey Dark' }
 - { colors: '#212121,#212121,#FFFFFF,#212121,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF', name: 'White Dark' }
+- { colors: '#212121,#212121,#E57373,#212121,#E57373,#ffffff,#E57373,#E57373', name: 'Red 300' }
