@@ -106,3 +106,4 @@
 - { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Material Dark Blue Grey' }
 - { colors: '#2F343B,#2F343B,#FD7532,#FFFFFF,#FD7532,#FFFFFF,#FD7532,#FD7532', name: 'Hummingbird' }
 - { colors: '#544538,#6b5847,#AD8D54,#00ff00,#997300,#ffcc66,#ffff00,#992600', name: 'Steampunk' }
+- { colors: '#002933,#2C3849,#008FB2,#FFFFFF,#4A5664,#00CCFF,#CCCC00,#FF9900', name: 'Tron Legacy'}
