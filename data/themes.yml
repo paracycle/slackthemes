@@ -111,4 +111,5 @@
 - { colors: '#635C5A,#564F4D,#E7412A,#FFFFFF,#564F4D,#FFFFFF,#8DA600,#0EA7B5', name: 'Dolly Dark' }
 - { colors: '#34495e,#16a085,#1abc9c,#FFFFFF,#16A085,#ecf0f1,#FF2A68,#FF2A68', name: 'Midnight Pink' }
 - { colors: '#112E51,#205493,#0071BC,#FFFFFF,#323A45,#FFFFFF,#4AA564,#981B1E', name: 'Draft U.S. Web Design Standards' }
+- { colors: '#5AADBB,#076570,#F5D087,#FFFFFF,#D37C71,#262222,#DD002A,#F15340', name: 'Yeoman' }
 
