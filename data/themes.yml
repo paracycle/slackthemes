@@ -116,3 +116,4 @@
 - { colors: '#5AADBB,#076570,#F5D087,#FFFFFF,#D37C71,#262222,#DD002A,#F15340', name: 'Yeoman' }
 - { colors: '#333333,#222222,#0074A2,#FFFFFF,#111111,#FFFFFF,#7AD03A,#D54E21', name: 'WordPress' }
 - { colors: '#2D363F,#D6D8D7,#D6D8D7,#2D363F,#D6D8D7,#FFFFFF,#D6D8D7,#D6D8D7', name: 'Front End Happy Hour' }
+- { colors: '#373D48,#303641,#5294E2,#FFFFFF,#4A5664,#FFFFFF,#5294E2,#5294E2', name: 'Arc' }
