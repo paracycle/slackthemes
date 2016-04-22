@@ -9,6 +9,7 @@
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
 - { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
 - { colors: '#193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400', name: 'Cobalt2' }
+- { colors: '#333F4E,#47525F,#DA513D,#FFFFFF,#47525F,#F8F8F8,#DA513D,#DA513D', name: 'CraftCMS' }
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
 - { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
 - { colors: '#1B549E,#1B549E,#19C0E7,#FFFFFF,#19C0E7,#FFFFFF,#19C0E7,#FFFFFF', name: 'Design Hub' }
