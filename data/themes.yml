@@ -101,7 +101,7 @@
 - { colors: '#B300B3,#23A61C,#FFFFFF,#C400FF,#FF2EFF,#000000,#F7FF00,#F7FF00', name: 'Summer Craze' }
 - { colors: '#101010,#000000,#FFFFFF,#000000,#A0A0A0,#FFFFFF,#00A400,#5858FE', name: 'Terminal' }
 - { colors: '#2B2D2D,#4A4C4D,#428BCA,#FFFFFF,#428BCA,#FFFFFF,#67D044,#DE495B', name: 'The Changelog' }
-- { colors: '#245b61,#245b61,#b0c1c4,#FFFFFF,#72d4c0,#FFFFFF,#bef200,#F15340'. name: 'Thoroughcare'}
+- { colors: '#245b61,#245b61,#72d4c0,#FFFFFF,#b0c1c4,#FFFFFF,#bef200,#F15340'. name: 'Thoroughcare'}
 - { colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
 - { colors: '#55ACEE,#55ACEE,#E1E8ED,#292F33,#ADDCFF,#F5F8FA,#E1E8ED,#E1E8ED', name: 'Twitter' }
 - { colors: '#151525,#3A3A48,#1EACC7,#F2F2F4,#3A3A48,#E6E6E9,#79D6E6,#4CC8DE', name: 'Uber Dark' }
