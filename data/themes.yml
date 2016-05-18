@@ -122,3 +122,4 @@
 - { colors: '#373D48,#303641,#5294E2,#FFFFFF,#4A5664,#FFFFFF,#5294E2,#5294E2', name: 'Arc' }
 - { colors: '#245b61,#245b61,#72d4c0,#FFFFFF,#b0c1c4,#FFFFFF,#bef200,#F15340', name: 'Thoroughcare' }
 - { colors: '#0D7E83,#076570,#32b377,#FFFFFF,#72d4c0,#FFFFFF,#bef200,#F15340', name: 'Minty' }
+- { colors: '#235ce2,#6BB700,#6BB700,#FFFFFF,#262626,#FFFFFF,#6BB700,#EB4D5C', name: 'Zillow' }
