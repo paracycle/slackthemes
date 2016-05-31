@@ -128,4 +128,4 @@
 - { colors: '#ffffff,#CCCCCC,#3F9DBC,#FFFFFF,#E46700,#777777,#3F9DBC,#BE3410', name: 'Naked Apartments' }
 - { colors: '#ffffff,#ffffff,#236ABE,#FFFFFF,#236ABE,#000000,#236ABE,#BE3410', name: 'StreetEasy' }
 - { colors: '#37B449,#2D9A48,#1B5E48,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#EB4D5C', name: 'Trulia' }
-- { colors: '#33cc33,#009900,#ff0000,#FFFF00,#99ff99,#0000ff,#FFFF00,#ffff00', name: 'Nintendo64' }
+- { colors: '#33cc33,#009900,#ff0000,#FFFF00,#99ff99,#0000ff,#FFFF00,#ff0000', name: 'Nintendo64' }
