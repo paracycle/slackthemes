@@ -132,3 +132,4 @@
 - { colors: '#ffffff,#ffffff,#236ABE,#FFFFFF,#236ABE,#000000,#236ABE,#BE3410', name: 'StreetEasy' }
 - { colors: '#37B449,#2D9A48,#1B5E48,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#EB4D5C', name: 'Trulia' }
 - { colors: '#319b44,#0047b3,#db3236,#ffff00,#0047B3,#FFFFFF,#FFFF00,#db3236', name: 'N64' }
+- { colors: '#284589,#3464d4,#FF6600,#FFFFFF,#445970,#FFFFFF,#00C19B,#FF6600', name: 'Nitronews' }
