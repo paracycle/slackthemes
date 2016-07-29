@@ -133,3 +133,4 @@
 - { colors: '#37B449,#2D9A48,#1B5E48,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#EB4D5C', name: 'Trulia' }
 - { colors: '#319b44,#0047b3,#db3236,#ffff00,#0047B3,#FFFFFF,#FFFF00,#db3236', name: 'N64' }
 - { colors: '#284589,#3464d4,#FF6600,#FFFFFF,#445970,#FFFFFF,#00C19B,#FF6600', name: 'Nitronews' }
+- { colors: '#F05A2D,#444A47,#ffffff,#333333,#434745,#FFFFFF,#333333,#333333', name: 'Myplanet-Orange' }
