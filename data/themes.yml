@@ -135,3 +135,4 @@
 - { colors: '#284589,#3464d4,#FF6600,#FFFFFF,#445970,#FFFFFF,#00C19B,#FF6600', name: 'Nitronews' }
 - { colors: '#F05A2D,#444A47,#ffffff,#333333,#434745,#FFFFFF,#333333,#333333', name: 'Myplanet-Orange' }
 - { colors: '#3396d3,#4c4c4c,#d43f27,#FFFFFF,#3E313C,#FFFFFF,#ffffff,#253c4e', name: 'Pinnaca' }
+- { colors: '#21252B,#272C33,#31363F,#D7DAE0,#272C33,#D7DAE0,#20B684,#528BFF', name: 'One Dark' }
