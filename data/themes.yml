@@ -36,6 +36,7 @@
 - { colors: '#293134,#2F393C,#293134,#93C763,#2F393C,#81969A,#EC7600,#EC7600', name: 'Son of Obsidian' }
 - { colors: '#000000,#A51C24,#FFFFFF,#0320FF,#A5A5A5,#FFFFFF,#FFFFFF,#FFFF00', name: 'Stark Contrast' }
 - { colors: '#B300B3,#23A61C,#FFFFFF,#C400FF,#FF2EFF,#000000,#F7FF00,#F7FF00', name: 'Summer Craze' }
+- { colors: '#574f4a,#48b9c7,#faa41a,#FFFFFF,#48b9c7,#FFFFFF,#26d076,#dc4405', name: 'System76' }
 - { colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
 - { colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242', name: 'Yosemite iTunes' }
 - { colors: '#BB6A76,#AD5B67,#62B791,#FFFFFF,#A5516A,#FFFFFF,#68F798,#694464', name: 'WameIn' }
