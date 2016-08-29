@@ -13,6 +13,7 @@
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
 - { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
 - { colors: '#1B549E,#1B549E,#19C0E7,#FFFFFF,#19C0E7,#FFFFFF,#19C0E7,#FFFFFF', name: 'Design Hub' }
+- { colors: '#dfdfdf,#f5f5f5,#cecece,#333333,#f5f5f5,#333333,#93d844,#da4d45', name: 'elementary GTK' }
 - { colors: '#faf4f1,#faf4f1,#E77562,#ffffff,#E5DBD6,#717171,#E46651,#E46651', name: 'Ember.js' }
 - { colors: '#171717,#404245,#424242,#ECF0F1,#4A4A4A,#FAFAFA,#2ECC71,#00A362', name: 'Green Lantern' }
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
