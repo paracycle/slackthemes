@@ -143,3 +143,4 @@
 - { colors: '#34495E,#42B983,#42B983,#FFFFFF,#42B983,#FFFFFF,#FFD41D,#42B983', name: 'Vue.js' }
 - { colors: '#21252B,#272C33,#31363F,#D7DAE0,#272C33,#D7DAE0,#20B684,#528BFF', name: 'One Dark' }
 - { colors: '#352e59,#2d274f,#0076bf,#FFFFFF,#2D274F,#ffffff,#94E864,#78AF8F', name: 'Purple Daydream' }
+- { colors: '#282828,#3c3836,#98971a,#fbf1c7,#3E313C,#EBDBB2,#b8bb26,#fb4934', name: 'Gruvbox' }
