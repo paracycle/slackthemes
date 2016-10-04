@@ -148,3 +148,5 @@
 - { colors: '#352e59,#2d274f,#0076bf,#FFFFFF,#2D274F,#ffffff,#94E864,#78AF8F', name: 'Purple Daydream' }
 - { colors: '#282828,#3c3836,#98971a,#fbf1c7,#3E313C,#EBDBB2,#b8bb26,#fb4934', name: 'Gruvbox' }
 - { colors: '#40415a,#54556e,#f99a66,#ffffff,#54556e,#ffffff,#d55161,#d55161', name: 'devRant' }
+- { colors: '#6044db,#500ba3,#f0b31a,#FFFFFF,#997929,#ffffff,#f0b31a,#a92ab0', name: 'Mautic' }
+- { colors: '#6fa36f,#3E313C,#01690b,#ffff00,#3E313C,#ffffff,#faff78,#ed687e', name: 'Drupal Twig'}
