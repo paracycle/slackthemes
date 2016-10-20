@@ -152,3 +152,4 @@
 - { colors: '#6fa36f,#3E313C,#01690b,#ffff00,#3E313C,#ffffff,#faff78,#ed687e', name: 'Drupal Twig'}
 - { colors: '#014A83,#053354,#dd661e,#ffffff,#053354,#ffffff,#dd661e,#dd661e', name: 'Florida Gators'}
 - { colors: '#ff8800,#000000,#ffffff,#000000,#4a5664,#000000,#000000,#736e65', name: 'Halloween'}
+- { colors: '#f1f1f1,#DDDDDD,#ff5d02,#FFFFFF,#DDDDDD,#000000,#28a05a,#ff5d02', name: 'Spreadfamily'}
