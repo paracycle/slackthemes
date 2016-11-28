@@ -30,6 +30,7 @@
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
 - { colors: '#00AED8,#00AEDF,#C5CC13,#000000,#FBB040,#FFFFFF,#2DEBAE,#EE2B74', name: 'KKBOX' }
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
+- { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C, name: 'Kayako Minimal' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
 - { colors: '#222222,#2F2F2F,#F92772,#FFFFFF,#A6E22D,#FFFFFF,#66D9EF,#BE84F2', name: 'Monokai' }
 - { colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'Monument' }
