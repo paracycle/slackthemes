@@ -159,3 +159,4 @@
 - { colors: '#2C2C26,#229725,#13C217,#FFFFFF,#229725,#FFFFFF,#13C217,#439AEA', name: 'Chargify'}
 - { colors: '#194234,#9c2e33,#E7C12e,#194234,#9c2e33,#FFFFFF,#ee6030,#9C2E33', name: 'Autumn'}
 - { colors: '#138724,#1B5E48,#db2e3f,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#DB2E3F', name: 'Christmas'}
+- { colors: '#033313,#077a07,#02ad44,#FFFFFF,#076e27,#FFFFFF,#94E864,#78AF8F', name: 'Forest'}
