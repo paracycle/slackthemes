@@ -63,6 +63,7 @@
 - { colors: '#2B7164,#2B7164,#51A050,#EC2262,#CECCB2,#032342,#DA3D61,#CECCB2', name: 'Watermelon' }
 - { colors: '#EB4D5C,#EB4D5C,#A6D6A1,#3C3865,#3C3865,#FFFFFF,#3C3865,#F18E2C', name: 'Spring Tree' }
 - { colors: '#663399,#592D86,#8F6DB0,#FFFFFF,#3E313C,#FFFFFF,#FFFFFF,#EB4D5C', name: 'Makers' }
+- { colors: '#27364E,#1A2535,#F55D54,#F2F2F4,#1A2535,#E6E6E9,#F6756D,#F55D54', name: 'MockingBot' }
 - { colors: '#CF7C44,#CF7C44,#E89A6B,#F7DB72,#FBEDD4,#FFFAFC,#92406A,#92406A', name: 'Bourbon' }
 - { colors: '#C17F46,#C17F46,#CFA677,#DCBF98,#FBEDD4,#EFEFEF,#EAECF1,#EAECF1', name: 'Latte' }
 - { colors: '#0A6242,#0A6242,#3D3935,#BC7E3B,#BC7E3B,#F7F7F7,#3D3935,#3D3935', name: 'Starbucks' }
