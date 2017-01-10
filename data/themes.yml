@@ -169,3 +169,5 @@
 - { colors: '#353535,#2f2f2f,#8fa876,#ffffff,#8fa876,#ffffff,#818181,#8fa876', name: 'Linux Mint Y Dark'}
 - { colors: '#444444,#157477,#e4e4e4,#666666,#888888,#ffffff,#5ae043,#1de2e7', name: 'Nitro Marketing Digital'}
 - { colors: '#003554,#073c57,#006494,#FFFFFF,#006494,#FFFFFF,#00A6FB,#EB4D5C', name: 'SQOOL by Unowhy'}
+- { colors: '#141422,#259692,#259692,#FFFFFF,#4A5664,#ffffff,#ff8800,#FF8800', name: 'GitKraken'}
+- { colors: '#242728,#259692,#259692,#FFFFFF,#535A5E,#ffffff,#ff8800,#FF8800', name: 'GitKraken UI by JSn1nj4'}
