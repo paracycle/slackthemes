@@ -100,6 +100,7 @@
 - { colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E', name: 'plug.dj' }
 - { colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD', name: 'Oktavilla' }
 - { colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823', name: 'Github Activity Graph' }
+- { colors: '#ffffff,#ffefc6,#EEEEEE,#4078C0,#ffefc6,#333333,#6CC644,#cccccc', name: 'Github' }
 - { colors: '#000000,#000000,#006600,#00ff00,#00ff00,#00ff00,#ff0000,#ff0000', name: 'Retro Monochrome Terminal' }
 - { colors: '#0000AA,#00AAAA,#FF55FF,#FFFFFF,#00AAAA,#FFFFFF,#C0C0C0,#FF00FF', name: 'EGA' }
 - { colors: '#0050A0,#000020,#F08000,#FFFFFF,#F08000,#FFFFFF,#F08000,#F08000', name: 'AmigaOS 1.3' }
