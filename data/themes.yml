@@ -170,3 +170,7 @@
 - { colors: '#444444,#157477,#e4e4e4,#666666,#888888,#ffffff,#5ae043,#1de2e7', name: 'Nitro Marketing Digital'}
 - { colors: '#003554,#073c57,#006494,#FFFFFF,#006494,#FFFFFF,#00A6FB,#EB4D5C', name: 'SQOOL by Unowhy'}
 - { colors: '#333333,#2d2d2d,#2d2d2d,#f9f9f9,#2d2d2d,#dedede,#d64937,#d64937', name: 'Numix'}
+- { colors: '#ffffee,#f0e0d6,#f0e0d6,#800000,#f0e0d6,#800000,#0000ee,#0000ee', name: 'Yotsuba'}
+- { colors: '#eef2ff,#d6daf0,#d6daf0,#000000,#d6daf0,#000000,#34345c,#34345c', name: 'Yotsuba B'}
+- { colors: '#1d1f21,#282a2e,#282a2e,#c5c8c6,#282a2e,#c5c8c6,#5f89ac,#5f89ac', name: 'Tomorrow'}
+- { colors: '#eeeeee,#dddddd,#dddddd,#333333,#dddddd,#333333,#ff6600,#ff6600', name: 'Photon'}
