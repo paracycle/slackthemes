@@ -174,3 +174,4 @@
 - { colors: '#eef2ff,#d6daf0,#d6daf0,#000000,#d6daf0,#000000,#34345c,#34345c', name: 'Yotsuba B'}
 - { colors: '#1d1f21,#282a2e,#282a2e,#c5c8c6,#282a2e,#c5c8c6,#5f89ac,#5f89ac', name: 'Tomorrow'}
 - { colors: '#eeeeee,#dddddd,#dddddd,#333333,#dddddd,#333333,#ff6600,#ff6600', name: 'Photon'}
+- { colors: '#7d5bbe,#6441a4,#6441a4,#ffffff,#6441a4,#ffffff,#6441a4,#6441a4', name: 'Twitch'}
