@@ -176,3 +176,4 @@
 - { colors: '#131313,#424242,#424242,#BDC3C7,#424242,#bdc3c7,#2ecc71,#e74c3c', name: 'Zebra'}
 - { colors: '#1B1C5B,#1B1C5B,#8E3441,#FFFFFF,#914751,#FFFFFF,#2ACB46,#F5804F', name: 'The Incomparable'}
 - { colors: '#333333,#1E2320,#709080,#FFFFFF,#1E2320,#FFFFFF,#F0DFAF,#CC9393', name: 'Dark Zenburn'}
+- { colors: '#ebe5da,#d6b498,#c2804a,#ffffff,#b09582,#000000,#009917,#d95b5b', name: 'Latte Time'}
