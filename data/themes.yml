@@ -172,3 +172,4 @@
 - { colors: '#141422,#259692,#259692,#FFFFFF,#4A5664,#ffffff,#ff8800,#FF8800', name: 'GitKraken'}
 - { colors: '#000000,#000000,#7aba20,#FFFFFF,#000000,#FFFFFF,#7aba20,#0088cc', name: 'Symfony'}
 - { colors: '#93C4D3,#FFFFFF,#93C4D3,#FFFFFF,#FFFFFF,#173C4C,#66CC33,#173C4C', name: 'Waze'}
+- { colors: '#131313,#424242,#424242,#BDC3C7,#424242,#bdc3c7,#2ecc71,#e74c3c', name: 'Zebra'}
