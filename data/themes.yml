@@ -33,6 +33,7 @@
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
 - { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C', name: 'Kayako Minimal' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
+- { colors: '#212420,#333632,#87CF3E,#FFFFFF,#393d39,#FFFFFF,#87CF3E,#68a030', name: 'Mint' }
 - { colors: '#222222,#2F2F2F,#F92772,#FFFFFF,#A6E22D,#FFFFFF,#66D9EF,#BE84F2', name: 'Monokai' }
 - { colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'Monument' }
 - { colors: '#1F1C18,#8E0E00,#8E0E00,#FFFFFF,#A1A09F,#FFFFFF,#B01D0C,#8E0E00', name: 'Netflix' }
@@ -169,4 +170,10 @@
 - { colors: '#353535,#2f2f2f,#8fa876,#ffffff,#8fa876,#ffffff,#818181,#8fa876', name: 'Linux Mint Y Dark'}
 - { colors: '#444444,#157477,#e4e4e4,#666666,#888888,#ffffff,#5ae043,#1de2e7', name: 'Nitro Marketing Digital'}
 - { colors: '#003554,#073c57,#006494,#FFFFFF,#006494,#FFFFFF,#00A6FB,#EB4D5C', name: 'SQOOL by Unowhy'}
-- { colors: '#ebe5da,#d6b498,#c2804a,#ffffff,#b09582,#000000,#009917,#d95b5b', name: 'Latte time'}
+- { colors: '#141422,#259692,#259692,#FFFFFF,#4A5664,#ffffff,#ff8800,#FF8800', name: 'GitKraken'}
+- { colors: '#000000,#000000,#7aba20,#FFFFFF,#000000,#FFFFFF,#7aba20,#0088cc', name: 'Symfony'}
+- { colors: '#93C4D3,#FFFFFF,#93C4D3,#FFFFFF,#FFFFFF,#173C4C,#66CC33,#173C4C', name: 'Waze'}
+- { colors: '#131313,#424242,#424242,#BDC3C7,#424242,#bdc3c7,#2ecc71,#e74c3c', name: 'Zebra'}
+- { colors: '#1B1C5B,#1B1C5B,#8E3441,#FFFFFF,#914751,#FFFFFF,#2ACB46,#F5804F', name: 'The Incomparable'}
+- { colors: '#333333,#1E2320,#709080,#FFFFFF,#1E2320,#FFFFFF,#F0DFAF,#CC9393', name: 'Dark Zenburn'}
+- { colors: '#ebe5da,#d6b498,#c2804a,#ffffff,#b09582,#000000,#009917,#d95b5b', name: 'Latte Time'}
