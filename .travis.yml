@@ -15,5 +15,9 @@ after_success:
       git config --global user.name "${GIT_NAME}";
       git config --global user.email "${GIT_EMAIL}";
       git remote set-url origin "https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git";
+      git checkout master;
+      git add 'source/images/theme/*';
+      git commit -m 'Adding generated images [skip ci]';
+      git push origin master;
       bundle exec middleman deploy;
     fi
