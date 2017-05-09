@@ -187,4 +187,5 @@
 - { colors: '#7d5bbe,#6441a4,#6441a4,#ffffff,#6441a4,#ffffff,#6441a4,#6441a4', name: 'Twitch' }
 - { colors: '#0c84a9,#f67f01,#94C53C,#FFFFFF,#16A1C8,#FFFFFF,#FFFFFF,#94C53C', name: 'CodeMash'}
 - { colors: '#373352,#1a123b,#a347b7,#FFFFFF,#1a123b,#d6e0ff,#d15fea,#A347B7', name: 'Smooch.io'}
+- { colors: '#8892BF,#4F5B93,#4F5B93,#FFFFFF,#CBCCD4,#FFFFFF,#4F5B93,#F15340', name: 'PHP'}
 - { colors: '#324050,#283542,#4b9ad9,#FFFFFF,#283542,#CFD8E5,#3bb594,#EB4D5C', name: 'REDAXO'}
