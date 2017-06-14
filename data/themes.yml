@@ -85,7 +85,7 @@
 - { colors: '#4F2F4C,#452842,#8C5888,#FFFFFF,#3E313C,#FFFFFF,#00FFB7,#DE4C0D', name: 'Brinjal' }
 - { colors: '#FFFFFF,#FDCE45,#FDCE45,#0F1216,#ECEEF2,#0F1216,#1FAE7D,#1FAE7D', name: 'Put.io' }
 - { colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669', name: 'Product Hunt' }
-- { colors: '#232323,#000000,#f05a28,#000000,#000000,#FFFFFF,#f05a28,#f05a28', name: 'Myplanet' }
+- { colors: '#2A2A49,#9292A8,#F25930,#FFFFFF,#9292A8,#EEEDEF,#F25930,#D5315C', name: 'Myplanet' }
 - { colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500', name: 'Reddit' }
 - { colors: '#FFFFFF,#CC181E,#CC181E,#FFFFFF,#444444,#0D0D0D,#CC181E,#E04A4D', name: 'Youtube' }
 - { colors: '#F5F5F5,#FFFFFF,#FDBD39,#FFFFFF,#FECF33,#574751,#A4BF36,#EE6723', name: 'Zeplin' }
@@ -152,7 +152,6 @@
 - { colors: '#173f85,#0072CE,#0072ce,#FFFFFF,#0072CE,#FFFFFF,#FFDA00,#FFDA00', name: 'PlayStation' }
 - { colors: '#ffffff,#B1B3B3,#63666a,#FFFFFF,#b1b3b3,#000000,#0072ce,#0072ce', name: 'PlayStation Classic' }
 - { colors: '#284589,#3464d4,#FF6600,#FFFFFF,#445970,#FFFFFF,#00C19B,#FF6600', name: 'Nitronews' }
-- { colors: '#F05A2D,#444A47,#ffffff,#333333,#434745,#FFFFFF,#333333,#333333', name: 'Myplanet-Orange' }
 - { colors: '#3396d3,#4c4c4c,#d43f27,#FFFFFF,#3E313C,#FFFFFF,#ffffff,#253c4e', name: 'Pinnaca' }
 - { colors: '#34495E,#42B983,#42B983,#FFFFFF,#42B983,#FFFFFF,#FFD41D,#42B983', name: 'Vue.js' }
 - { colors: '#21252B,#272C33,#31363F,#D7DAE0,#272C33,#D7DAE0,#20B684,#528BFF', name: 'One Dark' }
