@@ -7,6 +7,7 @@
 - { colors: '#2b303b,#16181f,#4f5b66,#c0c5ce,#343d46,#a7adba,#a3be8c,#bf616a', name: 'Base16 Ocean Dark' }
 - { colors: '#003E6B,#000a52,#73AD0D,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'BCIT' }
 - { colors: '#754242,#BD3737,#9C4444,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Big Red' }
+- { colors: '#020623,#020623,#00B993,#FFFFFF,#41465c,#FFFFFF,#52eb7b,#FF2154', name: 'Bolket' }
 - { colors: '#0E3386,#133a94,#D12325,#FFFFFF,#a31a1c,#FFFFFF,#D12325,#D12325', name: 'Chicago Cubs' }
 - { colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900', name: 'Citrus' }
 - { colors: '#2b2b2b,#f02109,#f9fc00,#2b2b2b,#2b2b2b,#FFFFFF,#66ed00,#ec34ff', name: 'WeAreLATech' }
