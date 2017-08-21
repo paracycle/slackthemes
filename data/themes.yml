@@ -197,4 +197,5 @@
 - { colors: '#222222,#333333,#444444,#FFFFFF,#333333,#FFFFFF,#38978D,#fc7459', name: 'AWA' }
 - { colors: '#042e47,#072333,#072333,#1b9eea,#072333,#FFFFFF,#1b9eea,#1b9eea', name: 'Thinkific'}
 - { colors: '#363C74,#000000,#E8D3A2,#363C74,#000000,#FFFFFF,#E8D3A2,#B7A57A', name: 'Washington Huskies'}
+- { colors: '#F0F4F8,#39B1DF,#C7EDFC,#000000,#F0F4F8,#000000,#7FBA00,#FF8C00', name: 'Skype'}
 - { colors: '#282a36,#2D2D2D,#ff5c57,#ffffff,#515151,#dee1db,#5af78e,#57c7ff', name: 'Snazzy'}
