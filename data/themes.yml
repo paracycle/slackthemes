@@ -199,3 +199,4 @@
 - { colors: '#363C74,#000000,#E8D3A2,#363C74,#000000,#FFFFFF,#E8D3A2,#B7A57A', name: 'Washington Huskies'}
 - { colors: '#F0F4F8,#39B1DF,#C7EDFC,#000000,#F0F4F8,#000000,#7FBA00,#FF8C00', name: 'Skype'}
 - { colors: '#282a36,#2D2D2D,#ff5c57,#ffffff,#515151,#dee1db,#5af78e,#57c7ff', name: 'Snazzy'}
+- { colors: '#065a8f,#267aaf,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'MetaFilter'}
