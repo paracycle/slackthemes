@@ -203,3 +203,4 @@
 - { colors: '#534d46,#706b63,#7a9c0f,#FFFFFF,#648200,#FFFFFF,#9cbe30,#f3b670', name: 'Ancestry' }
 - { colors: '#000000,#A7A8AC,#016F4A,#FFFFFF,#339E7A,#FFFFFF,#339E7A,#016F4A', name: 'Dallas Stars'}
 - { colors: '#065a8f,#267aaf,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'MetaFilter'}
+- { colors: '#000000,#000000,#355C7D,#ffffff,#222222,#ffffff,#b82601,#EFC000', name: 'newride.tech'}
