@@ -7,14 +7,16 @@
 - { colors: '#2b303b,#16181f,#4f5b66,#c0c5ce,#343d46,#a7adba,#a3be8c,#bf616a', name: 'Base16 Ocean Dark' }
 - { colors: '#003E6B,#000a52,#73AD0D,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'BCIT' }
 - { colors: '#754242,#BD3737,#9C4444,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Big Red' }
+- { colors: '#020623,#020623,#00B993,#FFFFFF,#41465c,#FFFFFF,#52eb7b,#FF2154', name: 'Bolket' }
 - { colors: '#0E3386,#133a94,#D12325,#FFFFFF,#a31a1c,#FFFFFF,#D12325,#D12325', name: 'Chicago Cubs' }
 - { colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900', name: 'Citrus' }
 - { colors: '#2b2b2b,#f02109,#f9fc00,#2b2b2b,#2b2b2b,#FFFFFF,#66ed00,#ec34ff', name: 'WeAreLATech' }
 - { colors: '#f4f5f0,#FFFFFF,#efd213,#FFFFFF,#EFD213,#333232,#59c77f,#fa575d', name: 'charity: water' }
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
 - { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
-- { colors: '#193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400', name: 'Cobalt2' }
+- { colors: '#193549,#FFC600,#1D425D,#FFFFFF,#0085FF,#FFFFFF,#2CDB00,#FFC600', name: 'Cobalt2' }
 - { colors: '#333F4E,#47525F,#DA513D,#FFFFFF,#47525F,#F8F8F8,#DA513D,#DA513D', name: 'CraftCMS' }
+- { colors: '#0c1e3e,#153161,#2970ff,#FFFFFF,#153161,#FFFFFF,#2ed6a1,#2ed6a1', name: 'Decred' }
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
 - { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
 - { colors: '#2e3136,#282b30,#282b30,#ffffff,#282b30,#818386,#43b581,#7289da', name: 'Discord' }
@@ -32,13 +34,16 @@
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
 - { colors: '#00AED8,#00AEDF,#C5CC13,#000000,#FBB040,#FFFFFF,#2DEBAE,#EE2B74', name: 'KKBOX' }
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
+- { colors: '#282828,#551127,#79092b,#f5f5f5,#111111,#cccccc,#f04b6e,#b40f42', name: 'KKTV' }
 - { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C', name: 'Kayako Minimal' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
+- { colors: '#FAFAFA,#FB503B,#FB503B,#FFFFFF,#F58F82,#1C1B1C,#FB503B,#424242', name: 'Laravel Light' }
 - { colors: '#212420,#333632,#87CF3E,#FFFFFF,#393d39,#FFFFFF,#87CF3E,#68a030', name: 'Mint' }
 - { colors: '#222222,#2F2F2F,#F92772,#FFFFFF,#A6E22D,#FFFFFF,#66D9EF,#BE84F2', name: 'Monokai' }
 - { colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'Monument' }
 - { colors: '#1F1C18,#8E0E00,#8E0E00,#FFFFFF,#A1A09F,#FFFFFF,#B01D0C,#8E0E00', name: 'Netflix' }
 - { colors: '#303E4D,#2C3849,#6698C8,#FFFFFF,#4A5664,#FFFFFF,#94E864,#78AF8F', name: 'Ochin' }
+- { colors: '#057fa5,#034F75,#ffffff,#057fa5,#034F75,#FFFFFF,#99D04A,#ff9800', name: 'OpenData.cz' }
 - { colors: '#F68D29,#F99A3F,#F99A3F,#FFFFFF,#ED8624,#FFFFFF,#FFFFFF,#F9A55A', name: 'osTicket' }
 - { colors: '#C10048,#920A3D,#2E0002,#FFFFFF,#610A29,#FFFFFF,#FFFFFF,#610A29', name: 'Polygon' }
 - { colors: '#1F2036,#7986CB,#FE528C,#FFFFFF,#606BA2,#FFFFFF,#2DEBAE,#FE528C', name: 'Polymer' }
@@ -84,7 +89,7 @@
 - { colors: '#4F2F4C,#452842,#8C5888,#FFFFFF,#3E313C,#FFFFFF,#00FFB7,#DE4C0D', name: 'Brinjal' }
 - { colors: '#FFFFFF,#FDCE45,#FDCE45,#0F1216,#ECEEF2,#0F1216,#1FAE7D,#1FAE7D', name: 'Put.io' }
 - { colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669', name: 'Product Hunt' }
-- { colors: '#232323,#000000,#f05a28,#000000,#000000,#FFFFFF,#f05a28,#f05a28', name: 'Myplanet' }
+- { colors: '#2A2A49,#9292A8,#F25930,#FFFFFF,#9292A8,#EEEDEF,#F25930,#D5315C', name: 'Myplanet' }
 - { colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500', name: 'Reddit' }
 - { colors: '#FFFFFF,#CC181E,#CC181E,#FFFFFF,#444444,#0D0D0D,#CC181E,#E04A4D', name: 'Youtube' }
 - { colors: '#F5F5F5,#FFFFFF,#FDBD39,#FFFFFF,#FECF33,#574751,#A4BF36,#EE6723', name: 'Zeplin' }
@@ -151,7 +156,6 @@
 - { colors: '#173f85,#0072CE,#0072ce,#FFFFFF,#0072CE,#FFFFFF,#FFDA00,#FFDA00', name: 'PlayStation' }
 - { colors: '#ffffff,#B1B3B3,#63666a,#FFFFFF,#b1b3b3,#000000,#0072ce,#0072ce', name: 'PlayStation Classic' }
 - { colors: '#284589,#3464d4,#FF6600,#FFFFFF,#445970,#FFFFFF,#00C19B,#FF6600', name: 'Nitronews' }
-- { colors: '#F05A2D,#444A47,#ffffff,#333333,#434745,#FFFFFF,#333333,#333333', name: 'Myplanet-Orange' }
 - { colors: '#3396d3,#4c4c4c,#d43f27,#FFFFFF,#3E313C,#FFFFFF,#ffffff,#253c4e', name: 'Pinnaca' }
 - { colors: '#34495E,#42B983,#42B983,#FFFFFF,#42B983,#FFFFFF,#FFD41D,#42B983', name: 'Vue.js' }
 - { colors: '#21252B,#272C33,#31363F,#D7DAE0,#272C33,#D7DAE0,#20B684,#528BFF', name: 'One Dark' }
@@ -191,3 +195,17 @@
 - { colors: '#8892BF,#4F5B93,#4F5B93,#FFFFFF,#CBCCD4,#FFFFFF,#4F5B93,#F15340', name: 'PHP'}
 - { colors: '#324050,#283542,#4b9ad9,#FFFFFF,#283542,#CFD8E5,#3bb594,#EB4D5C', name: 'REDAXO'}
 - { colors: '#292929,#252525,#252525,#f5f5f5,#252525,#B5B5B5,#79a548,#c83c3c', name: 'TYPO3'}
+- { colors: '#222222,#333333,#444444,#FFFFFF,#333333,#FFFFFF,#38978D,#fc7459', name: 'AWA' }
+- { colors: '#042e47,#072333,#072333,#1b9eea,#072333,#FFFFFF,#1b9eea,#1b9eea', name: 'Thinkific'}
+- { colors: '#363C74,#000000,#E8D3A2,#363C74,#000000,#FFFFFF,#E8D3A2,#B7A57A', name: 'Washington Huskies'}
+- { colors: '#F0F4F8,#39B1DF,#C7EDFC,#000000,#F0F4F8,#000000,#7FBA00,#FF8C00', name: 'Skype'}
+- { colors: '#282a36,#2D2D2D,#ff5c57,#ffffff,#515151,#dee1db,#5af78e,#57c7ff', name: 'Snazzy'}
+- { colors: '#534d46,#706b63,#7a9c0f,#FFFFFF,#648200,#FFFFFF,#9cbe30,#f3b670', name: 'Ancestry' }
+- { colors: '#000000,#A7A8AC,#016F4A,#FFFFFF,#339E7A,#FFFFFF,#339E7A,#016F4A', name: 'Dallas Stars'}
+- { colors: '#065a8f,#267aaf,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'MetaFilter'}
+- { colors: '#000000,#000000,#355C7D,#ffffff,#222222,#ffffff,#b82601,#EFC000', name: 'newride.tech'}
+- { colors: '#2E3440,#3B4252,#88C0D0,#2E3440,#3B4252,#D8DEE9,#A3BE8C,#81A1C1', name: 'Nord'}
+- { colors: '#306998,#FFD43B,#FFD43B,#7F7F7F,#5A9FD4,#F4F4F4,#FFE873,#FFD43B', name: 'Python'}
+- { colors: '#2B1F32,#FFB86C,#E15D97,#FFFFFF,#4A1386,#FFFFFF,#35BA66,#0AACC5', name: 'Wild Cherry'}
+- { colors: '#389196,#C3C0AB,#9FCC3B,#008CB5,#C3C0AB,#FFFFFF,#D90F21,#D90f21', name: 'EMBL'}
+- { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
