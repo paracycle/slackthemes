@@ -210,3 +210,4 @@
 - { colors: '#389196,#C3C0AB,#9FCC3B,#008CB5,#C3C0AB,#FFFFFF,#D90F21,#D90f21', name: 'EMBL'}
 - { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
 - { colors: '#0B62CD,#1673E6,#78D30A,#ffffff,#1673E6,#ffffff,#78d30a,#D34C4C', name: 'SeatGeek' }
+- { colors: '#192532,#263545,#19cd91,#FFFFFF,#263545,#FFFFFF,#19cd91,#f05751', name: 'Contentful' }
