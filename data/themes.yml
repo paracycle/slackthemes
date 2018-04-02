@@ -211,3 +211,4 @@
 - { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
 - { colors: '#0B62CD,#1673E6,#78D30A,#ffffff,#1673E6,#ffffff,#78d30a,#D34C4C', name: 'SeatGeek' }
 - { colors: '#192532,#263545,#19cd91,#FFFFFF,#263545,#FFFFFF,#19cd91,#f05751', name: 'Contentful' }
+- { colors: '#253346,#434f61,#434f61,#FFFFFF,#434f61,#f4f5f7,#44DB5E,#f72951', name: 'Delta' }
