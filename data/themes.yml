@@ -27,7 +27,6 @@
 - { colors: '#38307F,#737272,#DA6A2D,#FFFFFF,#737272,#FFFFFF,#DA6A2D,#DA6A2D', name: 'FOLIO purple' }
 - { colors: '#171717,#404245,#424242,#ECF0F1,#4A4A4A,#FAFAFA,#2ECC71,#00A362', name: 'Green Lantern' }
 - { colors: '#00254C,#15467a,#EEB211,#FFFFFF,#EEB211,#FFFFFF,#C59353,#007BFF', name: 'Georgia Tech' }
-- { colors: '#253346,#434f61,#434f61,#FFFFFF,#434f61,#f4f5f7,#44DB5E,#f72951', name: 'GetDelta.io' }
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
 - { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
@@ -210,3 +209,4 @@
 - { colors: '#2B1F32,#FFB86C,#E15D97,#FFFFFF,#4A1386,#FFFFFF,#35BA66,#0AACC5', name: 'Wild Cherry'}
 - { colors: '#389196,#C3C0AB,#9FCC3B,#008CB5,#C3C0AB,#FFFFFF,#D90F21,#D90f21', name: 'EMBL'}
 - { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
+- { colors: '#253346,#434f61,#434f61,#FFFFFF,#434f61,#f4f5f7,#44DB5E,#f72951', name: 'Delta' }
