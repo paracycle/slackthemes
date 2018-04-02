@@ -13,7 +13,6 @@
 - { colors: '#2b2b2b,#f02109,#f9fc00,#2b2b2b,#2b2b2b,#FFFFFF,#66ed00,#ec34ff', name: 'WeAreLATech' }
 - { colors: '#f4f5f0,#FFFFFF,#efd213,#FFFFFF,#EFD213,#333232,#59c77f,#fa575d', name: 'charity: water' }
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
-- { colors: '#342624,#000000,#EC5614,#FFFFFF,#7C7E7C,#FFFFFF,#EC5614,#EC5614', name: 'Cleveland Browns' }
 - { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
 - { colors: '#193549,#FFC600,#1D425D,#FFFFFF,#0085FF,#FFFFFF,#2CDB00,#FFC600', name: 'Cobalt2' }
 - { colors: '#333F4E,#47525F,#DA513D,#FFFFFF,#47525F,#F8F8F8,#DA513D,#DA513D', name: 'CraftCMS' }
@@ -210,3 +209,4 @@
 - { colors: '#2B1F32,#FFB86C,#E15D97,#FFFFFF,#4A1386,#FFFFFF,#35BA66,#0AACC5', name: 'Wild Cherry'}
 - { colors: '#389196,#C3C0AB,#9FCC3B,#008CB5,#C3C0AB,#FFFFFF,#D90F21,#D90f21', name: 'EMBL'}
 - { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
+- { colors: '#342624,#000000,#EC5614,#FFFFFF,#7C7E7C,#FFFFFF,#EC5614,#EC5614', name: 'Cleveland Browns' }
