@@ -55,7 +55,7 @@
 - { colors: '#000000,#A51C24,#FFFFFF,#0320FF,#A5A5A5,#FFFFFF,#FFFFFF,#FFFF00', name: 'Stark Contrast' }
 - { colors: '#B300B3,#23A61C,#FFFFFF,#C400FF,#FF2EFF,#000000,#F7FF00,#F7FF00', name: 'Summer Craze' }
 - { colors: '#574f4a,#48b9c7,#faa41a,#FFFFFF,#48b9c7,#FFFFFF,#26d076,#dc4405', name: 'System76' }
-- { colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
+- { colors: '#000000,#000000,#1EB8EB,#000000,#424242,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
 - { colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242', name: 'Yosemite iTunes' }
 - { colors: '#BB6A76,#AD5B67,#62B791,#FFFFFF,#A5516A,#FFFFFF,#68F798,#694464', name: 'WameIn' }
 - { colors: '#E3DAE6,#B49FC2,#5A30B0,#FDF6E3,#EEE8D5,#594275,#B358BF,#BD72CC', name: 'Wegman' }
@@ -209,4 +209,9 @@
 - { colors: '#2B1F32,#FFB86C,#E15D97,#FFFFFF,#4A1386,#FFFFFF,#35BA66,#0AACC5', name: 'Wild Cherry'}
 - { colors: '#389196,#C3C0AB,#9FCC3B,#008CB5,#C3C0AB,#FFFFFF,#D90F21,#D90f21', name: 'EMBL'}
 - { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
+- { colors: '#0B62CD,#1673E6,#78D30A,#ffffff,#1673E6,#ffffff,#78d30a,#D34C4C', name: 'SeatGeek' }
+- { colors: '#192532,#263545,#19cd91,#FFFFFF,#263545,#FFFFFF,#19cd91,#f05751', name: 'Contentful' }
+- { colors: '#253346,#434f61,#434f61,#FFFFFF,#434f61,#f4f5f7,#44DB5E,#f72951', name: 'Delta' }
+- { colors: '#8C1D40,#5C6670,#FFC627,#FFFFFF,#5C6670,#FFFFFF,#94E864,#00A3E0', name: 'Arizona State University' }
+- { colors: '#BF5700,#333F48,#FFFFFF,#333F48,#333F48,#FFFFFF,#94E864,#00A3E0', name: 'University Of Texas' }
 - { colors: '#342624,#000000,#EC5614,#FFFFFF,#7C7E7C,#FFFFFF,#EC5614,#EC5614', name: 'Cleveland Browns' }
