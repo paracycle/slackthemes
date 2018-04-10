@@ -217,3 +217,4 @@
 - { colors: '#342624,#000000,#EC5614,#FFFFFF,#7C7E7C,#FFFFFF,#EC5614,#EC5614', name: 'Cleveland Browns' }
 - { colors: '#DEE2E6,#ffffff,#0279f9,#FFFFFF,#ffffff,#37393c,#0279f9,#0279F9', name: 'Ziik.io' }
 - { colors: '#FBFBFB,#FBFBFB,#F9C6D6,#5D5759,#8EEADB,#5D5759,#F0A2B8,#F0A2B8', name: 'Kawaii' }
+- { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
