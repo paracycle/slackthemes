@@ -25,7 +25,6 @@
 - { colors: '#faf4f1,#faf4f1,#E77562,#ffffff,#E5DBD6,#717171,#E46651,#E46651', name: 'Ember.js' }
 - { colors: '#DA6A2D,#737272,#38307F,#FFFFFF,#737272,#FFFFFF,#38307F,#38307F', name: 'FOLIO orange' }
 - { colors: '#38307F,#737272,#DA6A2D,#FFFFFF,#737272,#FFFFFF,#DA6A2D,#DA6A2D', name: 'FOLIO purple' }
-- { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
 - { colors: '#171717,#404245,#424242,#ECF0F1,#4A4A4A,#FAFAFA,#2ECC71,#00A362', name: 'Green Lantern' }
 - { colors: '#00254C,#15467a,#EEB211,#FFFFFF,#EEB211,#FFFFFF,#C59353,#007BFF', name: 'Georgia Tech' }
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
@@ -218,3 +217,4 @@
 - { colors: '#342624,#000000,#EC5614,#FFFFFF,#7C7E7C,#FFFFFF,#EC5614,#EC5614', name: 'Cleveland Browns' }
 - { colors: '#DEE2E6,#ffffff,#0279f9,#FFFFFF,#ffffff,#37393c,#0279f9,#0279F9', name: 'Ziik.io' }
 - { colors: '#FBFBFB,#FBFBFB,#F9C6D6,#5D5759,#8EEADB,#5D5759,#F0A2B8,#F0A2B8', name: 'Kawaii' }
+- { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
