@@ -202,7 +202,6 @@
 - { colors: '#282a36,#2D2D2D,#ff5c57,#ffffff,#515151,#dee1db,#5af78e,#57c7ff', name: 'Snazzy'}
 - { colors: '#000000,#A7A8AC,#016F4A,#FFFFFF,#339E7A,#FFFFFF,#339E7A,#016F4A', name: 'Dallas Stars'}
 - { colors: '#534d46,#706b63,#7a9c0f,#FFFFFF,#648200,#FFFFFF,#9cbe30,#f3b670', name: 'Ancestry' }
-- { colors: '#000000,#A7A8AC,#016F4A,#FFFFFF,#339E7A,#FFFFFF,#339E7A,#016F4A', name: 'Dallas Stars'}
 - { colors: '#065a8f,#267aaf,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'MetaFilter'}
 - { colors: '#000000,#000000,#355C7D,#ffffff,#222222,#ffffff,#b82601,#EFC000', name: 'newride.tech'}
 - { colors: '#2E3440,#3B4252,#88C0D0,#2E3440,#3B4252,#D8DEE9,#A3BE8C,#81A1C1', name: 'Nord'}
@@ -219,3 +218,12 @@
 - { colors: '#DEE2E6,#ffffff,#0279f9,#FFFFFF,#ffffff,#37393c,#0279f9,#0279F9', name: 'Ziik.io' }
 - { colors: '#FBFBFB,#FBFBFB,#F9C6D6,#5D5759,#8EEADB,#5D5759,#F0A2B8,#F0A2B8', name: 'Kawaii' }
 - { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
+- { colors: '#0079BF,#026AA7,#5BA4CF,#FFFFFF,#026AA7,#FFFFFF,#61BD4F,#EB5A46', name: 'Trello' }
+- { colors: '#61BD4F,#5AAC44,#99D18F,#FFFFFF,#5AAC44,#FFFFFF,#D6ECD2,#EB5A46', name: 'Trello Green' }
+- { colors: '#EB5A46,#CF513D,#EC9488,#FFFFFF,#CF513D,#FFFFFF,#61BD4F,#FBEDEB', name: 'Trello Red' }
+- { colors: '#C377E0,#A86CC1,#D5A6E6,#FFFFFF,#A86CC1,#FFFFFF,#61BD4F,#EB5A46', name: 'Trello Purple' }
+- { colors: '#FFAB4A,#E99E40,#FDC788,#222222,#E99E40,#222222,#61BD4F,#EB5A46', name: 'Trello Orange' }
+- { colors: '#E6C60D,#D9B51C,#F3E260,#222222,#D9B51C,#222222,#61BD4F,#EB5A46', name: 'Trello Yellow' }
+- { colors: '#FF80CE,#E76EB1,#FFB0E1,#222222,#E76EB1,#222222,#61BD4F,#EB5A46', name: 'Trello Pink' }
+- { colors: '#00C2E0,#00AECC,#5DD3E5,#222222,#00AECC,#222222,#61BD4F,#EB5A46', name: 'Trello Sky' }
+- { colors: '#51E898,#4FD683,#90ECC1,#222222,#4FD683,#222222,#61BD4F,#EB5A46', name: 'Trello Lime' }
