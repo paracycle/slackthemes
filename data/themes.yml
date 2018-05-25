@@ -218,3 +218,5 @@
 - { colors: '#DEE2E6,#ffffff,#0279f9,#FFFFFF,#ffffff,#37393c,#0279f9,#0279F9', name: 'Ziik.io' }
 - { colors: '#FBFBFB,#FBFBFB,#F9C6D6,#5D5759,#8EEADB,#5D5759,#F0A2B8,#F0A2B8', name: 'Kawaii' }
 - { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
+- { colors: '#f9f9f9,#1BD9C4,#1BD9C4,#094074,#1BD9C4,#308390,#1bd9c4,#DB6668', name: 'WillowTree - Light' }
+- { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
