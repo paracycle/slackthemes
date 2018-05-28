@@ -221,3 +221,5 @@
 - { colors: '#0079BF,#026AA7,#5BA4CF,#FFFFFF,#026AA7,#FFFFFF,#61BD4F,#EB5A46', name: 'Trello' }
 - { colors: '#6236ba,#56A656,#56a656,#FFFFFF,#56A656,#ffffff,#D0FF00,#889100', name: 'Dobby Purple' }
 - { colors: '#36414C,#4D5561,#515C6B,#FFFFFF,#4D5561,#FFFFFF,#B3CAF0,#8097BD', name: 'Metal Blue' }
+- { colors: '#f9f9f9,#1BD9C4,#1BD9C4,#094074,#1BD9C4,#308390,#1bd9c4,#DB6668', name: 'WillowTree - Light' }
+- { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
