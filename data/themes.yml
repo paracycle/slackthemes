@@ -220,3 +220,4 @@
 - { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
 - { colors: '#0079BF,#026AA7,#5BA4CF,#FFFFFF,#026AA7,#FFFFFF,#61BD4F,#EB5A46', name: 'Trello' }
 - { colors: '#6236ba,#56A656,#56a656,#FFFFFF,#56A656,#ffffff,#D0FF00,#889100', name: 'Dobby Purple' }
+- { colors: '#36414C,#4D5561,#515C6B,#FFFFFF,#4D5561,#FFFFFF,#B3CAF0,#8097BD', name: 'Metal Blue' }
