@@ -1,5 +1,4 @@
 - { colors: '#4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C', name: 'Aubergine' }
-- { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
 - { colors: '#1d1d1d,#000000,#0ba8ca,#FFFFFF,#075566,#FFFFFF,#0ba8ca,#EB4D5C', name: 'B-MIND' }
 - { colors: '#181818,#585858,#7cafc2,#f8f8f8,#b8b8b8,#f8f8f8,#f7ca88,#ab4642', name: 'Base16 Default Dark' }
 - { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#515151,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
@@ -224,3 +223,4 @@
 - { colors: '#36414C,#4D5561,#515C6B,#FFFFFF,#4D5561,#FFFFFF,#B3CAF0,#8097BD', name: 'Metal Blue' }
 - { colors: '#f9f9f9,#1BD9C4,#1BD9C4,#094074,#1BD9C4,#308390,#1bd9c4,#DB6668', name: 'WillowTree - Light' }
 - { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
+- { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
