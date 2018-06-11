@@ -223,4 +223,5 @@
 - { colors: '#36414C,#4D5561,#515C6B,#FFFFFF,#4D5561,#FFFFFF,#B3CAF0,#8097BD', name: 'Metal Blue' }
 - { colors: '#f9f9f9,#1BD9C4,#1BD9C4,#094074,#1BD9C4,#308390,#1bd9c4,#DB6668', name: 'WillowTree - Light' }
 - { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
+- { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
 - { colors: '#333333,#85714D,#85714D,#FFFFFF,#85714D,#FFFFFF,#E31837,#E31837', name: 'Vegas Golden Knights' }
