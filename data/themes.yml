@@ -225,3 +225,11 @@
 - { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
 - { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
 - { colors: '#333333,#85714D,#85714D,#FFFFFF,#85714D,#FFFFFF,#E31837,#E31837', name: 'Vegas Golden Knights' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#277df6,#d7d5d4,#277df6,#277df6', name: 'Mojave Dark Mode Blue' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#9a57a3,#d7d5d4,#9a57a3,#9a57a3', name: 'Mojave Dark Mode Purple' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#e55e9c,#d7d5d4,#e55e9c,#e55e9c', name: 'Mojave Dark Mode Pink' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#ed5f5d,#d7d5d4,#ed5f5d,#ed5f5d', name: 'Mojave Dark Mode Red' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#e9873a,#d7d5d4,#e9873a,#e9873a', name: 'Mojave Dark Mode Orange' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#f3b94b,#d7d5d4,#f3b94b,#f3b94b', name: 'Mojave Dark Mode Yellow' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#78b656,#d7d5d4,#78b656,#78b656', name: 'Mojave Dark Mode Green' }
+- { colors: '#333336,#2e2e31,#666668,#ffffff,#8c8c8c,#d7d5d4,#8c8c8c,#8c8c8c', name: 'Mojave Dark Mode Grey' }
