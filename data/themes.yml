@@ -1,7 +1,7 @@
 - { colors: '#4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C', name: 'Aubergine' }
 - { colors: '#1d1d1d,#000000,#0ba8ca,#FFFFFF,#075566,#FFFFFF,#0ba8ca,#EB4D5C', name: 'B-MIND' }
 - { colors: '#181818,#585858,#7cafc2,#f8f8f8,#b8b8b8,#f8f8f8,#f7ca88,#ab4642', name: 'Base16 Default Dark' }
-- { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#515151,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
+- { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#B8B8B8,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
 - { colors: '#393939,#2D2D2D,#F2777A,#FFFFFF,#515151,#D3D0C8,#99CC99,#66CCCC', name: 'Base16 Eighties Dark' }
 - { colors: '#191A1C,#282A2E,#B6BC68,#FFFFFF,#363B41,#959896,#80A2BE,#C26161', name: 'Base16 Tomorrow Night' }
 - { colors: '#2b303b,#16181f,#4f5b66,#c0c5ce,#343d46,#a7adba,#a3be8c,#bf616a', name: 'Base16 Ocean Dark' }
