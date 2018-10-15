@@ -10,6 +10,7 @@
 - { colors: '#020623,#020623,#00B993,#FFFFFF,#41465c,#FFFFFF,#52eb7b,#FF2154', name: 'Bolket' }
 - { colors: '#0E3386,#133a94,#D12325,#FFFFFF,#a31a1c,#FFFFFF,#D12325,#D12325', name: 'Chicago Cubs' }
 - { colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900', name: 'Citrus' }
+- { colors: '#e56f43,#ff7a4a,#46266D,#FFFFFF,#5f3d99,#ffffff,#46266D,#46266D', name: 'Clemson' }
 - { colors: '#2b2b2b,#f02109,#f9fc00,#2b2b2b,#2b2b2b,#FFFFFF,#66ed00,#ec34ff', name: 'WeAreLATech' }
 - { colors: '#f4f5f0,#FFFFFF,#efd213,#FFFFFF,#EFD213,#333232,#59c77f,#fa575d', name: 'charity: water' }
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
