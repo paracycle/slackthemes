@@ -1,19 +1,8 @@
 language: ruby
 rvm:
-  - 2.1.0
+  - 2.2
 sudo: false
 cache: bundler
-env:
-  global:
-    - GITHUB_USERNAME="paracycle"
-    - # GITHUB_TOKEN
-      secure: "GxIYWgHaTXAO6jPn1L8JOYhwFmCRKCUttMP7+G6xMjSgQzrmaBuWWprKCNj5/8yOUrcQl0QOuUE0FLwdYAUouuesPoryyWuvLcHVKJUyHVH1ad8CXbTua//zH/0re4/3NDKRWgGK2piZHWVkacfoyo1qsQ5inyARPeXE4GmkkFI="
-    - # GIT_NAME
-      secure: "Rn6AWw/lpIjf0QzDDfBNdwA+JAJasvH7cx2MeHCF+j1yhyRAfGrHGkbGXca4bO8u8fi/Y+eYwjRl+lrys39vx9k8657ju2XJMRxszgqIQesc2TwKYxkH82m8BWpovFWFzViJjIZDOv5z6pR3HonbsdtCbhQQIixwT9m6NB63x9s="
-    - # GIT_EMAIL
-      secure: "Badx3sMShH8lhiinfhXKRPlq3bM0V8JKsBEHnKtWk4EO3t6dwJpYtXQH20qXJEMCWg+9mFJv+yLuiRVX3QrAJiPP1z/b01Q2zVmTL3SAZElXYOYCTekkc1qUvbjjA4g8y1X+cOPkLy13eGBM64mRqCBAV8oOFBx9wM8mMHTqgS0="
-    - # ANALYTICS_ID
-      secure: "TyGjoHZ4bhNed1k4ZvWxNmSrve+yTr+jlFx8MqvJoK+A5bZMq/CYkXajO96tKN0ZiJmF6Rm5/sn9kk00pwnjBw/FOkIKcen5Q+7R0zKYuBodM5q8uUDuqrJQDVJaPQ3BH15JGJR7oB/QoJR80iugGJcjvnF8CO3oCaiFcZWxOVg="
 before_install:
   - mkdir travis-phantomjs
   - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
@@ -26,5 +15,9 @@ after_success:
       git config --global user.name "${GIT_NAME}";
       git config --global user.email "${GIT_EMAIL}";
       git remote set-url origin "https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git";
+      git checkout master;
+      git add 'source/images/theme/*';
+      git commit -m 'Adding generated images [skip ci]';
+      git push origin master;
       bundle exec middleman deploy;
     fi
