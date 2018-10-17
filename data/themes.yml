@@ -4,15 +4,19 @@
 - { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#515151,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
 - { colors: '#393939,#2D2D2D,#F2777A,#FFFFFF,#515151,#D3D0C8,#99CC99,#66CCCC', name: 'Base16 Eighties Dark' }
 - { colors: '#191A1C,#282A2E,#B6BC68,#FFFFFF,#363B41,#959896,#80A2BE,#C26161', name: 'Base16 Tomorrow Night' }
+- { colors: '#2b303b,#16181f,#4f5b66,#c0c5ce,#343d46,#a7adba,#a3be8c,#bf616a', name: 'Base16 Ocean Dark' }
+- { colors: '#003E6B,#000a52,#73AD0D,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'BCIT' }
 - { colors: '#754242,#BD3737,#9C4444,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Big Red' }
+- { colors: '#020623,#020623,#00B993,#FFFFFF,#41465c,#FFFFFF,#52eb7b,#FF2154', name: 'Bolket' }
 - { colors: '#0E3386,#133a94,#D12325,#FFFFFF,#a31a1c,#FFFFFF,#D12325,#D12325', name: 'Chicago Cubs' }
 - { colors: '#507800,#94AF63,#FFEA00,#507800,#94AF63,#FFFFFF,#F7FF00,#FF9900', name: 'Citrus' }
 - { colors: '#2b2b2b,#f02109,#f9fc00,#2b2b2b,#2b2b2b,#FFFFFF,#66ed00,#ec34ff', name: 'WeAreLATech' }
 - { colors: '#f4f5f0,#FFFFFF,#efd213,#FFFFFF,#EFD213,#333232,#59c77f,#fa575d', name: 'charity: water' }
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
 - { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
-- { colors: '#193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400', name: 'Cobalt2' }
+- { colors: '#193549,#FFC600,#1D425D,#FFFFFF,#0085FF,#FFFFFF,#2CDB00,#FFC600', name: 'Cobalt2' }
 - { colors: '#333F4E,#47525F,#DA513D,#FFFFFF,#47525F,#F8F8F8,#DA513D,#DA513D', name: 'CraftCMS' }
+- { colors: '#0c1e3e,#153161,#2970ff,#FFFFFF,#153161,#FFFFFF,#2ed6a1,#2ed6a1', name: 'Decred' }
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
 - { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
 - { colors: '#2e3136,#282b30,#282b30,#ffffff,#282b30,#818386,#43b581,#7289da', name: 'Discord' }
@@ -22,6 +26,7 @@
 - { colors: '#DA6A2D,#737272,#38307F,#FFFFFF,#737272,#FFFFFF,#38307F,#38307F', name: 'FOLIO orange' }
 - { colors: '#38307F,#737272,#DA6A2D,#FFFFFF,#737272,#FFFFFF,#DA6A2D,#DA6A2D', name: 'FOLIO purple' }
 - { colors: '#171717,#404245,#424242,#ECF0F1,#4A4A4A,#FAFAFA,#2ECC71,#00A362', name: 'Green Lantern' }
+- { colors: '#00254C,#15467a,#EEB211,#FFFFFF,#EEB211,#FFFFFF,#C59353,#007BFF', name: 'Georgia Tech' }
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
 - { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
@@ -29,11 +34,17 @@
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
 - { colors: '#00AED8,#00AEDF,#C5CC13,#000000,#FBB040,#FFFFFF,#2DEBAE,#EE2B74', name: 'KKBOX' }
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
+- { colors: '#282828,#551127,#79092b,#f5f5f5,#111111,#cccccc,#f04b6e,#b40f42', name: 'KKTV' }
+- { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C', name: 'Kayako Minimal' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
+- { colors: '#FAFAFA,#FB503B,#FB503B,#FFFFFF,#F58F82,#1C1B1C,#FB503B,#424242', name: 'Laravel Light' }
+- { colors: '#212420,#333632,#87CF3E,#FFFFFF,#393d39,#FFFFFF,#87CF3E,#68a030', name: 'Mint' }
 - { colors: '#222222,#2F2F2F,#F92772,#FFFFFF,#A6E22D,#FFFFFF,#66D9EF,#BE84F2', name: 'Monokai' }
 - { colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'Monument' }
 - { colors: '#1F1C18,#8E0E00,#8E0E00,#FFFFFF,#A1A09F,#FFFFFF,#B01D0C,#8E0E00', name: 'Netflix' }
 - { colors: '#303E4D,#2C3849,#6698C8,#FFFFFF,#4A5664,#FFFFFF,#94E864,#78AF8F', name: 'Ochin' }
+- { colors: '#057fa5,#034F75,#ffffff,#057fa5,#034F75,#FFFFFF,#99D04A,#ff9800', name: 'OpenData.cz' }
+- { colors: '#F68D29,#F99A3F,#F99A3F,#FFFFFF,#ED8624,#FFFFFF,#FFFFFF,#F9A55A', name: 'osTicket' }
 - { colors: '#C10048,#920A3D,#2E0002,#FFFFFF,#610A29,#FFFFFF,#FFFFFF,#610A29', name: 'Polygon' }
 - { colors: '#1F2036,#7986CB,#FE528C,#FFFFFF,#606BA2,#FFFFFF,#2DEBAE,#FE528C', name: 'Polymer' }
 - { colors: '#F6F6F6,#EEEEEE,#FA3649,#FFFFFF,#FFFFFF,#000000,#60D156,#FA3649', name: 'PouchDB' }
@@ -44,7 +55,7 @@
 - { colors: '#000000,#A51C24,#FFFFFF,#0320FF,#A5A5A5,#FFFFFF,#FFFFFF,#FFFF00', name: 'Stark Contrast' }
 - { colors: '#B300B3,#23A61C,#FFFFFF,#C400FF,#FF2EFF,#000000,#F7FF00,#F7FF00', name: 'Summer Craze' }
 - { colors: '#574f4a,#48b9c7,#faa41a,#FFFFFF,#48b9c7,#FFFFFF,#26d076,#dc4405', name: 'System76' }
-- { colors: '#000000,#000000,#1EB8EB,#000000,#1EB8EB,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
+- { colors: '#000000,#000000,#1EB8EB,#000000,#424242,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
 - { colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242', name: 'Yosemite iTunes' }
 - { colors: '#BB6A76,#AD5B67,#62B791,#FFFFFF,#A5516A,#FFFFFF,#68F798,#694464', name: 'WameIn' }
 - { colors: '#E3DAE6,#B49FC2,#5A30B0,#FDF6E3,#EEE8D5,#594275,#B358BF,#BD72CC', name: 'Wegman' }
@@ -59,6 +70,7 @@
 - { colors: '#2B7164,#2B7164,#51A050,#EC2262,#CECCB2,#032342,#DA3D61,#CECCB2', name: 'Watermelon' }
 - { colors: '#EB4D5C,#EB4D5C,#A6D6A1,#3C3865,#3C3865,#FFFFFF,#3C3865,#F18E2C', name: 'Spring Tree' }
 - { colors: '#663399,#592D86,#8F6DB0,#FFFFFF,#3E313C,#FFFFFF,#FFFFFF,#EB4D5C', name: 'Makers' }
+- { colors: '#27364E,#1A2535,#F55D54,#F2F2F4,#1A2535,#E6E6E9,#F6756D,#F55D54', name: 'MockingBot' }
 - { colors: '#CF7C44,#CF7C44,#E89A6B,#F7DB72,#FBEDD4,#FFFAFC,#92406A,#92406A', name: 'Bourbon' }
 - { colors: '#C17F46,#C17F46,#CFA677,#DCBF98,#FBEDD4,#EFEFEF,#EAECF1,#EAECF1', name: 'Latte' }
 - { colors: '#0A6242,#0A6242,#3D3935,#BC7E3B,#BC7E3B,#F7F7F7,#3D3935,#3D3935', name: 'Starbucks' }
@@ -77,7 +89,7 @@
 - { colors: '#4F2F4C,#452842,#8C5888,#FFFFFF,#3E313C,#FFFFFF,#00FFB7,#DE4C0D', name: 'Brinjal' }
 - { colors: '#FFFFFF,#FDCE45,#FDCE45,#0F1216,#ECEEF2,#0F1216,#1FAE7D,#1FAE7D', name: 'Put.io' }
 - { colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669', name: 'Product Hunt' }
-- { colors: '#232323,#000000,#f05a28,#000000,#000000,#FFFFFF,#f05a28,#f05a28', name: 'Myplanet' }
+- { colors: '#2A2A49,#9292A8,#F25930,#FFFFFF,#9292A8,#EEEDEF,#F25930,#D5315C', name: 'Myplanet' }
 - { colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500', name: 'Reddit' }
 - { colors: '#FFFFFF,#CC181E,#CC181E,#FFFFFF,#444444,#0D0D0D,#CC181E,#E04A4D', name: 'Youtube' }
 - { colors: '#F5F5F5,#FFFFFF,#FDBD39,#FFFFFF,#FECF33,#574751,#A4BF36,#EE6723', name: 'Zeplin' }
@@ -95,6 +107,7 @@
 - { colors: '#1C1F25,#282C35,#925AFF,#FFFFFF,#925AFF,#FFFFFF,#89BE6C,#DB182E', name: 'plug.dj' }
 - { colors: '#F9F6F1,#F9F6F1,#FF3300,#FFFFFF,#FF3300,#1E1E1E,#FF3300,#B3D4FD', name: 'Oktavilla' }
 - { colors: '#333333,#222222,#44A340,#FFFFFF,#8CBE65,#FFFFFF,#D6E685,#1E6823', name: 'Github Activity Graph' }
+- { colors: '#ffffff,#24292e,#e9f0f7,#1d4880,#ffefc6,#666666,#28a745,#92979b', name: 'Github' }
 - { colors: '#000000,#000000,#006600,#00ff00,#00ff00,#00ff00,#ff0000,#ff0000', name: 'Retro Monochrome Terminal' }
 - { colors: '#0000AA,#00AAAA,#FF55FF,#FFFFFF,#00AAAA,#FFFFFF,#C0C0C0,#FF00FF', name: 'EGA' }
 - { colors: '#0050A0,#000020,#F08000,#FFFFFF,#F08000,#FFFFFF,#F08000,#F08000', name: 'AmigaOS 1.3' }
@@ -140,8 +153,9 @@
 - { colors: '#ffffff,#ffffff,#236ABE,#FFFFFF,#236ABE,#000000,#236ABE,#BE3410', name: 'StreetEasy' }
 - { colors: '#37B449,#2D9A48,#1B5E48,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#EB4D5C', name: 'Trulia' }
 - { colors: '#319b44,#0047b3,#db3236,#ffff00,#0047B3,#FFFFFF,#FFFF00,#db3236', name: 'N64' }
+- { colors: '#173f85,#0072CE,#0072ce,#FFFFFF,#0072CE,#FFFFFF,#FFDA00,#FFDA00', name: 'PlayStation' }
+- { colors: '#ffffff,#B1B3B3,#63666a,#FFFFFF,#b1b3b3,#000000,#0072ce,#0072ce', name: 'PlayStation Classic' }
 - { colors: '#284589,#3464d4,#FF6600,#FFFFFF,#445970,#FFFFFF,#00C19B,#FF6600', name: 'Nitronews' }
-- { colors: '#F05A2D,#444A47,#ffffff,#333333,#434745,#FFFFFF,#333333,#333333', name: 'Myplanet-Orange' }
 - { colors: '#3396d3,#4c4c4c,#d43f27,#FFFFFF,#3E313C,#FFFFFF,#ffffff,#253c4e', name: 'Pinnaca' }
 - { colors: '#34495E,#42B983,#42B983,#FFFFFF,#42B983,#FFFFFF,#FFD41D,#42B983', name: 'Vue.js' }
 - { colors: '#21252B,#272C33,#31363F,#D7DAE0,#272C33,#D7DAE0,#20B684,#528BFF', name: 'One Dark' }
@@ -150,3 +164,64 @@
 - { colors: '#40415a,#54556e,#f99a66,#ffffff,#54556e,#ffffff,#d55161,#d55161', name: 'devRant' }
 - { colors: '#6044db,#500ba3,#f0b31a,#FFFFFF,#997929,#ffffff,#f0b31a,#a92ab0', name: 'Mautic' }
 - { colors: '#6fa36f,#3E313C,#01690b,#ffff00,#3E313C,#ffffff,#faff78,#ed687e', name: 'Drupal Twig'}
+- { colors: '#014A83,#053354,#dd661e,#ffffff,#053354,#ffffff,#dd661e,#dd661e', name: 'Florida Gators'}
+- { colors: '#ff8800,#000000,#ffffff,#000000,#4a5664,#000000,#000000,#736e65', name: 'Halloween'}
+- { colors: '#f1f1f1,#DDDDDD,#ff5d02,#FFFFFF,#DDDDDD,#000000,#28a05a,#ff5d02', name: 'Spreadfamily'}
+- { colors: '#2C2C26,#229725,#13C217,#FFFFFF,#229725,#FFFFFF,#13C217,#439AEA', name: 'Chargify'}
+- { colors: '#194234,#9c2e33,#E7C12e,#194234,#9c2e33,#FFFFFF,#ee6030,#9C2E33', name: 'Autumn'}
+- { colors: '#138724,#1B5E48,#db2e3f,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#DB2E3F', name: 'Christmas'}
+- { colors: '#033313,#077a07,#02ad44,#FFFFFF,#076e27,#FFFFFF,#94E864,#78AF8F', name: 'Forest'}
+- { colors: '#263238,#263238,#263238,#64fcda,#546e7a,#eceff1,#40c4ff,#ff5252', name: 'Material'}
+- { colors: '#262626,#555555,#0F80AA,#FFFFFF,#555555,#FFFFFF,#99D04A,#DCAF1B', name: 'Librato'}
+- { colors: '#353535,#2f2f2f,#8fa876,#ffffff,#8fa876,#ffffff,#818181,#8fa876', name: 'Linux Mint Y Dark'}
+- { colors: '#444444,#157477,#e4e4e4,#666666,#888888,#ffffff,#5ae043,#1de2e7', name: 'Nitro Marketing Digital'}
+- { colors: '#003554,#073c57,#006494,#FFFFFF,#006494,#FFFFFF,#00A6FB,#EB4D5C', name: 'SQOOL by Unowhy'}
+- { colors: '#141422,#259692,#259692,#FFFFFF,#4A5664,#ffffff,#ff8800,#FF8800', name: 'GitKraken'}
+- { colors: '#000000,#000000,#7aba20,#FFFFFF,#000000,#FFFFFF,#7aba20,#0088cc', name: 'Symfony'}
+- { colors: '#93C4D3,#FFFFFF,#93C4D3,#FFFFFF,#FFFFFF,#173C4C,#66CC33,#173C4C', name: 'Waze'}
+- { colors: '#131313,#424242,#424242,#BDC3C7,#424242,#bdc3c7,#2ecc71,#e74c3c', name: 'Zebra'}
+- { colors: '#1B1C5B,#1B1C5B,#8E3441,#FFFFFF,#914751,#FFFFFF,#2ACB46,#F5804F', name: 'The Incomparable'}
+- { colors: '#333333,#1E2320,#709080,#FFFFFF,#1E2320,#FFFFFF,#F0DFAF,#CC9393', name: 'Dark Zenburn'}
+- { colors: '#ebe5da,#d6b498,#c2804a,#ffffff,#b09582,#000000,#009917,#d95b5b', name: 'Latte Time'}
+- { colors: '#f4f6f9,#e0e5ee,#d8edff,#0070d2,#e0e5ee,#16325c,#4bca81,#c23934', name: 'Lightning'}
+- { colors: '#333333,#2d2d2d,#2d2d2d,#f9f9f9,#2d2d2d,#dedede,#d64937,#d64937', name: 'Numix' }
+- { colors: '#ffffee,#f0e0d6,#f0e0d6,#800000,#f0e0d6,#800000,#0000ee,#0000ee', name: 'Yotsuba' }
+- { colors: '#eef2ff,#d6daf0,#d6daf0,#000000,#d6daf0,#000000,#34345c,#34345c', name: 'Yotsuba B' }
+- { colors: '#1d1f21,#282a2e,#282a2e,#c5c8c6,#282a2e,#c5c8c6,#5f89ac,#5f89ac', name: 'Tomorrow' }
+- { colors: '#eeeeee,#dddddd,#dddddd,#333333,#dddddd,#333333,#ff6600,#ff6600', name: 'Photon' }
+- { colors: '#7d5bbe,#6441a4,#6441a4,#ffffff,#6441a4,#ffffff,#6441a4,#6441a4', name: 'Twitch' }
+- { colors: '#0c84a9,#f67f01,#94C53C,#FFFFFF,#16A1C8,#FFFFFF,#FFFFFF,#94C53C', name: 'CodeMash'}
+- { colors: '#373352,#1a123b,#a347b7,#FFFFFF,#1a123b,#d6e0ff,#d15fea,#A347B7', name: 'Smooch.io'}
+- { colors: '#8892BF,#4F5B93,#4F5B93,#FFFFFF,#CBCCD4,#FFFFFF,#4F5B93,#F15340', name: 'PHP'}
+- { colors: '#324050,#283542,#4b9ad9,#FFFFFF,#283542,#CFD8E5,#3bb594,#EB4D5C', name: 'REDAXO'}
+- { colors: '#292929,#252525,#252525,#f5f5f5,#252525,#B5B5B5,#79a548,#c83c3c', name: 'TYPO3'}
+- { colors: '#222222,#333333,#444444,#FFFFFF,#333333,#FFFFFF,#38978D,#fc7459', name: 'AWA' }
+- { colors: '#042e47,#072333,#072333,#1b9eea,#072333,#FFFFFF,#1b9eea,#1b9eea', name: 'Thinkific'}
+- { colors: '#363C74,#000000,#E8D3A2,#363C74,#000000,#FFFFFF,#E8D3A2,#B7A57A', name: 'Washington Huskies'}
+- { colors: '#F0F4F8,#39B1DF,#C7EDFC,#000000,#F0F4F8,#000000,#7FBA00,#FF8C00', name: 'Skype'}
+- { colors: '#282a36,#2D2D2D,#ff5c57,#ffffff,#515151,#dee1db,#5af78e,#57c7ff', name: 'Snazzy'}
+- { colors: '#534d46,#706b63,#7a9c0f,#FFFFFF,#648200,#FFFFFF,#9cbe30,#f3b670', name: 'Ancestry' }
+- { colors: '#000000,#A7A8AC,#016F4A,#FFFFFF,#339E7A,#FFFFFF,#339E7A,#016F4A', name: 'Dallas Stars'}
+- { colors: '#065a8f,#267aaf,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'MetaFilter'}
+- { colors: '#000000,#000000,#355C7D,#ffffff,#222222,#ffffff,#b82601,#EFC000', name: 'newride.tech'}
+- { colors: '#2E3440,#3B4252,#88C0D0,#2E3440,#3B4252,#D8DEE9,#A3BE8C,#81A1C1', name: 'Nord'}
+- { colors: '#306998,#FFD43B,#FFD43B,#7F7F7F,#5A9FD4,#F4F4F4,#FFE873,#FFD43B', name: 'Python'}
+- { colors: '#2B1F32,#FFB86C,#E15D97,#FFFFFF,#4A1386,#FFFFFF,#35BA66,#0AACC5', name: 'Wild Cherry'}
+- { colors: '#389196,#C3C0AB,#9FCC3B,#008CB5,#C3C0AB,#FFFFFF,#D90F21,#D90f21', name: 'EMBL'}
+- { colors: '#F1F3F5,#DAD8DA,#D3DFE3,#303030,#C2E2ED,#303030,#1682FB,#34C749', name: 'macOs' }
+- { colors: '#0B62CD,#1673E6,#78D30A,#ffffff,#1673E6,#ffffff,#78d30a,#D34C4C', name: 'SeatGeek' }
+- { colors: '#192532,#263545,#19cd91,#FFFFFF,#263545,#FFFFFF,#19cd91,#f05751', name: 'Contentful' }
+- { colors: '#253346,#434f61,#434f61,#FFFFFF,#434f61,#f4f5f7,#44DB5E,#f72951', name: 'Delta' }
+- { colors: '#8C1D40,#5C6670,#FFC627,#FFFFFF,#5C6670,#FFFFFF,#94E864,#00A3E0', name: 'Arizona State University' }
+- { colors: '#BF5700,#333F48,#FFFFFF,#333F48,#333F48,#FFFFFF,#94E864,#00A3E0', name: 'University Of Texas' }
+- { colors: '#342624,#000000,#EC5614,#FFFFFF,#7C7E7C,#FFFFFF,#EC5614,#EC5614', name: 'Cleveland Browns' }
+- { colors: '#DEE2E6,#ffffff,#0279f9,#FFFFFF,#ffffff,#37393c,#0279f9,#0279F9', name: 'Ziik.io' }
+- { colors: '#FBFBFB,#FBFBFB,#F9C6D6,#5D5759,#8EEADB,#5D5759,#F0A2B8,#F0A2B8', name: 'Kawaii' }
+- { colors: '#39434D,#272e35,#F26900,#ffffff,#272E35,#ADBED1,#48B8AD,#F3B200', name: 'frame.ai' }
+- { colors: '#0079BF,#026AA7,#5BA4CF,#FFFFFF,#026AA7,#FFFFFF,#61BD4F,#EB5A46', name: 'Trello' }
+- { colors: '#6236ba,#56A656,#56a656,#FFFFFF,#56A656,#ffffff,#D0FF00,#889100', name: 'Dobby Purple' }
+- { colors: '#36414C,#4D5561,#515C6B,#FFFFFF,#4D5561,#FFFFFF,#B3CAF0,#8097BD', name: 'Metal Blue' }
+- { colors: '#f9f9f9,#1BD9C4,#1BD9C4,#094074,#1BD9C4,#308390,#1bd9c4,#DB6668', name: 'WillowTree - Light' }
+- { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
+- { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
+- { colors: '#333333,#85714D,#85714D,#FFFFFF,#85714D,#FFFFFF,#E31837,#E31837', name: 'Vegas Golden Knights' }
