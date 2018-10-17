@@ -150,3 +150,7 @@
 - { colors: '#40415a,#54556e,#f99a66,#ffffff,#54556e,#ffffff,#d55161,#d55161', name: 'devRant' }
 - { colors: '#6044db,#500ba3,#f0b31a,#FFFFFF,#997929,#ffffff,#f0b31a,#a92ab0', name: 'Mautic' }
 - { colors: '#6fa36f,#3E313C,#01690b,#ffff00,#3E313C,#ffffff,#faff78,#ed687e', name: 'Drupal Twig'}
+- { colors: '#0060AA,#FFED10,#E20025,#ffffff,#ffffff,#ffffff,#E20025,#E20025', name: 'Superman'}
+- { colors: '#FF96A7,#FFA7B3,#FFCECE,#ffffff,#ffffff,#ffffff,#FFCECE,#FFCECE', name: 'Pink October'}
+- { colors: '#F4793E,#C49D6E,#231F20,#ffffff,#ffffff,#ffffff,#231F20,#231f20, name: 'SF Giants'}
+- { colors: '#F44747,#0E68CE,#0E68CE,#ffffff,#ffffff,#ffffff,#EEDC31,#7FDB6A, name: 'ROYGBIV'}
