@@ -232,3 +232,4 @@
 - { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
 - { colors: '#333333,#85714D,#85714D,#FFFFFF,#85714D,#FFFFFF,#E31837,#E31837', name: 'Vegas Golden Knights' }
 - { colors: '#F4F5F6,#FFFFFF,#9B4DCA,#ffffff,#FFFFFF,#606c76,#9B4DCA,#9B4DCA', name: 'Milligram.io'}
+- { colors: '#23232c,#42424D,#007FEB,#fefefe,#42424d,#c2c2ca,#a4bf36,#f74343', name: 'Deezer' }
