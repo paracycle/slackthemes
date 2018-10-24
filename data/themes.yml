@@ -245,3 +245,4 @@
 #- { colors: '#333336,#2e2e31,#666668,#ffffff,#f3b94b,#d7d5d4,#f3b94b,#f3b94b', name: 'Mojave Dark Mode Yellow' }
 #- { colors: '#333336,#2e2e31,#666668,#ffffff,#78b656,#d7d5d4,#78b656,#78b656', name: 'Mojave Dark Mode Green' }
 #- { colors: '#333336,#2e2e31,#666668,#ffffff,#8c8c8c,#d7d5d4,#8c8c8c,#8c8c8c', name: 'Mojave Dark Mode Grey' }
+- { colors: '#E3E6EA,#EDEFF1,#D1571C,#FFFFFF,#1DB3C5,#333232,#48B8AD,#D3561A', name: 'beNext' }
