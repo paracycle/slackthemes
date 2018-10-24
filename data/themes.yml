@@ -152,6 +152,7 @@
 - { colors: '#333333,#222222,#0074A2,#FFFFFF,#111111,#FFFFFF,#7AD03A,#D54E21', name: 'WordPress' }
 - { colors: '#2D363F,#D6D8D7,#D6D8D7,#2D363F,#D6D8D7,#FFFFFF,#D6D8D7,#D6D8D7', name: 'Front End Happy Hour' }
 - { colors: '#373D48,#303641,#5294E2,#FFFFFF,#4A5664,#FFFFFF,#5294E2,#5294E2', name: 'Arc' }
+- { colors: '#383838,#303641,#999999,#FFFFFF,#5c5c5c,#FFFFFF,#999999,#999999', name: 'Arc Grey' }
 - { colors: '#245b61,#245b61,#72d4c0,#FFFFFF,#b0c1c4,#FFFFFF,#bef200,#F15340', name: 'Thoroughcare' }
 - { colors: '#0D7E83,#076570,#32b377,#FFFFFF,#72d4c0,#FFFFFF,#bef200,#F15340', name: 'Minty' }
 - { colors: '#235ce2,#6BB700,#6BB700,#FFFFFF,#262626,#FFFFFF,#6BB700,#EB4D5C', name: 'Zillow' }
