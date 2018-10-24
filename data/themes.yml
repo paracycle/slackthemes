@@ -29,7 +29,7 @@
 - { colors: '#00254C,#15467a,#EEB211,#FFFFFF,#EEB211,#FFFFFF,#C59353,#007BFF', name: 'Georgia Tech' }
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
-- { colors: '#FFFFFF,#999999,#000000,#FFFFFF,#000000,#000000,#808080,#000000', name: 'High Contrast' }
+- { colors: '#FFFFFF,#999999,#000000,#FFFFFF,#AAAAAA,#000000,#808080,#000000', name: 'High Contrast' }
 - { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
 - { colors: '#F0DB4F,#F0DB4F,#323330,#FFFFFF,#e6cd2c,#323330,#323330,#323330', name: 'JavaScript' }
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
