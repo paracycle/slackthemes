@@ -19,6 +19,7 @@
 - { colors: '#0c1e3e,#153161,#2970ff,#FFFFFF,#153161,#FFFFFF,#2ed6a1,#2ed6a1', name: 'Decred' }
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
 - { colors: '#3686BE,#215F8B,#7DB461,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#215F8B', name: 'DigitalOcean' }
+- { colors: '#117bcf,#117bcf,#467ca2,#FFFFFF,#2E3234,#FFFFFF,#7DB461,#cb4641', name: 'DigitalMediaSolutions' }
 - { colors: '#2e3136,#282b30,#282b30,#ffffff,#282b30,#818386,#43b581,#7289da', name: 'Discord' }
 - { colors: '#1B549E,#1B549E,#19C0E7,#FFFFFF,#19C0E7,#FFFFFF,#19C0E7,#FFFFFF', name: 'Design Hub' }
 - { colors: '#dfdfdf,#f5f5f5,#cecece,#333333,#f5f5f5,#333333,#93d844,#da4d45', name: 'elementary GTK' }
@@ -27,10 +28,13 @@
 - { colors: '#38307F,#737272,#DA6A2D,#FFFFFF,#737272,#FFFFFF,#DA6A2D,#DA6A2D', name: 'FOLIO purple' }
 - { colors: '#171717,#404245,#424242,#ECF0F1,#4A4A4A,#FAFAFA,#2ECC71,#00A362', name: 'Green Lantern' }
 - { colors: '#00254C,#15467a,#EEB211,#FFFFFF,#EEB211,#FFFFFF,#C59353,#007BFF', name: 'Georgia Tech' }
+- { colors: '#643685,#634489,#FC6D26,#ffffff,#71558f,#ffffff,#FCA326,#e24329', name: 'GitLab' }
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
+- { colors: '#FFFFFF,#999999,#000000,#FFFFFF,#AAAAAA,#000000,#808080,#000000', name: 'High Contrast' }
 - { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
 - { colors: '#F0DB4F,#F0DB4F,#323330,#FFFFFF,#e6cd2c,#323330,#323330,#323330', name: 'JavaScript' }
+- { colors: '#181818,#b65f49,#81A9C2,#ffffff,#384048,#CFCFBD,#A79AC6,#889962', name: 'Jellybeans' }
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
 - { colors: '#00AED8,#00AEDF,#C5CC13,#000000,#FBB040,#FFFFFF,#2DEBAE,#EE2B74', name: 'KKBOX' }
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
@@ -38,6 +42,9 @@
 - { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C', name: 'Kayako Minimal' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
 - { colors: '#FAFAFA,#FB503B,#FB503B,#FFFFFF,#F58F82,#1C1B1C,#FB503B,#424242', name: 'Laravel Light' }
+- { colors: '#0D2240,#00A8E1,#F7A800,#FFFFFF,#00A8E1,#FFFFFF,#00A8E1,#00A8E1', name: 'Milwaukee Dark' }
+- { colors: '#00A8E1,#0D2240,#F7A800,#FFFFFF,#0D2240,#FFFFFF,#F7A800,#0D2240', name: 'Milwaukee Mid' }
+- { colors: '#FFFFFF,#00A8E1,#0D2240,#FFFFFF,#F7A800,#0D2240,#F7A800,#00A8E1', name: 'Milwaukee Light' }
 - { colors: '#212420,#333632,#87CF3E,#FFFFFF,#393d39,#FFFFFF,#87CF3E,#68a030', name: 'Mint' }
 - { colors: '#222222,#2F2F2F,#F92772,#FFFFFF,#A6E22D,#FFFFFF,#66D9EF,#BE84F2', name: 'Monokai' }
 - { colors: '#0D7E83,#076570,#F79F66,#FFFFFF,#D37C71,#FFFFFF,#F79F66,#F15340', name: 'Monument' }
@@ -160,7 +167,8 @@
 - { colors: '#34495E,#42B983,#42B983,#FFFFFF,#42B983,#FFFFFF,#FFD41D,#42B983', name: 'Vue.js' }
 - { colors: '#21252B,#272C33,#31363F,#D7DAE0,#272C33,#D7DAE0,#20B684,#528BFF', name: 'One Dark' }
 - { colors: '#352e59,#2d274f,#0076bf,#FFFFFF,#2D274F,#ffffff,#94E864,#78AF8F', name: 'Purple Daydream' }
-- { colors: '#282828,#3c3836,#98971a,#fbf1c7,#3E313C,#EBDBB2,#b8bb26,#fb4934', name: 'Gruvbox' }
+- { colors: '#282828,#3c3836,#98971a,#fbf1c7,#3E313C,#EBDBB2,#b8bb26,#fb4934', name: 'Gruvbox Dark' }
+- { colors: '#FBF1C7,#EBDBB2,#79740E,#ffffff,#D5C4A1,#3C3836,#8F3F71,#076678', name: 'Gruvbox Light Medium' }
 - { colors: '#40415a,#54556e,#f99a66,#ffffff,#54556e,#ffffff,#d55161,#d55161', name: 'devRant' }
 - { colors: '#6044db,#500ba3,#f0b31a,#FFFFFF,#997929,#ffffff,#f0b31a,#a92ab0', name: 'Mautic' }
 - { colors: '#6fa36f,#3E313C,#01690b,#ffff00,#3E313C,#ffffff,#faff78,#ed687e', name: 'Drupal Twig'}
@@ -225,6 +233,8 @@
 - { colors: '#308390,#1BD9C4,#1BD9C4,#FFFFFF,#40C1BB,#f0f0f4,#1bd9c4,#DB6668', name: 'WillowTree - Dark' }
 - { colors: '#121417,#2F343D,#2F343D,#ABB2BF,#2F343D,#ABB2BF,#98C379,#98C379', name: 'Atom One Dark' }
 - { colors: '#333333,#85714D,#85714D,#FFFFFF,#85714D,#FFFFFF,#E31837,#E31837', name: 'Vegas Golden Knights' }
+- { colors: '#F4F5F6,#FFFFFF,#9B4DCA,#ffffff,#FFFFFF,#606c76,#9B4DCA,#9B4DCA', name: 'Milligram.io'}
+- { colors: '#23232c,#42424D,#007FEB,#fefefe,#42424d,#c2c2ca,#a4bf36,#f74343', name: 'Deezer' }
 - { colors: '#333336,#2e2e31,#666668,#ffffff,#277df6,#d7d5d4,#277df6,#277df6', name: 'Mojave Dark Mode Blue' }
 # @todo: Handle theme variants more elegantly. Keeping these here until we can do that
 #- { colors: '#333336,#2e2e31,#666668,#ffffff,#9a57a3,#d7d5d4,#9a57a3,#9a57a3', name: 'Mojave Dark Mode Purple' }
