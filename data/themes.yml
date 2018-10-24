@@ -32,6 +32,7 @@
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
 - { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
 - { colors: '#F0DB4F,#F0DB4F,#323330,#FFFFFF,#e6cd2c,#323330,#323330,#323330', name: 'JavaScript' }
+- { colors: '#181818,#b65f49,#81A9C2,#ffffff,#384048,#CFCFBD,#A79AC6,#889962', name: 'Jellybeans' }
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
 - { colors: '#00AED8,#00AEDF,#C5CC13,#000000,#FBB040,#FFFFFF,#2DEBAE,#EE2B74', name: 'KKBOX' }
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
