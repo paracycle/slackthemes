@@ -149,7 +149,7 @@
 - { colors: '#34495e,#16a085,#1abc9c,#FFFFFF,#16A085,#ecf0f1,#FF2A68,#FF2A68', name: 'Midnight Pink' }
 - { colors: '#112E51,#205493,#0071BC,#FFFFFF,#323A45,#FFFFFF,#4AA564,#981B1E', name: 'Draft U.S. Web Design Standards' }
 - { colors: '#5AADBB,#076570,#F5D087,#FFFFFF,#D37C71,#262222,#DD002A,#F15340', name: 'Yeoman' }
-- { colors: '#333333,#222222,#0074A2,#FFFFFF,#111111,#FFFFFF,#7AD03A,#D54E21', name: 'WordPress' }
+- { colors: '#23282d,#191e23,#0073AA,#FFFFFF,#111111,#EEEEEE,#46b450,#D54E21', name: 'WordPress' }
 - { colors: '#2D363F,#D6D8D7,#D6D8D7,#2D363F,#D6D8D7,#FFFFFF,#D6D8D7,#D6D8D7', name: 'Front End Happy Hour' }
 - { colors: '#373D48,#303641,#5294E2,#FFFFFF,#4A5664,#FFFFFF,#5294E2,#5294E2', name: 'Arc' }
 - { colors: '#383838,#303641,#999999,#FFFFFF,#5c5c5c,#FFFFFF,#999999,#999999', name: 'Arc Grey' }
