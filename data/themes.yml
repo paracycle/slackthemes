@@ -15,6 +15,7 @@
 - { colors: '#544538,#42362B,#5DB09D,#FFFFFF,#4A3C30,#FFFFFF,#FFFFFF,#5DB09D', name: 'Choco Mint' }
 - { colors: '#3A3D3F,#3A3D3F,#D84315,#FFFFFF,#3A3D3F,#FFFFFF,#48B8AD,#D84315', name: 'Convoy' }
 - { colors: '#193549,#FFC600,#1D425D,#FFFFFF,#0085FF,#FFFFFF,#2CDB00,#FFC600', name: 'Cobalt2' }
+- { colors: '#1b2b34,#343d46,#5fb3b3,#1B2B34,#0b151b,#FFFFFF,#99c794,#fac863', name: 'CobaltNext' }
 - { colors: '#333F4E,#47525F,#DA513D,#FFFFFF,#47525F,#F8F8F8,#DA513D,#DA513D', name: 'CraftCMS' }
 - { colors: '#0c1e3e,#153161,#2970ff,#FFFFFF,#153161,#FFFFFF,#2ed6a1,#2ed6a1', name: 'Decred' }
 - { colors: '#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555', name: 'Dracula' }
