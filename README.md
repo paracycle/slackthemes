@@ -25,7 +25,7 @@ It is not affiliated with [Slack](https://slack.com/) in any way or form; but it
 2. Install dependencies using `bundle install`
 3. Make changes.
 4. Build the project using `bundle exec middleman build`
-5. You can run a local webserver to test the project using `php -t ./build -S 0.0.0.0:8080` and access it on `localhost:8080`
+5. You can [run a local webserver](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) to test the project. (make sure to use the `./build` folder as your DocumentRoot).
 6. Create a pull request.
 
 ### Contributors
