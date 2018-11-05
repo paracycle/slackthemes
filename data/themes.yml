@@ -252,3 +252,4 @@
 - { colors: '#000000,#a8a8a8,#000000,#a6a6a6,#000000,#7d7d7d,#078500,#bf0000', name: 'mishaor' }
 - { colors: '#222222,#333333,#9FC65D,#FFFFFF,#4A5664,#F4F4F4,#9FC65D,#ffbc3b', name: 'Inpsyde' }
 - { colors: '#2e4f7e,#2C3849,#203251,#FFFFFF,#456494,#FFFFFF,#a6c056,#e9ae4c', name: 'Visual Composer' }
+- { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
