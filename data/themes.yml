@@ -136,7 +136,8 @@
 - { colors: '#212121,#212121,#3F51B5,#FFFFFF,#3F51B5,#FFFFFF,#3F51B5,#3F51B5', name: 'Material Dark Indigo' }
 - { colors: '#212121,#212121,#607D8B,#FFFFFF,#607D8B,#FFFFFF,#607D8B,#607D8B', name: 'Material Dark Blue Grey' }
 - { colors: '#2F343B,#2F343B,#FD7532,#FFFFFF,#FD7532,#FFFFFF,#FD7532,#FD7532', name: 'Hummingbird' }
-- { colors: '#CEC18A,#ffffff,#000000,#FFFFFF,#FFFFFF,#000000,#ffff00,#000000', name: 'Pittsburgh Penguins (old)' }
+- { colors: '#CEC18A,#ffffff,#000000,#FFFFFF,#FFFFFF,#000000,#ffff00,#000000', name: 'Pittsburgh Penguins (Vegas Gold)' }
+- { colors: '#FFC80C,#FFFFFF,#040707,#FFFFFF,#FFfFFF,#040707,#040707,#040707', name: 'Pittsburgh Penguins (2017 Gold)' }
 - { colors: '#FAFAFA,#F3F3F3,#E7412A,#FFFFFF,#EDEDED,#564F4D,#8DA600,#0EA7B5', name: 'Dolly Light' }
 - { colors: '#635C5A,#564F4D,#E7412A,#FFFFFF,#564F4D,#FFFFFF,#8DA600,#0EA7B5', name: 'Dolly Dark' }
 - { colors: '#34495e,#16a085,#1abc9c,#FFFFFF,#16A085,#ecf0f1,#FF2A68,#FF2A68', name: 'Midnight Pink' }
