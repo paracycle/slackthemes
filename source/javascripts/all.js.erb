@@ -23,7 +23,18 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
           end.join ",\n" %>
         };
 
+        var DEFAULT_THEME = '<%= themes.first.slug %>';
+
+        $scope.initialLoad = true;
+
         $scope.$on('$stateChangeSuccess', function() {
+            if ($scope.initialLoad && $stateParams.slug !== DEFAULT_THEME) {
+                $scope.onThemeUpdate($stateParams.slug);
+                $scope.initialLoad = false;
+            } else if (! $scope.initialLoad) {
+                $scope.onThemeUpdate($stateParams.slug);
+            }
+
             $scope.slug = $stateParams.slug;
         });
 
@@ -68,4 +79,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
                 $state.go('theme', { slug: 'custom' }).then(updateHash);
             }
         });
+
+        $scope.onThemeUpdate = function (theme) {
+            ga('send', 'event', 'Themes', 'view', $scope.slug);
+        };
     }]);
