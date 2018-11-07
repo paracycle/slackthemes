@@ -1,5 +1,6 @@
 require 'middleman'
 require 'capybara'
+require 'capybara/dsl'
 require 'capybara/poltergeist'
 require 'mini_magick'
 
