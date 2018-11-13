@@ -253,3 +253,7 @@
 - { colors: '#222222,#333333,#9FC65D,#FFFFFF,#4A5664,#F4F4F4,#9FC65D,#ffbc3b', name: 'Inpsyde' }
 - { colors: '#2e4f7e,#2C3849,#203251,#FFFFFF,#456494,#FFFFFF,#a6c056,#e9ae4c', name: 'Visual Composer' }
 - { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
+- { colors: '#172751,#303E6B,#EB6851,#EDD9D4,#303E6B,#EDD9D4,#EB6851,#CFA975', name: 'Write/Speak/Code' }
+- { colors: '#c91414,#940a0a,#ffe100,#000000,#940A0A,#FFFFFF,#FFE100,#ffe100', name: 'Tech Workers Coalition' }
+- { colors: '#FAE38F,#F6F491,#F3EEE9,#A1935B,#F6F491,#A1935B,#ffffff,#b80f20', name: 'Micro.blog' }
+- { colors: '#2C3F74,#5E8BBF,#D1BA70,#000000,#5E8BBF,#FFFFFF,#D1BA70,#EB4D5C', name: '7th Sea' }
