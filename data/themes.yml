@@ -253,3 +253,4 @@
 - { colors: '#222222,#333333,#9FC65D,#FFFFFF,#4A5664,#F4F4F4,#9FC65D,#ffbc3b', name: 'Inpsyde' }
 - { colors: '#2e4f7e,#2C3849,#203251,#FFFFFF,#456494,#FFFFFF,#a6c056,#e9ae4c', name: 'Visual Composer' }
 - { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
+- { colors: '#1D0A2B,#3B0C42,#380A2D,#ffffff,#783A8A,#ffffff,#5B3680,#803736', name: 'Elk Eyes' }
