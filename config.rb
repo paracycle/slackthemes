@@ -105,4 +105,12 @@ helpers do
         ))
     end
   end
+
+  def default_theme
+    theme = data.themes.first
+    OpenStruct.new(theme.merge(
+      slug: theme['name'].parameterize.underscore,
+      digest: Digest::MD5.new.hexdigest(theme['colors'])
+    ))
+  end
 end

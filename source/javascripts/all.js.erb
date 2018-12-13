@@ -9,10 +9,10 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 url: "/:slug",
                 controller: 'ThemeController',
                 params: {
-                    slug: { value: '<%= themes.first.slug %>' }
+                    slug: { value: '<%= default_theme.slug %>' }
                 }
             });
-        $urlRouterProvider.otherwise('/<%= themes.first.slug %>');
+        $urlRouterProvider.otherwise('/<%= default_theme.slug %>');
     }]);
 
 app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$location',
