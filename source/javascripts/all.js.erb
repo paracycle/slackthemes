@@ -68,4 +68,25 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
                 $state.go('theme', { slug: 'custom' }).then(updateHash);
             }
         });
+
+        var clipboard = new ClipboardJS('#btn_copy');
+        var timeoutCoppied = null;
+
+        clipboard.on('success', function(e) {
+            e.clearSelection();
+
+            var $message = document.querySelector('.message_coppied');
+            if ($message === null) {
+                return;
+            }
+            if (timeoutCoppied !== null) {
+                clearTimeout(timeoutCoppied);
+            }
+
+            $message.classList.add('show');
+            timeoutCoppied = setTimeout(function(){
+                $message.classList.remove('show');
+                timeoutCoppied = null;
+            }, 1500);
+        });
     }]);

@@ -15,12 +15,60 @@
     width: 100px;
     height: 125px;
 }
+.sidebar_theme_custom_wrap {
+    display: table;
+    width: 100%;
+}
 input#sidebar_theme_custom {
-  width: 100% !important;
+    display: table-cell;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100% !important;
+    height: 31px;
+}
+.sidebar_theme_custom_addon {
+    display: table-cell;
+    width: 50px;
+    vertical-align: middle;
+}
+.sidebar_theme_custom_addon > .btn {
+    margin-left: -1px;
+    padding: 5px 14px;
+    height: 31px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #eee;
+}
+.sidebar_theme_custom_addon > .btn:active {
+    background: #e6e6e6;
+}
+.sidebar_theme_custom_addon > .btn:focus {
+    outline: none;
+}
+.sidebar_theme_custom_addon > .btn:active,
+.sidebar_theme_custom_addon > .btn:focus {
+    border-bottom-color: #cccccc !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.message_coppied_wrap {
+    display: table-cell;
+    width: 66px;
+    vertical-align: middle;
+}
+.message_coppied {
+    display: none;
+    color: #4dac86;
+    font-size: 16px;
+}
+.message_coppied.show {
+    display: inline;
 }
 #special_formatting_text {
-  font-size: 0.8em !important;
-  opacity: 1 !important;
+    font-size: 0.8em !important;
+    opacity: 1 !important;
 }
 #team_menu,#user_menu {
     text-decoration: none;
