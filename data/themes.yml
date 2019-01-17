@@ -68,6 +68,7 @@
 - { colors: '#000000,#000000,#1EB8EB,#000000,#424242,#FFFFFF,#1EB8EB,#1EB8EB', name: 'Tron' }
 - { colors: '#FAFAFA,#FAFAFA,#0F82FF,#FFFFFF,#D4E7FF,#404040,#62D962,#E92242', name: 'Yosemite iTunes' }
 - { colors: '#BB6A76,#AD5B67,#62B791,#FFFFFF,#A5516A,#FFFFFF,#68F798,#694464', name: 'WameIn' }
+- { colors: '#136782,#8E95A0,#8e95a0,#FFFFFF,#8E95A0,#FFFFFF,#75c71c,#f34f4b', name: "Watchman Monitoring" }
 - { colors: '#E3DAE6,#B49FC2,#5A30B0,#FDF6E3,#EEE8D5,#594275,#B358BF,#BD72CC', name: 'Wegman' }
 - { colors: '#4D5250,#444A47,#D39B46,#FFFFFF,#434745,#FFFFFF,#99D04A,#DB6668', name: 'Work Hard' }
 - { colors: '#2C2B32,#534C55,#FFB24C,#2C2B32,#534C55,#EEEDEF,#B8E986,#FF884E', name: 'Team Pizza' }
