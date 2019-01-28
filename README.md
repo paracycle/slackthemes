@@ -19,6 +19,16 @@ It is not affiliated with [Slack](https://slack.com/) in any way or form; but it
 2. Add your theme to the `data/themes.yml` file.
 3. Create a pull request.
 
+Themes consist of eight RGB hex colors as follows:
+1. Primary background color for the sidebar (variants are used for other elements)
+2. Header and footer to the sidebar
+3. Highlight color for current channel
+4. Text color for current channel
+5. Highlight color for channel selection
+6. Text color for non-current channels and other sidebar text
+7. User DM / online indicator
+8. Unread direct message indicator
+
 ### How to contribute (core)
 
 1. Fork this project.
