@@ -134,6 +134,7 @@
 - { colors: '#F7941E,#FFB963,#FFB963,#110000,#F5A849,#110000,#3D0000,#507DAA', name: 'Beaver Builders' }
 - { colors: '#2F2C2F,#252525,#A36B31,#D2D6D6,#5C6380,#DEDEDE,#ADBA4E,#DB6668', name: 'Afterglow' }
 - { colors: '#C0441C,#91282A,#F79F66,#FFFFFF,#91282A,#FFFFFF,#F79F66,#F15340', name: 'Hot Dog Stand' }
+- { colors: '#FF0000,#000000,#FFFF00,#000000,#000000,#FFFFFF,#FFFF00,#000000', name: 'Hot Dog Stand Windows 3.1' }
 - { colors: '#FFFFFF,#C0C0C0,#001F7E,#FFFFFF,#C0C0C0,#000000,#001F7E,#C0C0C0', name: 'Windows 3.1' }
 - { colors: '#327C7E,#001F7E,#001F7E,#FFFFFF,#001F7E,#FFFFFF,#C0C0C0,#C0C0C0', name: 'Windows 95' }
 - { colors: '#F0EDE0,#0054E3,#0054E3,#FFFFFF,#0054E3,#000000,#ED6D3A,#ED6D3A', name: 'Windows XP' }
