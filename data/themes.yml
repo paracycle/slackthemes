@@ -254,3 +254,4 @@
 - { colors: '#2e4f7e,#2C3849,#203251,#FFFFFF,#456494,#FFFFFF,#a6c056,#e9ae4c', name: 'Visual Composer' }
 - { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
 - { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify'}
+- { colors: '#A0FF1F,#00ED71,#F70087,#FFFFFF,#00ED71,#000000,#F70087,#F40256', name: 'Cube'}
