@@ -163,6 +163,7 @@
 - { colors: '#ffffff,#CCCCCC,#3F9DBC,#FFFFFF,#E46700,#777777,#3F9DBC,#BE3410', name: 'Naked Apartments' }
 - { colors: '#ffffff,#ffffff,#236ABE,#FFFFFF,#236ABE,#000000,#236ABE,#BE3410', name: 'StreetEasy' }
 - { colors: '#37B449,#2D9A48,#1B5E48,#FFFFFF,#2D9A48,#FFFFFF,#1B5E48,#EB4D5C', name: 'Trulia' }
+- { colors: '#cec9cc,#908a99,#4f43ae,#FFFFFF,#B5B6E4,#211a21,#4F43AE,#908A99', name: 'SNES' }
 - { colors: '#319b44,#0047b3,#db3236,#ffff00,#0047B3,#FFFFFF,#FFFF00,#db3236', name: 'N64' }
 - { colors: '#173f85,#0072CE,#0072ce,#FFFFFF,#0072CE,#FFFFFF,#FFDA00,#FFDA00', name: 'PlayStation' }
 - { colors: '#ffffff,#B1B3B3,#63666a,#FFFFFF,#b1b3b3,#000000,#0072ce,#0072ce', name: 'PlayStation Classic' }
