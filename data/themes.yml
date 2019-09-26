@@ -255,3 +255,5 @@
 - { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
 - { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify' }
 - { colors: '#100E0E,#C10800,#FFB400,#FFFFFF,#242121,#FFFFFF,#FF2B22,#FF2B22', name: 'RubyConf' }
+- { colors: '#000000,#8D9092,#7BAFD4,#FFFFFF,#13294B,#7BAFD4,#00EB42,#E60004', name: 'Carolina Tarheels' }
+
