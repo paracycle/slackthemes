@@ -42,6 +42,7 @@
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
 - { colors: '#282828,#551127,#79092b,#f5f5f5,#111111,#cccccc,#f04b6e,#b40f42', name: 'KKTV' }
 - { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C', name: 'Kayako Minimal' }
+- { colors: '#001E62,#737373,#C63527,#F1C400,#737373,#FFFFFF,#737373,#C63527', name: 'Keio University' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
 - { colors: '#FAFAFA,#FB503B,#FB503B,#FFFFFF,#F58F82,#1C1B1C,#FB503B,#424242', name: 'Laravel Light' }
 - { colors: '#0D2240,#00A8E1,#F7A800,#FFFFFF,#00A8E1,#FFFFFF,#00A8E1,#00A8E1', name: 'Milwaukee Dark' }
