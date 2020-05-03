@@ -253,6 +253,7 @@
 - { colors: '#222222,#333333,#9FC65D,#FFFFFF,#4A5664,#F4F4F4,#9FC65D,#ffbc3b', name: 'Inpsyde' }
 - { colors: '#2e4f7e,#2C3849,#203251,#FFFFFF,#456494,#FFFFFF,#a6c056,#e9ae4c', name: 'Visual Composer' }
 - { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
-- { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify'}
+- { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify' }
+- { colors: '#100E0E,#C10800,#FFB400,#FFFFFF,#242121,#FFFFFF,#FF2B22,#FF2B22', name: 'RubyConf' }
 - { colors: '#500000,#003C71,#FFFFFF,#332C2C,#5B6236,#FFFFFF,#FCE300,#E4002B', name: 'Texas AM University'}
 - { colors: '#00205B,#2C3849,#C1C6C8,#00205B,#4A5664,#FFFFFF,#D4AF37,#FFD700', name: 'Rice University'}
