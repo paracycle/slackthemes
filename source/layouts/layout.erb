@@ -11,6 +11,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
     <link rel="shortcut icon" href="/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png">
 
@@ -364,7 +365,17 @@
                         Copy and paste these values to your <strong>Slack</strong> settings
                         <a target="_blank" href="https://get.slack.help/hc/en-us/articles/205166337-Customizing-your-Slack-theme"><strong>Sidebar Theme</strong></a> section:
                     </p>
-                    <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="colors">
+                    <div class="sidebar_theme_custom_wrap">
+                        <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="colors">
+                        <span class="sidebar_theme_custom_addon">
+                            <button id="btn_copy" class="btn" type="button" data-clipboard-target="#sidebar_theme_custom">
+                                <img class="clippy" src="/images/clippy.svg" width="13" alt="">
+                            </button>
+                        </span>
+                        <span class="message_coppied_wrap">
+                            <span class="message_coppied">Copied!</span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
