@@ -1,4 +1,7 @@
 - { colors: '#4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C', name: 'Aubergine' }
+- { colors: '#0d1016,#0a0e14,#273747,#59C2FF,#273747,#B3B1AD,#e6b450,#ff8f40', name: 'Ayu Dark' }
+- { colors: '#ffffff,#fafafa,#d1e4f4,#399ee6,#d1e4f4,#575f66,#ff9940,#fa8d3e', name: 'Ayu Light'}
+- { colors: '#232834,#1F2430,#33415E,#73D0FF,#33415E,#CBCCC6,#FFCC66,#FFA759', name: 'Ayu Mirage'}
 - { colors: '#1d1d1d,#000000,#0ba8ca,#FFFFFF,#075566,#FFFFFF,#0ba8ca,#EB4D5C', name: 'B-MIND' }
 - { colors: '#181818,#585858,#7cafc2,#f8f8f8,#b8b8b8,#f8f8f8,#f7ca88,#ab4642', name: 'Base16 Default Dark' }
 - { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#B8B8B8,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
