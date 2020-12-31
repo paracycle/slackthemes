@@ -1,23 +1,11 @@
 language: ruby
 rvm:
-  - 2.2
+  - 2.7
 sudo: false
 cache: bundler
-before_install:
-  - mkdir travis-phantomjs
-  - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-  - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
-  - export PATH=$PWD/travis-phantomjs:$PATH
 script:
   - bundle exec middleman build
 after_success:
   - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then
-      git config --global user.name "${GIT_NAME}";
-      git config --global user.email "${GIT_EMAIL}";
-      git remote set-url origin "https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git";
-      git checkout master;
-      git add 'source/images/theme/*';
-      git commit -m 'Adding generated images [skip ci]';
-      git push origin master;
       bundle exec middleman deploy;
     fi
