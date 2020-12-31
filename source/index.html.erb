@@ -3,8 +3,55 @@ title: Slack Themes
 ---
 
 <% themes.each do |theme| %>
-<label class="radio theme_label theme_<%= theme.slug %>">
-    <img src="/images/theme/<%= theme.slug %>-<%= theme.digest %>.png" class="theme_thumb"><br>
-    <input name="sidebar_theme_rd" type="radio" value="<%= theme.slug %>" ng-model="slug"> <%= theme.name %>
-</label>
+  <label 
+    class="p-ia_builtin_theme_option__label p-prefs_modal__radio"
+    ng-class="slug == '<%= theme.slug %>' ? 'p-prefs_modal__radio--selected' : ''"
+    id="<%= escape_html(theme.slug) %>"
+    data-colors="<%= escape_html(theme.colors) %>"
+  >
+    <div class="p-prefs_modal__radio__image p-prefs_modal__radio__image--no_padding">
+      <div class="p-ia_builtin_theme_preview">
+        <div class="p-ia_builtin_theme_preview__nav" style="background-color: <%= rgb(theme.top_nav_bg) %>; box-shadow: <%= rgba(theme.text_color, 0.1) %> 0px 1px 0px 0px;">
+          <div class="p-ia_builtin_theme_preview__search" style="background: <%= mix(theme.top_nav_text, theme.top_nav_bg, 0.9) %>;">
+          </div>
+        </div>
+        <div class="p-ia_builtin_theme_preview__sidebar" style="background-color: <%= rgb(theme.column_bg) %>; color: <%= rgb(theme.text_color) %>;">
+          <div class="p-ia_builtin_theme_preview__sidebar__row">
+            <div class="p-ia_builtin_theme_preview__sidebar__placeholder" style="width: 47px;">
+            </div>
+          </div>
+          <div class="p-ia_builtin_theme_preview__sidebar__row">
+            <i class="c-icon p-ia_builtin_theme_preview__sidebar__icon c-icon--hash-small c-icon--inherit" type="hash-small" aria-hidden="true">
+            </i>
+            <div class="p-ia_builtin_theme_preview__sidebar__placeholder">
+            </div>
+          </div>
+          <div class="p-ia_builtin_theme_preview__sidebar__row" style="background-color: <%= rgb(theme.active_item) %>; color: rgb(255, 255, 255);">
+            <i class="c-icon p-ia_builtin_theme_preview__sidebar__icon c-icon--hash-small c-icon--inherit" type="hash-small" aria-hidden="true">
+            </i>
+            <div class="p-ia_builtin_theme_preview__sidebar__placeholder">
+            </div>
+          </div>
+          <div class="p-ia_builtin_theme_preview__sidebar__row">
+            <i class="c-icon p-ia_builtin_theme_preview__sidebar__icon p-ia_builtin_theme_preview__sidebar__presence c-icon--presence-online c-icon--inherit" type="presence-online" aria-hidden="true" style="color: <%= rgb(theme.active_presence) %>;">
+            </i>
+            <div class="p-ia_builtin_theme_preview__sidebar__placeholder">
+            </div>
+            <div class="p-ia_builtin_theme_preview__sidebar__badge" style="background-color: <%= rgb(theme.mention_badge) %>;">
+            </div>
+          </div>
+        </div>
+        <div class="p-ia_builtin_theme_preview__compose" style="background-color: <%= rgb(theme.text_color) %>; box-shadow: <%= rgb(theme.column_bg) %> 0px 0px 0px 4px;">
+        </div>
+      </div>
+    </div>
+    <div class="p-prefs_modal__radio__content">
+      <input name="builtin_theme" class="c-input_radio"
+      type="radio" value="<%= theme.slug %>" ng-model="slug" checked="">
+      <div class="p-prefs_modal__radio__text">
+        <div class="p-prefs_modal__radio__title"><%= theme.name %></div>
+        <div class="p-prefs_modal__radio__description"></div>
+      </div>
+    </div>
+  </label>
 <% end %>

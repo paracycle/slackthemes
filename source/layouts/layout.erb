@@ -1,373 +1,1974 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <meta name="superfish" content="nofish">
+  <meta name="author" content="Slack">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google" content="notranslate">
+  <title>Slack Themes</title>
+  <script>function isDesktop() { return /(Slack)/g.test(navigator.userAgent) } function getDesktopThemePreference() { return isDesktop() && "true" === window.localStorage.getItem("slack-client-theme-os-sync") ? window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" : null } function addDarkModeRuleToHead(e) { window.skFirstPaintStyle = document.createElement("style"), window.skFirstPaintStyle.type = "text/css", window.skFirstPaintStyle.appendChild(document.createTextNode(e)), document.head.appendChild(window.skFirstPaintStyle) } function applyTheme() { try { const e = getDesktopThemePreference(), t = null !== e ? e : window.localStorage.getItem("slack-client-theme"); if ("client" === document.documentElement.dataset.app) "dark" === t && addDarkModeRuleToHead("body { background-color: #1a1d21; }"); else if ("workflow-builder" === document.documentElement.dataset.app) "dark" === t && addDarkModeRuleToHead("body { background-color: #1a1d21; --sk_primary_background: 26, 29, 33; }"); else if ("docs" === document.documentElement.dataset.app) { const e = window.location.search.split("&"); let a = ""; for (let t = 0; t < e.length; t++) { const o = e[t].split("="); if (o && 2 === o.length && ("client_theme" === o[0] || "?client_theme" === o[0])) { a = o[1]; break } } "dark" !== t && "dark" !== a || addDarkModeRuleToHead("html { background-color: #1a1d21; --sk_primary_background: 26, 29, 33; }") } } catch (e) { } } window.skFirstPaintStyle = null, applyTheme()</script>
+  <link href="/fonts/slack-icons-v2-efcc328.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="/fonts/lato-regular-d9ce515.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="/fonts/lato-black-b64f5e4.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="/fonts/lato-bold-4b1dc11.woff2" rel="preload" as="font" crossorigin="anonymous">
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <%= stylesheet_link_tag "client-boot-styles.13a0cc6.css" %>
+  <%= stylesheet_link_tag "slack-kit-styles.a483c72.css" %>
+  <%= stylesheet_link_tag "helper-styles.1ca91f7.css" %>
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" integrity="sha512-bIUdhwNdPRVsQ7a9X93M400wJTBZTp+L5JZFtGb7VJ0da/mQMB7x3EWEdmR2qfcon0WErjJZdCIXBLmtvd0grw==" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js" integrity="sha512-rVtt5MF4HMTRn87EXr5i0njGxx7WLC4A+zvy0bt8tASmGoSRbxbYRRQx24VkZ11/tKjBkURlAfngExqhaD4YYw==" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/3.0.1/main/clipboard-polyfill.min.js" integrity="sha512-QpQT1tpnIGTHF8DZQmL2Xp9QhAYp7Kfl8yJwlyjoYNe1YDWgE1kd9NfnzPVo2GPDpHtLyixEKaSNL/CNe6ZzYg==" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ==" crossorigin="anonymous"></script>
+  <%= javascript_include_tag  "all" %>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+  <link rel="shortcut icon" href="/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png">
+</head>
 
-    <link rel="shortcut icon" href="/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png">
+<body tabindex="-1"
+  class="supports_custom_scrollbar p-client_desktop--ia-top-nav sk-client-theme--light"
+  ng-app="theme" ng-controller='ThemeController'>
+  <div aria-hidden="true" style="position:absolute" tabindex="1"></div>
+  <div class="p-client_container" aria-hidden="true">
+    <div class="p-client p-client--show-team-sidebar">
+      <div class="p-top_nav p-top_nav--dark" role="navigation" aria-label="History and search" data-qa="top-nav">
+        <div class="p-top_nav__sidebar"><button class="c-button-unstyled p-top_nav__button p-top_nav__history_menu"
+            aria-label="Show history" data-qa="top-nav-history-menu" delay="150" aria-haspopup="menu"
+            aria-expanded="false" data-sk="tooltip_parent" type="button"><i class="c-icon c-icon--clock-o"
+              type="clock-o" aria-hidden="true"></i></button></div>
+        <div class="p-top_nav__search__container"><button
+            class="c-button-unstyled p-top_nav__search p-top_nav__search--mac" aria-label="Search"
+            data-qa="top_nav_search" delay="150" data-sk="tooltip_parent" type="button"><i
+              class="c-icon p-top_nav__search__icon c-icon--search-medium c-icon--inherit" type="search-medium"
+              aria-hidden="true"></i> <span class="p-top_nav__search__text">Search Slack Themes</span></button></div>
+        <div class="p-top_nav__windows_controls_container margin_left_100" data-qa="top-nav-help-button" delay="150"
+          aria-haspopup="menu" aria-expanded="false" data-sk="tooltip_parent"><button
+            class="c-button-unstyled p-top_nav__button p-top_nav__help" aria-label="Help" type="button"><i
+              class="c-icon c-icon--question-circle" type="question-circle" aria-hidden="true"></i></button></div>
+        <div class="p-top_nav__right"><button
+            class="c-button-unstyled p-ia__nav__user__button p-top_nav__button p-top_nav__windows_controls_container"
+            data-qa="user-button" aria-label="User menu: ufuk" delay="150" aria-haspopup="menu" aria-expanded="true"
+            data-sk="tooltip_parent" type="button">
+            <div class="p-ia__nav__user"><span class="p-ia__nav__user__avatar c-avatar"
+                style="height: 28px; width: 28px;"><img src="/images/profile.jpg"
+                  class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                  style="height: 28px; width: 28px;"></span><i
+                class="c-icon p-ia__nav__user__presence--stroke c-presence c-presence--active c-icon--presence-online"
+                type="presence-online" title="Active" aria-hidden="true" data-qa="presence_indicator"
+                data-qa-presence-self="true" data-qa-presence-active="true" data-qa-presence-dnd="false"></i><i
+                class="c-icon p-ia__nav__user__presence c-presence c-presence--active c-icon--presence-online"
+                type="presence-online" title="Active" aria-hidden="true" data-qa="presence_indicator"
+                data-qa-presence-self="true" data-qa-presence-active="true" data-qa-presence-dnd="false"></i></div>
+          </button></div>
+      </div>
+      <style class="p-team_sidebar__theme">
+        .p-team_sidebar,
+        .p-team_sidebar--frameless::before {
+          background: {{ column_bg }};
+        }
+        .p-client_desktop--ia-top-nav .p-team_sidebar {
+          box-shadow: inset -1px 0 0 0 {{ mix(text_color, column_bg, 0.1) }};
+        }
 
-    <link href="/stylesheets/rollup-client_core.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/rollup-client_primary.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/rollup-client_general.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/rollup-client_secondary.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/libs/lato-1.css" rel="stylesheet" type="text/css">
+        .p-team_sidebar__item {
+          color: {{ text_color }};
+        }
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
+        .p-team_sidebar__add_button,
+        .p-team_sidebar__add_button:hover,
+        .p-team_sidebar__add_button:focus,
+        .p-team_sidebar__add_button:active {
+          color: {{ add(text_color, "#323232") }};
+        }
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1,
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1:hover,
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1:focus,
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1:active {
+          color: {{ mix(text_color, column_bg, 0.8) }} !important;
+        }
 
-  <body class="<%= page_classes %>">
-    <%= google_analytics_universal_tag %>
+        .p-team_sidebar__add_button:not(.p-team_sidebar__add_button--iap1) {
+          background: {{ column_bg }};
+          border-color: {{ alpha(text_color, 0.3) }};
+        }
 
-    <div ng-app="theme" ng-controller='ThemeController'>
-        <style type="text/css" id="sidebar_theme_css">
-            /* Column Background */
-            #col_channels_bg,
-            #col_channels {
-                background: {{ column_bg }};
-            }
-            #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner {
-                border-color: {{ column_bg }};
-            }
+        .p-team_sidebar__add_button:not(.p-team_sidebar__add_button--iap1):hover,
+        .p-team_sidebar__add_button:not(.p-team_sidebar__add_button--iap1):focus,
+        .p-team_sidebar__add_button:not(.p-team_sidebar__add_button--iap1):active {
+          border-color: {{ text_color }};
+          background: {{ sub(column_bg, "#3C3C3C") }};
+          box-shadow: 0 0 0 3px {{ column_bg }},
+          0 0 0 6px {{ alpha(text_color, 0.3) }};
+        }
 
-            /* Menu Background */
-            #team_menu,
-            #user_menu {
-                background: {{ menu_bg }};
-                color: {{ text_color }};
-                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-            }
-            #team_menu {
-                border-bottom-color: {{ menu_bg }};
-            }
-            #user_menu {
-                border-top-color: {{ menu_bg }};
-            }
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1:hover,
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1:focus,
+        .p-team_sidebar__add_button.p-team_sidebar__add_button--iap1:active {
+          background: {{ alpha(text_color, 0.1) }};
+        }
 
-            /* Active Item */
-            #col_channels ul li.channel.active a.channel_name,
-            #col_channels ul li.group.active a.group_name,
-            #col_channels ul li.member.active a.im_name {
-                background: {{ active_item }};
-                opacity: 1;
-                color: {{ active_item_text }} !important;
-            }
-            #col_channels.channels_list_holder ul li.channel.active .unread_highlight, #col_channels.channels_list_holder ul li.member.active .unread_highlight, #col_channels.channels_list_holder ul li.group.active .unread_highlight {
-                color: {{ active_item }};
-            }
+        .p-team_sidebar__unread_dot,
+        .p-team_sidebar__mentions_badge {
+          border-color: {{ column_bg }};
+        }
 
-            /* Hovered Item */
-            .channels_list_holder ul li a:hover,
-            #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_bar {
-                background: {{ hover_item }};
-            }
+        .p-team_sidebar__mentions_badge {
+          background: {{ mention_badge }};
+        }
 
-            /* Text Color */
-            .channels_list_holder ul li a,
-            .channels_list_holder h2,
-            .list_more,
-            #team_menu i,
-            #user_menu i,
-            .channels_list_holder ul li.channel.active a.channel_name .prefix,
-            .channels_list_holder ul li.group.active a.group_name .prefix,
-            #current_user_name,
-            .channels_list_holder ul li.unread .prefix,
-            .channels_list_holder ul li.member .im_close,
-            .channels_list_holder ul li.group .group_close {
-                color: {{ text_color }} !important;
-                opacity: 0.6;
-            }
-            .channels_list_holder ul li.channel.active a.channel_name .prefix,
-            .channels_list_holder ul li.group.active a.group_name .prefix {
-                color: {{ active_item_text }} !important;
-            }
-            .list_more:hover {
-                color: {{ text_color }} !important;
-                border-bottom-color: {{ text_color }};
-            }
+        .p-team_sidebar__unread_dot {
+          background: {{ text_color }}
+        }
 
-            .channels_list_holder ul li.unread a,
-            #current_user_name,
-            .channels_list_holder ul li.member .im_close,
-            .channels_list_holder ul li.group .group_close {
-                opacity: 1;
-            }
+        .p-team_sidebar__item.c-button--focus-visible:focus,
+        .p-team_sidebar__add_button:not(.p-team_sidebar__add_button--iap1).c-link--focus-visible:focus {
+          box-shadow: 0 0 0 3px {{ column_bg }}, 0 0 0 4px {{ text_color }}, 0 0 0 6px {{ alpha(text_color, 0.3) }};
+        }
 
-            #monkey_scroll_wrapper_for_channels_scroller .monkey_scroll_handle_inner {
-                background: {{ text_color }};
-                opacity: 0.7;
-            }
+        .c-button--focus-visible:focus .p-team_sidebar__icon--active {
+          box-shadow: none;
+        }
 
-            /* Presence */
-            #im-list .presence.active i.presence_icon,
-            #starred-list .presence.active i.presence_icon,
-            .slackbot_icon {
-                color: {{ active_presence }};
-                opacity: 1;
-            }
-            #im-list li.member.active .presence.active i.presence_icon,
-            #starred-list li.member.active .presence.active i.presence_icon,
-            #im-list li.member.active .slackbot_icon,
-            #starred-list li.member.active .slackbot_icon {
-                color: {{ active_item_text }} !important;
-            }
+        .p-team_sidebar__signed_out_badge__stroke {
+          -webkit-text-stroke: 6px {{ column_bg }};
+          color: {{ column_bg }};
+        }
 
-            /* Override for Hoth Theme presence dot on selected item. Fix Bug #7154 */
-            .sidebar_theme_hoth_theme #im-list li.member.active .presence.active i.presence_icon,
-            .sidebar_theme_hoth_theme #starred-list li.member.active .presence.active i.presence_icon,
-            .sidebar_theme_hoth_theme #im-list li.member.active .slackbot_icon,
-            .sidebar_theme_hoth_theme #starred-list li.member.active .slackbot_icon {
-                color: {{ active_presence }} !important;
-            }
+        .p-team_sidebar__icon:hover {
+          box-shadow: 0 0 0 3px {{ column_bg }},
+          0 0 0 6px {{ alpha(text_color, 0.3) }};
+        }
 
-            #im-list li.member.active .presence.away i.presence_icon,
-            #starred-list li.member.active .presence.away i.presence_icon {
-                color: {{ active_item_text }} !important;
-                opacity: 0.3;
-            }
-            #im-list .presence.away,
-            #starred-list .presence.away {
-                color: {{ text_color }};
-                opacity: 0.3;
-            }
+        .p-team_sidebar__icon--active,
+        .p-team_sidebar__icon--active:hover {
+          box-shadow: 0 0 0 3px {{ column_bg }},
+          0 0 0 6px {{ text_color }};
+        }
 
-            /* Badge + Mentions bar */
-            .channels_list_holder .unread_highlight,
-            #channel_scroll_up.unseen_have_mentions,
-            #channel_scroll_down.unseen_have_mentions,
-            #omnibox .omnibox_item .unread_highlight_cnt {
-                background: {{ mention_badge }};
-            }
-
-            /* No text shadows */
-            #col_channels a,
-            #team_menu,
-            #user_menu,
-            #loading_team_menu_bg,
-            #loading_user_menu_bg {
-                text-shadow: none !important;
-            }
-        </style>
-        <a href="https://github.com/paracycle/slackthemes"><img style="position: absolute; z-index: 1000; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-
-        <div id="client-ui" class="container-fluid sidebar_theme_hoth_theme">
-            <div id="header" class="">
-                <div id="channel_header">
-
-                    <div id="team_menu">
-                        <span id="team_name" class="overflow_ellipsis right_padding">Slack Themes</span>
-                        <i class="fa fa-chevron-down"></i>
-                    </div>
-
-                    <h2 id="active_channel_name" class="overflow_ellipsis" data-original-title="" title="">
-                        <span class="name ">
-                            <span class="prefix">#</span>
-                            general
-                        </span>
-                        <i id="channel_actions" class="fa fa-chevron-down"></i>
-                    </h2>
-                </div>
+        
+        .p-client--show-team-sidebar {
+          grid-template-columns: 48px auto;
+        }
+        .p-team_sidebar--frameless:before {
+          width: 48px;
+        }
+      </style>
+      <div role="navigation" aria-label="Workspaces" data-qa="team_sidebar_scroll_container" class="p-client__team_sidebar p-team_sidebar p-team_sidebar--classic_nav">
+        <div role="tablist" aria-orientation="vertical" aria-label="Workspaces" class="p-team_sidebar__teams">
+          <button class="c-button-unstyled p-team_sidebar__item p-team_sidebar__item--mac" tabindex="0" data-qa="team_sidebar_item" aria-label="Slack Themes" role="tab" aria-selected="false" delay="150" data-sk="tooltip_parent" type="button">
+            <div class="p-team_sidebar__icon">
+              <i class="c-team_icon p-team_sidebar__image" aria-hidden="true" style="height: 32px; width: 32px; min-width: 32px; font-size: 18px; line-height: 32px; white-space: nowrap; background-image: url(&quot;/images/favicon-32.png&quot;);"></i>
             </div>
-
-            <div id="footer" style="bottom: 0px;">
-                <div id="notification_bar" class="wide really_wide">
-                    <div id="notification_text" class="overflow_ellipsis">
-                        Not affiliated with <a href="https://slack.com/">Slack</a> in any way or form; but it is a great tool, use it.
-                    </div>
-                    <div id="special_formatting_text" class="special_formatting_tips showing">
-                        Made with ♥ in Istanbul by <a href="https://twitter.com/paracycle">Ufuk Kayserilioglu</a>
-                    </div>
-                </div>
+            <div class="p-team_sidebar__unread_dot"></div>
+            <div class="p-team_sidebar__shortcut_hint">1</div>
+          </button>
+          <button class="c-button-unstyled p-team_sidebar__item p-team_sidebar__item--mac" tabindex="0" data-qa="team_sidebar_item" aria-label="Pied Piper" role="tab" aria-selected="false" delay="150" data-sk="tooltip_parent" type="button">
+            <div class="p-team_sidebar__icon">
+              <i class="c-team_icon p-team_sidebar__image" aria-hidden="true" style="height: 32px; width: 32px; min-width: 32px; font-size: 18px; line-height: 32px; white-space: nowrap; background-image: url(&quot;/images/pied-piper.jpg&quot;);"></i>
             </div>
+            <div class="p-team_sidebar__mentions_badge"><span>1</span></div>
+            <div class="p-team_sidebar__shortcut_hint">2</div>
+          </button>
+          <button class="c-button-unstyled p-team_sidebar__item p-team_sidebar__item--mac" tabindex="0" data-qa="team_sidebar_item" aria-label="Ruby Türkiye" role="tab" aria-selected="false" delay="150" data-sk="tooltip_parent" type="button">
+            <div class="p-team_sidebar__icon">
+              <i class="c-team_icon p-team_sidebar__image" aria-hidden="true" style="height: 32px; width: 32px; min-width: 32px; font-size: 18px; line-height: 32px; white-space: nowrap; background-image: url(&quot;/images/rubytr.png&quot;);"></i>
+            </div>
+            <div class="p-team_sidebar__shortcut_hint">3</div>
+          </button>
+        </div>
+        <button class="c-button-unstyled c-icon_button c-icon_button--light c-icon_button--size_medium p-team_sidebar__add_button p-team_sidebar__add_button--iap1" aria-label="Add workspaces" delay="150" aria-haspopup="menu" aria-expanded="false" data-sk="tooltip_parent" type="button">
+          <i class="c-icon c-icon--plus-thick" type="plus-thick" aria-hidden="true"></i>
+        </button>
+      </div>
+      <style class="p-channel_sidebar__theme--default_theme">
+        .p-channel_sidebar {
+          background: {{ column_bg }};
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
 
-            <div id="client_body">
-                <div id="col_messages">
-                    <div class="row-fluid">
-                        <div id="col_channels" class="show_presence channels_list_holder no_just_unreads">
-                            <div id="monkey_scroll_wrapper_for_channels_scroller" class="monkey_scroll_wrapper ">
-                                <div class="monkey_scroll_hider" style="width: 203px;">
-                                    <div id="channels_scroller" class="monkey_scroller" style="height: 813px; visibility: visible; width: 220px;">
-                                        <div id="channels" class="section_holder">
-                                            <h2 id="channels_header" class="hoverable overflow_ellipsis">Channels</h2>
-                                            <ul id="channel-list">
-                                                <li class="channel active ">
-                                                    <a class="channel_name">
-                                                        <span class="unread_highlight">8</span>
-                                                        <span class="overflow_ellipsis">
-                                                            <span class="prefix">#</span> general
-                                                        </span>
-                                                    </a>
-                                                </li>
+        /* Cover up "p-channel_sidebar__icon" when the close button is focused */
+        .p-channel_sidebar__close:focus {
+          background: {{ column_bg }};
+        }
+        .p-channel_sidebar__channel--selected + .p-channel_sidebar__close:focus {
+          background: {{ active_item }};
+        }
 
-                                                <li class="channel unread">
-                                                    <a class="channel_name">
-                                                        <span class="unread_highlight">3</span>
-                                                        <span class="overflow_ellipsis">
-                                                            <span class="prefix">#</span> random
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <a class="channel-list-create list_more">Create a channel...</a>
-                                            </ul>
-                                            <div class="clear_both"></div>
-                                        </div>
+        .p-channel_sidebar__channel,
+        .p-channel_sidebar__link,
+        .p-channel_sidebar__channel:link,
+        .p-channel_sidebar__link:link,
+        .p-channel_sidebar__channel:visited,
+        .p-channel_sidebar__link:visited,
+        .p-channel_sidebar__channel:hover,
+        .p-channel_sidebar__channel--context,
+        .p-channel_sidebar__link:hover,
+        .p-channel_sidebar__section_placeholder {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+        .p-channel_sidebar__section_heading--selected,
+        .p-channel_sidebar__section_heading--selected:hover,
+        .p-channel_sidebar__channel--selected,
+        .p-channel_sidebar__link--selected,
+        .p-channel_sidebar__channel--selected:link,
+        .p-channel_sidebar__link--selected:link,
+        .p-channel_sidebar__channel--selected:visited,
+        .p-channel_sidebar__link--selected:visited,
+        .p-channel_sidebar__channel--selected:hover,
+        .p-channel_sidebar__link--selected:hover,
+        .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
+        .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
+          color: {{ active_item_text }};
+        }
 
-                                        <div id="direct_messages" class="section_holder">
-                                            <h2 id="direct_messages_header" class="hoverable overflow_ellipsis">Direct Messages</h2>
-                                            <ul id="im-list">
-                                                <li class="member_USLACKBOT member  cursor_pointer">
-                                                    <a class="im_name nuc color_USLACKBOT" data-member-id="USLACKBOT">
-                                                        <i class="fa fa-times-circle im_close"></i>
-                                                        <span class="unread_highlight_USLACKBOT unread_highlight hidden">0</span>
-                                                        <span class="overflow_ellipsis">
-                                                                <i class="fa fa-heart slackbot_icon"></i>
-                                                                slackbot
-                                                        </span>
-                                                    </a>
-                                                </li>
+        .p-channel_sidebar__channel:hover,
+        .p-channel_sidebar__channel--context,
+        .p-channel_sidebar__link:hover,
+        .p-channel_sidebar__channel:hover .p-channel_sidebar__user_avatar_presence_bg,
+        .p-channel_sidebar__close_container:hover {
+          background: {{ hover_item }};
+        }
 
-                                                <li class="member away  cursor_pointer">
-                                                    <a class="im_name nuc">
-                                                        <i class="fa fa-times-circle im_close"></i>
-                                                        <span class="unread_highlight hidden">0</span>
-                                                        <span class="overflow_ellipsis">
-                                                                <span class="presence away" title="away"><i class="fa fa-circle presence_icon"></i></span>
-                                                                jack
-                                                        </span>
-                                                    </a>
-                                                </li>
+        .p-channel_sidebar__link--page--disabled:hover, .p-channel_sidebar__link--all-threads--disabled:hover {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+          background: {{ column_bg }};
+        }
 
-                                                <li class="member cursor_pointer unread">
-                                                    <a class="im_name nuc">
-                                                        <i class="fa fa-times-circle im_close"></i>
-                                                        <span class="unread_highlight">10</span>
-                                                        <span class="overflow_ellipsis">
-                                                                <span class="presence active" title="active"><i class="fa fa-circle presence_icon"></i></span>
-                                                                jane
-                                                        </span>
-                                                    </a>
-                                                </li>
+        .p-channel_sidebar__channel:hover .p-channel_sidebar__presence_icon--on-avatar-border {
+          -webkit-text-stroke-color: {{ hover_item }};
+        }
+        .p-channel_sidebar__channel:hover .p-channel_sidebar__mpim_counter,
+        .p-channel_sidebar__channel:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+        .p-channel_sidebar__channel:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon {
+          box-shadow: 0px 0px 0px 2px {{ hover_item }};
+        }
 
-                                                <li class="member cursor_pointer">
-                                                    <a class="im_name nuc">
-                                                        <i class="fa fa-times-circle im_close"></i>
-                                                        <span class="unread_highlight hidden">0</span>
-                                                        <span class="overflow_ellipsis">
-                                                                <span class="presence active" title="active"><i class="fa fa-circle presence_icon"></i></span>
-                                                                hanna
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="clear_both"></div>
-                                            <a id="im_list_more" class="list_more hidden"></a>
-                                        </div>
+        .p-channel_sidebar__header {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
 
-                                        <div id="groups" class="section_holder">
-                                            <h2 id="groups_header" class="hoverable overflow_ellipsis">Private Groups</h2>
-                                            <ul id="group-list"></ul>
-                                            <div class="clear_both"></div>
-                                            <a id="group_list_more" class="list_more">New private group...</a>
-                                        </div>
+        /* Override presence icons */
+        .p-channel_sidebar__presence_icon.c-presence--active,
+        .p-channel_sidebar__channel_icon_prefix--im-slackbot {
+          color: {{ active_presence }};
+        }
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon.c-presence,
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix--im-slackbot {
+          color: {{ active_item_text }};
+        }
+        .p-channel_sidebar__presence_icon.c-presence--away {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
 
-                                    </div>
-                                </div>
+        .p-channel_sidebar__section_heading--selected,
+        .p-channel_sidebar__channel--selected,
+        .p-channel_sidebar__channel--selected:hover,
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__user_avatar_presence_bg,
+        .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__user_avatar_presence_bg,
+        .p-channel_sidebar__link--selected,
+        .p-channel_sidebar__link--selected:hover {
+          background: {{ active_item }};
+        }
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon--on-avatar-border,
+        .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__presence_icon--on-avatar-border {
+          -webkit-text-stroke-color: {{ active_item }};
+        }
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter,
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon,
+        .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__mpim_counter,
+        .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+        .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon {
+          box-shadow: 0px 0px 0px 2px {{ active_item }};
+        }
+
+        .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__channel_icon_prefix--comfy:not(.c-presence) {
+          color: {{ text_color }};
+        }
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix--comfy {
+          color: {{ active_item_text }};
+        }
+        .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy.c-icon--channel-pane-hash::before {
+          content: "\E150";
+        }
+        .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy.c-icon--lock-o::before {
+          content: "\E50A";
+        }
+        .p-channel_sidebar__link--add-more-items.p-channel_sidebar__channel--unread .p-channel_sidebar__channel_icon_prefix--comfy {
+          background: {{ active_item }};
+        }
+
+        .p-channel_sidebar__section-heading--browse:hover,
+        .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix,
+        .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__channel_icon_prefix,
+        .p-channel_sidebar__link--selected:before,
+        .p-channel_sidebar__link--selected:before,
+        .p-channel_sidebar__channel--selected:after,
+        .p-channel_sidebar__channel--selected:hover:after,
+        .p-channel_sidebar__link--selected:after,
+        .p-channel_sidebar__link--selected:after {
+          color: {{ active_item_text }};
+        }
+
+        .p-channel_sidebar__link--selected.p-channel_sidebar__link--page--disabled,
+        .p-channel_sidebar__link--selected.p-channel_sidebar__link--all-threads--disabled {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+
+        .p-channel_sidebar__badge:not(.c-mention_badge--transparent),
+        .p-channel_sidebar__banner--mentions {
+          background: {{ mention_badge }};
+        }
+
+        .p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
+        .p-channel_sidebar .c-scrollbar__bar {
+          background: {{ alpha(text_color, 0.45) }};
+        }
+
+        .p-channel_sidebar__organize_selection_action.c-link--focus-visible:focus,
+        .p-channel_sidebar__organize_action.c-button--focus-visible:focus,
+        .p-channel_sidebar__jumper.c-button--focus-visible:focus,
+        .p-channel_sidebar__history_button.c-button--focus-visible:focus,
+        .p-channel_sidebar__section_heading_label--clickable.c-button--focus-visible:focus,
+        .p-channel_sidebar__section_heading_plus.c-button--focus-visible:focus,
+        .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name,
+        .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,
+        .p-channel_sidebar__link.c-link--focus-visible:focus .p-channel_sidebar__name,
+        .p-channel_sidebar__close.c-button--focus-visible:focus {
+          box-shadow: 0 0 0 1px {{ text_color }}, 0 0 0 5px {{ alpha(text_color, 0.3) }};
+        }
+
+        /** `opacity: 1` color overrides */
+        .p-channel_sidebar__organize_selection_action.c-link--focus-visible:focus,
+        .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+        .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
+        .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+        .p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+        .p-channel_sidebar__link--add-apps:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+        .p-channel_sidebar__section_heading:not(.p-channel_sidebar__section_heading--selected) .p-channel_sidebar__section_heading_label--unreads,
+        .p-channel_sidebar__quickswitcher:hover,
+        .p-channel_sidebar__section_placeholder--has_cta:hover,
+        .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer:hover {
+          color: {{ text_color }};
+        }
+
+        .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer--disabled:hover {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+
+
+        .p-channel_sidebar__link .p-channel_sidebar__channel_icon_prefix--comfy,
+        .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter .p-channel_sidebar__mpim_counter_inner {
+          background: {{ alpha(text_color, 0.1) }};
+        }
+        .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter {
+          background: {{ column_bg }};
+        }
+        .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim.p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter {
+          background: {{ active_item }};
+        }
+
+        .p-channel_sidebar__user_avatar_presence_bg {
+          background: {{ column_bg }};
+        }
+        .p-channel_sidebar__presence_icon--on-avatar-border {
+          -webkit-text-stroke-color: {{ column_bg }};
+        }
+        .p-channel_sidebar__mpim_counter,
+        .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+        .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon {
+          box-shadow: 0px 0px 0px 2px {{ column_bg }};
+        }
+
+        /** Navigation Bar **/
+        .p-channel_sidebar__jumper {
+          background: {{ alpha(text_color, 0.15) }};
+        }
+        .p-channel_sidebar__jumper:hover {
+          background: {{ alpha(text_color, 0.2) }};
+        }
+        .p-channel_sidebar__history_button {
+          background: {{ alpha(text_color, 0.15) }};
+        }
+        .p-channel_sidebar__history_button:hover {
+          background: {{ alpha(text_color, 0.2) }};
+        }
+        .p-channel_sidebar__history_button--disabled:hover {
+          background: {{ alpha(text_color, 0.15) }};
+        }
+
+        /** Compose Button **/
+        .p-channel_sidebar__compose_button,
+        .p-ia__big_search_compose {
+          background: {{ top_nav_bg }};
+          color: {{ top_nav_text }};
+        }
+        .p-channel_sidebar__compose_button--disabled {
+          background: {{ mix(text_color, column_bg, 0.75) }};
+        }
+
+        .p-channel_sidebar__compose_button--iap1 {
+          background-color: {{ text_color }};
+          color: {{ column_bg }};
+          fill: {{ column_bg }};
+        }
+        .p-channel_sidebar__compose_button--iap1:active {
+          background-color: {{ mix(text_color, column_bg, 0.88) }};
+        }
+
+        /** Classic Nav **/
+        .p-classic_nav__team_header {
+          background: {{ column_bg }};
+          color: {{ text_color }};
+        }
+        .p-classic_nav__team_header:hover {
+          background: {{ top_nav_bg }};
+        }
+        .p-classic_nav__team_header__user__presence.c-presence--active {
+          color: {{ active_presence }};
+        }
+        .p-classic_nav__team_header__user__presence.c-presence--away {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+        .p-classic_nav__team_header .c-link--focus-visible:focus,
+        .p-classic_nav__team_header .c-button--focus-visible:focus,
+        .p-channel_sidebar__static_list__item.c-virtual_list__item--focus:focus:after,
+        div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after,
+        .p-pages_list__list_item--focus-visible:after,
+        .p-channel_sidebar__section_heading.p-channel_sidebar__section-heading--pages-drawer.c-button--focus-visible:focus:after {
+          box-shadow: 0 0 0 1px {{ text_color }}, 0 0 0 5px {{ alpha(text_color, 0.3) }};
+        }
+
+        /** IA **/
+        .p-ia__sidebar_header .c-button--focus-visible:focus {
+          box-shadow: 0 0 0 1px {{ text_color }}, 0 0 0 5px {{ alpha(text_color, 0.3) }};
+        }
+
+        /** Allow dragged channels and channel sections to have a background **/
+        .p-drag_layer__sidebar_channels,
+        .p-drag_layer__sidebar_section_heading {
+          background: {{ column_bg }};
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+
+        .p-drag_layer__sidebar_channels--multiple {
+          background: {{ active_item }};
+        }
+
+        /** Allow dragged section heading to have a background **/
+        .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading,
+        .p-drag_layer .p-channel_sidebar__section_heading {
+          background: {{ column_bg }};
+        }
+
+        /** Drag and drop indicators **/
+        .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides.p-channel_sidebar__drop_target_indicator--channel_below {
+          box-shadow: inset 0 0 0 4px {{ mix(text_color, column_bg, 0.3) }},
+                      inset 0 0 0 5px {{ text_color }};
+        }
+
+        .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_sides {
+          box-shadow: inset -4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset 4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset -5px 0 0 0 {{ text_color }},
+                      inset 5px 0 0 0 {{ text_color }};
+        }
+
+        .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
+          box-shadow: inset -4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset 4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset 0 4px 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset -5px 0 0 0 {{ text_color }},
+                      inset 5px 0 0 0 {{ text_color }},
+                      inset 0 5px 0 0 {{ text_color }};
+        }
+
+        .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_below.p-channel_sidebar__drop_target_indicator--channel_sides {
+          box-shadow: inset -4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset 4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset 0 -4px 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                      inset -5px 0 0 0 {{ text_color }},
+                      inset 5px 0 0 0 {{ text_color }},
+                      inset 0 -5px 0 0 {{ text_color }};
+        }
+
+        .p-channel_sidebar--channel_section_dragging .p-channel_sidebar__drop_target_indicator--channel_section_above {
+          box-shadow: inset -16px 0 0 0 {{ column_bg }},
+                      inset 16px 0 0 0 {{ column_bg }},
+                      inset 0 2px 0 0 {{ text_color }};
+        }
+
+        .p-channel_sidebar--channel_section_dragging .p-channel_sidebar__drop_target_indicator--channel_section_below {
+          box-shadow: inset -16px 0 0 0 {{ column_bg }},
+                      inset 16px 0 0 0 {{ column_bg }},
+                      inset 0 -2px 0 0 {{ text_color }};
+        }
+
+        /** Edit mode (formerly organization mode) **/
+        .p-ia__sidebar_header__mode, p-ia__sidebar_header__mode:hover {
+          border-bottom: 1px solid {{ mix(text_color, column_bg, 0.1) }};
+        }
+
+        .p-ia__sidebar_header__mode__info_button,
+        .p-ia__sidebar_header__mode__find_button {
+          border: 1px solid {{ alpha(text_color, 0.2) }};
+        }
+
+        .p-ia__sidebar_header__mode__info_button:hover,
+        .p-ia__sidebar_header__mode__find_button:hover {
+          background-color: {{ alpha(text_color, 0.05) }};
+          border: 1px solid {{ alpha(text_color, 0.3) }};
+        }
+
+        .p-ia__sidebar_header__mode__filter_input,
+        .p-ia__sidebar_header__mode__filter_input:hover
+        .p-ia__sidebar_header__mode__filter_input:active
+        .p-ia__sidebar_header__mode__filter_input:focus {
+          border: 1px solid {{ alpha(text_color, 0.2) }};
+        }
+
+        .p-ia__sidebar_header__mode__filter_input.c-filter_input.c-filter_input--active, .p-ia__sidebar_header__mode__filter_input.c-filter_input.c-filter_input:hover {
+          box-shadow: none;
+          border: 1px solid {{ alpha(text_color, 0.3) }};
+        }
+
+        .p-ia__sidebar_header__mode__filter_input.c-filter_input .c-icon, .p-ia__sidebar_header__mode__filter_input .c-filter_input__reset_button {
+          color: {{ alpha(text_color, 0.85) }};
+        }
+
+        .p-ia__sidebar_header__mode__filter_input .c-filter_input__input[type="text"] {
+          color: {{ text_color }};
+        }
+
+        .p-ia__sidebar_header__mode__filter_input .c-filter_input__input::placeholder {
+          color: {{ alpha(text_color, 0.6) }};
+        }
+
+        .p-channel_sidebar__organize_mode_menu {
+          border-color: {{ alpha(text_color, 0.11) }};
+        }
+        .p-channel_sidebar__organize_action {
+          color: {{ text_color }};
+          background-color: {{ alpha(text_color, 0.11) }};
+        }
+
+        .p-channel_sidebar__organize_action:hover,
+        .p-channel_sidebar__organize_action:active,
+        .p-channel_sidebar__organize_action:focus {
+          background-color: {{ alpha(text_color, 0.2) }};
+        }
+        .p-channel_sidebar__organize_action--primary {
+          color: {{ column_bg }};
+          background-color: {{ text_color }};
+
+        }
+        .p-channel_sidebar__organize_action--primary:hover,
+        .p-channel_sidebar__organize_action--primary:active,
+        .p-channel_sidebar__organize_action--primary:focus {
+          background-color: {{ alpha(text_color, 0.89) }};
+        }
+
+        /** IA experiment (feature_iap1) **/
+        .p-ia__sidebar_header {
+          background: {{ column_bg }};
+          color: {{ text_color }};
+        }
+        .p-ia__omniswitcher_button {
+          color: {{ text_color }};
+          border: 1px solid {{ mix(text_color, column_bg, 0.12) }};
+        }
+        .p-ia__omniswitcher_button:hover {
+          border-color: {{ mix(text_color, column_bg, 0.2) }};
+        }
+        .p-ia__sidebar_header__mode {
+          background-color: {{ mix(text_color, column_bg, 0.07) }};
+        }
+        .p-ia__sidebar_header .p-ia__sidebar_header__mode {
+          background: {{ column_bg }};
+        }
+
+        .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
+        .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
+          background-color: initial;
+          border-color: {{ mix(text_color, column_bg, 0.1) }};
+        }
+        .p-ia__sidebar_header--top-nav:not(.p-ia__sidebar_header--creator-setup):hover {
+          background-color: {{ hover_item }};
+        }
+        .p-ia__sidebar_header__user__presence.c-presence--active {
+          color: {{ active_presence }};
+        }
+        .p-ia__sidebar_header__user__presence.c-presence--away {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+        .p-channel_sidebar--iap1 .p-channel_sidebar__banner--unreads {
+          background: {{ mix(text_color, column_bg, 0.9) }};
+          color: {{ column_bg }};
+        }
+        .p-channel_sidebar--iap1.p-channel_sidebar--top_banner_showing .p-channel_sidebar__list:before {
+          background: linear-gradient(to bottom, {{ column_bg }}, {{ alpha(column_bg, 0) }});
+        }
+        .p-channel_sidebar--iap1.p-channel_sidebar--bottom_banner_showing .p-channel_sidebar__list:after {
+          background: linear-gradient(to top, {{ column_bg }}, {{ alpha(column_bg, 0) }});
+        }
+        .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_plus:hover,
+        .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_ellipsis:hover,
+        .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_expand_container--show_more_feature:hover {
+          background: {{ alpha(text_color, 0.1) }};
+        }
+        .p-channel_sidebar--iap1 .p-channel_sidebar__divider {
+          border-bottom: 1px solid {{ mix(text_color, column_bg, 0.1) }};
+        }
+        .p-workspace__sidebar:after {
+          background: {{ alpha(text_color, 0.1) }};
+        }
+
+        .p-top_nav .p-ia__nav__user__presence {
+          color: {{ active_presence }};
+        }
+        .p-top_nav .p-ia__nav__user__presence.c-presence--away {
+          color: {{ top_nav_text }};
+        }
+        .p-top_nav .p-ia__nav__user__presence--stroke {
+          -webkit-text-stroke-color: {{ top_nav_bg }};
+        }
+        .p-top_nav .p-ia__sidebar_header__user__status {
+          background: {{ mix(top_nav_bg, top_nav_text, 0.9) }};
+        }
+        .p-top_nav .p-ia__sidebar_header__user__status:hover {
+          background: {{ mix(top_nav_bg, top_nav_text, 0.77) }};
+        }
+
+        .p-top_nav {
+          background: {{ top_nav_bg }};
+          color: {{ top_nav_text }};
+          box-shadow: 0 1px 0 0 {{ alpha(text_color, 0.1) }};
+        }
+        .p-top_nav__button,
+        .p-top_nav__search,
+        .p-top_nav__sidebar .p-channel_sidebar__history_button,
+        .p-top_nav__sidebar .p-channel_sidebar__history_button--disabled:hover,
+        .p-top_nav__search__clear {
+          color: {{ top_nav_text }};
+        }
+        .p-top_nav__windows_icon {
+          fill: {{ top_nav_text }};
+        }
+        .p-top_nav__search__clear:hover {
+          color: {{ mix(top_nav_bg, top_nav_text, 0.2) }};
+        }
+        .p-top_nav__button:hover,
+        .p-setup_escape_hatch:hover,
+        .p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
+          background: {{ mix(top_nav_bg, top_nav_text, 0.9) }};
+        }
+        .p-top_nav__sidebar .p-channel_sidebar__history_button--disabled:hover {
+          background: none;
+        }
+        .p-top_nav__button.c-button--focus-visible:focus,
+        .p-top_nav__search.c-button--focus-visible:focus,
+        .p-top_nav__sidebar .p-channel_sidebar__history_button.c-button--focus-visible:focus {
+          box-shadow: 0 0 0 1px {{ top_nav_text }}, 0 0 0 5px {{ alpha(top_nav_text, 0.3) }};
+        }
+        .p-top_nav__search {
+          background: {{ mix(top_nav_bg, top_nav_text, 0.93) }};
+          box-shadow: inset 0 0 0 1px {{ mix(top_nav_bg, top_nav_text, 0.75) }};
+        }
+        .p-top_nav__search:hover {
+          background: {{ mix(top_nav_bg, top_nav_text, 0.9) }};
+          box-shadow: inset 0 0 0 1px {{ mix(top_nav_bg, top_nav_text, 0.5) }};
+        }
+
+        .p-top_nav__help__badge {
+          background: {{ mention_badge }};
+          box-shadow: 0 0 0 2px {{ top_nav_bg }};
+        }
+        .p-top_nav__help__badge--dot {
+          background: {{ top_nav_text }};
+        }
+
+        .p-ia_edu_cta,
+        .p-ia_edu_cta:hover {
+          background: {{ mention_badge }};
+        }
+        .p-ia_edu_throbber circle {
+          fill: {{ text_color }};
+        }
+        .p-top_nav__ia_edu_throbber circle {
+          fill: {{ top_nav_text }};
+        }
+        .p-channel_sidebar__section_heading_ellipsis--showing_throbber {
+          box-shadow: 0 0 1px 1px {{ text_color }};
+        }
+        .p-channel_sidebar__section_heading_ellipsis--showing_throbber .p-ia_edu_thobber__inner--square {
+          fill: {{ column_bg }};
+        }
+        .p-channel_sidebar__section_heading_ellipsis--showing_throbber .p-ia_edu_throbber__pulse--square {
+          fill: {{ text_color }};
+        }
+
+        .p-ia__view_header__sidebar_toggle_dot.p-ia__view_header__sidebar_toggle_dot--mentions {
+          background: {{ mention_badge }};
+        }
+
+        /** Day 1: Setup Sidebar **/
+        .p-channel_sidebar__loading_spacer_section--bottom-border {
+          border-color: {{ mix(text_color, column_bg, 0.1) }};
+        }
+        .p-channel_sidebar__channel.p-channel_sidebar__setup_channel_input {
+          background: {{ column_bg }};
+          color: {{ text_color }};
+        }
+        .p-channel_sidebar__setup_channel_input::placeholder,
+        .p-channel_sidebar__setup_prompt .c-icon {
+          color: {{ mix(text_color, column_bg, 0.75) }};
+        }
+        .p-channel_sidebar__setup_channel_error_text {
+          color: {{ text_color }};
+        }
+        .p-channel_sidebar__close_container:hover .p-channel_sidebar__setup_channel_input:not(:focus) {
+          background: {{ hover_item }};
+        }
+        .p-channel_sidebar__setup_channel_input:focus,
+        .p-channel_sidebar__link--page_pbrowse-people.p-channel_sidebar__link--page_pbrowse-people--setup,
+        .p-ia__sidebar_header--v-team-creation-view {
+          background: {{ mix(text_color, column_bg, 0.1) }};
+          color: {{ text_color }};
+        }
+        .p-channel_sidebar__link--add-teammates, .p-channel_sidebar__link--add-teammates:hover {
+          color: {{ text_color }};
+        }
+        .p-channel_type_button--selected:not(.p-channel_type_button--large-with-icon) {
+          background: {{ mix(top_nav_bg, top_nav_text, 0.1) }};
+          border: 1px solid {{ mix(top_nav_bg, top_nav_text, 0.1) }};
+          color: {{ top_nav_bg }};
+        }
+
+        /** Day 1: Sidebar Setup Prompt**/
+        .p-channel_sidebar__setup_prompt {
+          border-top: 1px solid {{ mix(text_color, column_bg, 0.1) }};
+          color: {{ text_color }};
+          background: {{ mix(text_color, column_bg, 0.05) }};
+        }
+        .p-channel_sidebar__setup_prompt a, .p-channel_sidebar__setup_prompt .c-link--button {
+          color: {{ text_color }};
+        }
+
+        /** Message send failure indicator **/
+        .p-channel_sidebar__message_failure_suffix {
+          color: {{ mention_badge }};
+        }
+
+        /** Golden Gate **/
+        .p-channel_sidebar__link .p-sidebar_link__icon--bold {
+          color: {{ text_color }};
+        }
+        .p-channel_sidebar__link.p-channel_sidebar_header_link {
+          background: {{ alpha(text_color, 0.1) }};
+          color: {{ alpha(text_color, 0.8) }};
+        }
+        .p-channel_sidebar__link.p-channel_sidebar_header_link__discount {
+          background: {{ alpha(text_color, 0.1) }};
+          color: {{ alpha(text_color, 0.8) }};
+        }
+        .p-channel_sidebar__link.p-channel_sidebar_header_link--bright {
+          background: {{ alpha(text_color, 0.2) }};
+          color: {{ text_color }};
+        }
+        .p-channel_sidebar__link.p-channel_sidebar_header_link:hover {
+          background: {{ hover_item }};
+        }
+        .p-channel_sidebar__close_container.p-channel_sidebar_header_link__container:hover * {
+          background: {{ hover_item }};
+        }
+      </style>
+      <div class="p-workspace-layout">
+        <div class="p-workspace__sidebar" style="width: 260px;">
+          <div class="p-workspace__channel_sidebar" data-qa="ws_channel_sidebar">
+            <div class="p-ia__sidebar_header p-ia__sidebar_header--top-nav">
+              <div tabindex="-1" data-qa="sidebar_header_button" class="p-ia__sidebar_header__button"
+                aria-haspopup="menu" aria-expanded="false">
+                <div class="p-ia__sidebar_header__info"><button
+                    class="c-button-unstyled p-ia__sidebar_header__team_name" data-qa="team-menu-trigger"
+                    aria-label="Main menu for Slack Themes" type="button"><span
+                      class="p-ia__sidebar_header__team_name_text">Slack Themes</span> <i
+                      class="c-icon p-ia__sidebar_header__menu_icon c-icon--chevron-down" type="chevron-down"
+                      aria-hidden="true"></i></button></div>
+              </div><button
+                class="c-button-unstyled p-channel_sidebar__compose_button p-channel_sidebar__compose_button--iap1"
+                aria-label="New message" data-qa="composer_button" delay="300" data-sk="tooltip_parent"
+                type="button"><svg height="16px" viewBox="0 0 20 20" class="p-channel_sidebar__compose_button_svg_icon">
+                  <path
+                    d="M8.66000142,13.3899994 L10.3700017,12.6999993 C10.8700018,12.4999993 11.3300019,12.1999992 11.7100019,11.8199992 L19.5600032,3.96999786 C20.1900033,3.33999776 20.0600033,2.19999757 19.2800032,1.41999745 L18.570003,0.70999733 C17.7900029,-0.070002798 16.6500027,-0.190002818 16.0300026,0.429997284 L8.22000135,8.23999856 C7.81000128,8.64999863 7.49000123,9.13999871 7.29000119,9.6899988 L6.65000109,11.4199991 C6.120001,12.7599993 7.29000119,13.9099995 8.66000142,13.3899994 Z M14.4200024,18.9999974 C16.8700028,18.9999974 19.0000002,16.96 19.0000002,14.4199996 L19.0000002,8.49999738 C19.0000002,7.34999842 17.5000002,7.34999842 17.5000002,8.49999738 L17.5000002,14.1199995 C17.5000002,16.1099999 16.1100026,17.4999974 14.1200023,17.4999974 L5.88000096,17.4999974 C3.89000064,17.4999974 2.50000016,16.1099999 2.50000016,14.1199995 L2.50000016,5.87999818 C2.50000016,3.88999785 3.89000064,2.49999738 5.88000096,2.49999738 L11.5000002,2.49999738 C12.6900021,2.49999738 12.6800021,0.999997377 11.5000002,0.999997377 L5.58000091,0.999997377 C3.0300005,0.999997377 1.00000016,3.03999771 1.00000016,5.57999813 L1.00000016,14.4199996 C1.00000016,16.96 3.0300005,18.9999974 5.58000091,18.9999974 L14.4200024,18.9999974 Z M17.2100028,4.1899979 L15.8000026,2.76999767 L16.9500028,1.61999468 C17.0600028,1.50999746 17.3300028,1.54999747 17.5200029,1.7499975 L18.230003,2.45999762 C18.430003,2.65999765 18.470003,2.92999769 18.370003,3.01999771 L17.2100028,4.1899979 Z M7.98000131,12.0499992 L8.67000142,10.1099989 C8.75000143,9.88999883 8.86000145,9.71999881 9.02000148,9.54999878 L14.7300024,3.83999784 L16.1400026,5.24999807 L10.4300017,10.989999 C10.2500017,11.159999 10.0900017,11.2599991 9.90000162,11.3299991 L8.00000131,12.0699992 C7.98000131,12.0799992 7.97000131,12.0699992 7.98000131,12.0499992 Z"
+                    id="compose-dm" fill-rule="nonzero"></path>
+                </svg></button>
+            </div>
+            <div
+              class="p-channel_sidebar p-channel_sidebar--classic_nav p-channel_sidebar--iap1 p-channel_sidebar--show_more_feature"
+              data-qa-channel-sidebar-sections-booted="true" aria-label="Channel Sidebar">
+              <div id="channel_sidebar_summary" class="offscreen">0 conversations with unread messages, including 0
+                mentions and keywords.</div>
+              <style class="p-channel_sidebar__theme--default_theme">
+                .p-channel_sidebar {
+                  background: {{ column_bg }};
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+                /* Cover up "p-channel_sidebar__icon" when the close button is focused */
+                .p-channel_sidebar__close:focus {
+                  background: {{ column_bg }};
+                }
+                .p-channel_sidebar__channel--selected + .p-channel_sidebar__close:focus {
+                  background: {{ active_item }};
+                }
+
+                .p-channel_sidebar__channel,
+                .p-channel_sidebar__link,
+                .p-channel_sidebar__channel:link,
+                .p-channel_sidebar__link:link,
+                .p-channel_sidebar__channel:visited,
+                .p-channel_sidebar__link:visited,
+                .p-channel_sidebar__channel:hover,
+                .p-channel_sidebar__channel--context,
+                .p-channel_sidebar__link:hover,
+                .p-channel_sidebar__section_placeholder {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+                .p-channel_sidebar__section_heading--selected,
+                .p-channel_sidebar__section_heading--selected:hover,
+                .p-channel_sidebar__channel--selected,
+                .p-channel_sidebar__link--selected,
+                .p-channel_sidebar__channel--selected:link,
+                .p-channel_sidebar__link--selected:link,
+                .p-channel_sidebar__channel--selected:visited,
+                .p-channel_sidebar__link--selected:visited,
+                .p-channel_sidebar__channel--selected:hover,
+                .p-channel_sidebar__link--selected:hover,
+                .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
+                .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
+                  color: {{ active_item_text }};
+                }
+
+                .p-channel_sidebar__channel:hover,
+                .p-channel_sidebar__channel--context,
+                .p-channel_sidebar__link:hover,
+                .p-channel_sidebar__channel:hover .p-channel_sidebar__user_avatar_presence_bg,
+                .p-channel_sidebar__close_container:hover {
+                  background: {{ hover_item }};
+                }
+
+                .p-channel_sidebar__link--page--disabled:hover, .p-channel_sidebar__link--all-threads--disabled:hover {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                  background: {{ column_bg }};
+                }
+
+                .p-channel_sidebar__channel:hover .p-channel_sidebar__presence_icon--on-avatar-border {
+                  -webkit-text-stroke-color: {{ hover_item }};
+                }
+                .p-channel_sidebar__channel:hover .p-channel_sidebar__mpim_counter,
+                .p-channel_sidebar__channel:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+                .p-channel_sidebar__channel:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon {
+                  box-shadow: 0px 0px 0px 2px {{ hover_item }};
+                }
+
+                .p-channel_sidebar__header {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+                /* Override presence icons */
+                .p-channel_sidebar__presence_icon.c-presence--active,
+                .p-channel_sidebar__channel_icon_prefix--im-slackbot {
+                  color: {{ active_presence }};
+                }
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon.c-presence,
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix--im-slackbot {
+                  color: {{ active_item_text }};
+                }
+                .p-channel_sidebar__presence_icon.c-presence--away {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+                .p-channel_sidebar__section_heading--selected,
+                .p-channel_sidebar__channel--selected,
+                .p-channel_sidebar__channel--selected:hover,
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__user_avatar_presence_bg,
+                .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__user_avatar_presence_bg,
+                .p-channel_sidebar__link--selected,
+                .p-channel_sidebar__link--selected:hover {
+                  background: {{ active_item }};
+                }
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon--on-avatar-border,
+                .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__presence_icon--on-avatar-border {
+                  -webkit-text-stroke-color: {{ active_item }};
+                }
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter,
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon,
+                .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__mpim_counter,
+                .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+                .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon {
+                  box-shadow: 0px 0px 0px 2px {{ active_item }};
+                }
+
+                .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__channel_icon_prefix--comfy:not(.c-presence) {
+                  color: {{ text_color }};
+                }
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix--comfy {
+                  color: {{ active_item_text }};
+                }
+                .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy.c-icon--channel-pane-hash::before {
+                  content: "\E150";
+                }
+                .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy.c-icon--lock-o::before {
+                  content: "\E50A";
+                }
+                .p-channel_sidebar__link--add-more-items.p-channel_sidebar__channel--unread .p-channel_sidebar__channel_icon_prefix--comfy {
+                  background: {{ active_item }};
+                }
+
+                .p-channel_sidebar__section-heading--browse:hover,
+                .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix,
+                .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__channel_icon_prefix,
+                .p-channel_sidebar__link--selected:before,
+                .p-channel_sidebar__link--selected:before,
+                .p-channel_sidebar__channel--selected:after,
+                .p-channel_sidebar__channel--selected:hover:after,
+                .p-channel_sidebar__link--selected:after,
+                .p-channel_sidebar__link--selected:after {
+                  color: {{ active_item_text }};
+                }
+
+                .p-channel_sidebar__link--selected.p-channel_sidebar__link--page--disabled,
+                .p-channel_sidebar__link--selected.p-channel_sidebar__link--all-threads--disabled {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+                .p-channel_sidebar__badge:not(.c-mention_badge--transparent),
+                .p-channel_sidebar__banner--mentions {
+                  background: {{ mention_badge }};
+                }
+
+                .p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
+                .p-channel_sidebar .c-scrollbar__bar {
+                  background: {{ alpha(text_color, 0.45) }};
+                }
+
+                .p-channel_sidebar__organize_selection_action.c-link--focus-visible:focus,
+                .p-channel_sidebar__organize_action.c-button--focus-visible:focus,
+                .p-channel_sidebar__jumper.c-button--focus-visible:focus,
+                .p-channel_sidebar__history_button.c-button--focus-visible:focus,
+                .p-channel_sidebar__section_heading_label--clickable.c-button--focus-visible:focus,
+                .p-channel_sidebar__section_heading_plus.c-button--focus-visible:focus,
+                .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name,
+                .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,
+                .p-channel_sidebar__link.c-link--focus-visible:focus .p-channel_sidebar__name,
+                .p-channel_sidebar__close.c-button--focus-visible:focus {
+                  box-shadow: 0 0 0 1px {{ text_color }}, 0 0 0 5px {{ alpha(text_color, 0.3) }};
+                }
+
+                /** `opacity: 1` color overrides */
+                .p-channel_sidebar__organize_selection_action.c-link--focus-visible:focus,
+                .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+                .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
+                .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+                .p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+                .p-channel_sidebar__link--add-apps:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+                .p-channel_sidebar__section_heading:not(.p-channel_sidebar__section_heading--selected) .p-channel_sidebar__section_heading_label--unreads,
+                .p-channel_sidebar__quickswitcher:hover,
+                .p-channel_sidebar__section_placeholder--has_cta:hover,
+                .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer:hover {
+                  color: {{ text_color }};
+                }
+
+                .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer--disabled:hover {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+
+                .p-channel_sidebar__link .p-channel_sidebar__channel_icon_prefix--comfy,
+                .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter .p-channel_sidebar__mpim_counter_inner {
+                  background: {{ alpha(text_color, 0.1) }};
+                }
+                .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter {
+                  background: {{ column_bg }};
+                }
+                .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim.p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter {
+                  background: {{ active_item }};
+                }
+
+                .p-channel_sidebar__user_avatar_presence_bg {
+                  background: {{ column_bg }};
+                }
+                .p-channel_sidebar__presence_icon--on-avatar-border {
+                  -webkit-text-stroke-color: {{ column_bg }};
+                }
+                .p-channel_sidebar__mpim_counter,
+                .p-channel_sidebar__mpim_avatars_mpim2 .c-avatar__image,
+                .p-channel_sidebar__mpim_avatars_mpim2 .c-base_icon {
+                  box-shadow: 0px 0px 0px 2px {{ column_bg }};
+                }
+
+                /** Navigation Bar **/
+                .p-channel_sidebar__jumper {
+                  background: {{ alpha(text_color, 0.15) }};
+                }
+                .p-channel_sidebar__jumper:hover {
+                  background: {{ alpha(text_color, 0.2) }};
+                }
+                .p-channel_sidebar__history_button {
+                  background: {{ alpha(text_color, 0.15) }};
+                }
+                .p-channel_sidebar__history_button:hover {
+                  background: {{ alpha(text_color, 0.2) }};
+                }
+                .p-channel_sidebar__history_button--disabled:hover {
+                  background: {{ alpha(text_color, 0.15) }};
+                }
+
+                /** Compose Button **/
+                .p-channel_sidebar__compose_button,
+                .p-ia__big_search_compose {
+                  background: {{ top_nav_bg }};
+                  color: {{ top_nav_text }};
+                }
+                .p-channel_sidebar__compose_button--disabled {
+                  background: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+                .p-channel_sidebar__compose_button--iap1 {
+                  background-color: {{ text_color }};
+                  color: {{ column_bg }};
+                  fill: {{ column_bg }};
+                }
+                .p-channel_sidebar__compose_button--iap1:active {
+                  background-color: {{ mix(text_color, column_bg, 0.88) }};
+                }
+
+                /** Classic Nav **/
+                .p-classic_nav__team_header {
+                  background: {{ column_bg }};
+                  color: {{ text_color }};
+                }
+                .p-classic_nav__team_header:hover {
+                  background: {{ top_nav_bg }};
+                }
+                .p-classic_nav__team_header__user__presence.c-presence--active {
+                  color: {{ active_presence }};
+                }
+                .p-classic_nav__team_header__user__presence.c-presence--away {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+                .p-classic_nav__team_header .c-link--focus-visible:focus,
+                .p-classic_nav__team_header .c-button--focus-visible:focus,
+                .p-channel_sidebar__static_list__item.c-virtual_list__item--focus:focus:after,
+                div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after,
+                .p-pages_list__list_item--focus-visible:after,
+                .p-channel_sidebar__section_heading.p-channel_sidebar__section-heading--pages-drawer.c-button--focus-visible:focus:after {
+                  box-shadow: 0 0 0 1px {{ text_color }}, 0 0 0 5px {{ alpha(text_color, 0.3) }};
+                }
+
+                /** IA **/
+                .p-ia__sidebar_header .c-button--focus-visible:focus {
+                  box-shadow: 0 0 0 1px {{ text_color }}, 0 0 0 5px {{ alpha(text_color, 0.3) }};
+                }
+
+                /** Allow dragged channels and channel sections to have a background **/
+                .p-drag_layer__sidebar_channels,
+                .p-drag_layer__sidebar_section_heading {
+                  background: {{ column_bg }};
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+
+                .p-drag_layer__sidebar_channels--multiple {
+                  background: {{ active_item }};
+                }
+
+                /** Allow dragged section heading to have a background **/
+                .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading,
+                .p-drag_layer .p-channel_sidebar__section_heading {
+                  background: {{ column_bg }};
+                }
+
+                /** Drag and drop indicators **/
+                .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides.p-channel_sidebar__drop_target_indicator--channel_below {
+                  box-shadow: inset 0 0 0 4px {{ mix(text_color, column_bg, 0.3) }},
+                              inset 0 0 0 5px {{ text_color }};
+                }
+
+                .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_sides {
+                  box-shadow: inset -4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset 4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset -5px 0 0 0 {{ text_color }},
+                              inset 5px 0 0 0 {{ text_color }};
+                }
+
+                .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
+                  box-shadow: inset -4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset 4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset 0 4px 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset -5px 0 0 0 {{ text_color }},
+                              inset 5px 0 0 0 {{ text_color }},
+                              inset 0 5px 0 0 {{ text_color }};
+                }
+
+                .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_below.p-channel_sidebar__drop_target_indicator--channel_sides {
+                  box-shadow: inset -4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset 4px 0 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset 0 -4px 0 0 {{ mix(text_color, column_bg, 0.3) }},
+                              inset -5px 0 0 0 {{ text_color }},
+                              inset 5px 0 0 0 {{ text_color }},
+                              inset 0 -5px 0 0 {{ text_color }};
+                }
+
+                .p-channel_sidebar--channel_section_dragging .p-channel_sidebar__drop_target_indicator--channel_section_above {
+                  box-shadow: inset -16px 0 0 0 {{ column_bg }},
+                              inset 16px 0 0 0 {{ column_bg }},
+                              inset 0 2px 0 0 {{ text_color }};
+                }
+
+                .p-channel_sidebar--channel_section_dragging .p-channel_sidebar__drop_target_indicator--channel_section_below {
+                  box-shadow: inset -16px 0 0 0 {{ column_bg }},
+                              inset 16px 0 0 0 {{ column_bg }},
+                              inset 0 -2px 0 0 {{ text_color }};
+                }
+
+                /** Edit mode (formerly organization mode) **/
+                .p-ia__sidebar_header__mode, p-ia__sidebar_header__mode:hover {
+                  border-bottom: 1px solid {{ mix(text_color, column_bg, 0.1) }};
+                }
+
+                .p-ia__sidebar_header__mode__info_button,
+                .p-ia__sidebar_header__mode__find_button {
+                  border: 1px solid {{ alpha(text_color, 0.2) }};
+                }
+
+                .p-ia__sidebar_header__mode__info_button:hover,
+                .p-ia__sidebar_header__mode__find_button:hover {
+                  background-color: {{ alpha(text_color, 0.05) }};
+                  border: 1px solid {{ alpha(text_color, 0.3) }};
+                }
+
+                .p-ia__sidebar_header__mode__filter_input,
+                .p-ia__sidebar_header__mode__filter_input:hover
+                .p-ia__sidebar_header__mode__filter_input:active
+                .p-ia__sidebar_header__mode__filter_input:focus {
+                  border: 1px solid {{ alpha(text_color, 0.2) }};
+                }
+
+                .p-ia__sidebar_header__mode__filter_input.c-filter_input.c-filter_input--active, .p-ia__sidebar_header__mode__filter_input.c-filter_input.c-filter_input:hover {
+                  box-shadow: none;
+                  border: 1px solid {{ alpha(text_color, 0.3) }};
+                }
+
+                .p-ia__sidebar_header__mode__filter_input.c-filter_input .c-icon, .p-ia__sidebar_header__mode__filter_input .c-filter_input__reset_button {
+                  color: {{ alpha(text_color, 0.85) }};
+                }
+
+                .p-ia__sidebar_header__mode__filter_input .c-filter_input__input[type="text"] {
+                  color: {{ text_color }};
+                }
+
+                .p-ia__sidebar_header__mode__filter_input .c-filter_input__input::placeholder {
+                  color: {{ alpha(text_color, 0.6) }};
+                }
+
+                .p-channel_sidebar__organize_mode_menu {
+                  border-color: {{ alpha(text_color, 0.11) }};
+                }
+                .p-channel_sidebar__organize_action {
+                  color: {{ text_color }};
+                  background-color: {{ alpha(text_color, 0.11) }};
+                }
+
+                .p-channel_sidebar__organize_action:hover,
+                .p-channel_sidebar__organize_action:active,
+                .p-channel_sidebar__organize_action:focus {
+                  background-color: {{ alpha(text_color, 0.2) }};
+                }
+                .p-channel_sidebar__organize_action--primary {
+                  color: {{ column_bg }};
+                  background-color: {{ text_color }};
+
+                }
+                .p-channel_sidebar__organize_action--primary:hover,
+                .p-channel_sidebar__organize_action--primary:active,
+                .p-channel_sidebar__organize_action--primary:focus {
+                  background-color: {{ alpha(text_color, 0.89) }};
+                }
+
+                /** IA experiment (feature_iap1) **/
+                .p-ia__sidebar_header {
+                  background: {{ column_bg }};
+                  color: {{ text_color }};
+                }
+                .p-ia__omniswitcher_button {
+                  color: {{ text_color }};
+                  border: 1px solid {{ mix(text_color, column_bg, 0.12) }};
+                }
+                .p-ia__omniswitcher_button:hover {
+                  border-color: {{ mix(text_color, column_bg, 0.2) }};
+                }
+                .p-ia__sidebar_header__mode {
+                  background-color: {{ mix(text_color, column_bg, 0.07) }};
+                }
+                .p-ia__sidebar_header .p-ia__sidebar_header__mode {
+                  background: {{ column_bg }};
+                }
+
+                .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
+                .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
+                  background-color: initial;
+                  border-color: {{ mix(text_color, column_bg, 0.1) }};
+                }
+                .p-ia__sidebar_header--top-nav:not(.p-ia__sidebar_header--creator-setup):hover {
+                  background-color: {{ hover_item }};
+                }
+                .p-ia__sidebar_header__user__presence.c-presence--active {
+                  color: {{ active_presence }};
+                }
+                .p-ia__sidebar_header__user__presence.c-presence--away {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+                .p-channel_sidebar--iap1 .p-channel_sidebar__banner--unreads {
+                  background: {{ mix(text_color, column_bg, 0.9) }};
+                  color: {{ column_bg }};
+                }
+                .p-channel_sidebar--iap1.p-channel_sidebar--top_banner_showing .p-channel_sidebar__list:before {
+                  background: linear-gradient(to bottom, {{ column_bg }}, {{ alpha(column_bg, 0) }});
+                }
+                .p-channel_sidebar--iap1.p-channel_sidebar--bottom_banner_showing .p-channel_sidebar__list:after {
+                  background: linear-gradient(to top, {{ column_bg }}, {{ alpha(column_bg, 0) }});
+                }
+                .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_plus:hover,
+                .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_ellipsis:hover,
+                .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_expand_container--show_more_feature:hover {
+                  background: {{ alpha(text_color, 0.1) }};
+                }
+                .p-channel_sidebar--iap1 .p-channel_sidebar__divider {
+                  border-bottom: 1px solid {{ mix(text_color, column_bg, 0.1) }};
+                }
+                .p-workspace__sidebar:after {
+                  background: {{ alpha(text_color, 0.1) }};
+                }
+
+                .p-top_nav .p-ia__nav__user__presence {
+                  color: {{ active_presence }};
+                }
+                .p-top_nav .p-ia__nav__user__presence.c-presence--away {
+                  color: {{ top_nav_text }};
+                }
+                .p-top_nav .p-ia__nav__user__presence--stroke {
+                  -webkit-text-stroke-color: {{ top_nav_bg }};
+                }
+                .p-top_nav .p-ia__sidebar_header__user__status {
+                  background: {{ mix(top_nav_bg, top_nav_text, 0.9) }};
+                }
+                .p-top_nav .p-ia__sidebar_header__user__status:hover {
+                  background: {{ mix(top_nav_bg, top_nav_text, 0.77) }};
+                }
+
+                .p-top_nav {
+                  background: {{ top_nav_bg }};
+                  color: {{ top_nav_text }};
+                  box-shadow: 0 1px 0 0 {{ alpha(text_color, 0.1) }};
+                }
+                .p-top_nav__button,
+                .p-top_nav__search,
+                .p-top_nav__sidebar .p-channel_sidebar__history_button,
+                .p-top_nav__sidebar .p-channel_sidebar__history_button--disabled:hover,
+                .p-top_nav__search__clear {
+                  color: {{ top_nav_text }};
+                }
+                .p-top_nav__windows_icon {
+                  fill: {{ top_nav_text }};
+                }
+                .p-top_nav__search__clear:hover {
+                  color: {{ mix(top_nav_bg, top_nav_text, 0.2) }};
+                }
+                .p-top_nav__button:hover,
+                .p-setup_escape_hatch:hover,
+                .p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
+                  background: {{ mix(top_nav_bg, top_nav_text, 0.9) }};
+                }
+                .p-top_nav__sidebar .p-channel_sidebar__history_button--disabled:hover {
+                  background: none;
+                }
+                .p-top_nav__button.c-button--focus-visible:focus,
+                .p-top_nav__search.c-button--focus-visible:focus,
+                .p-top_nav__sidebar .p-channel_sidebar__history_button.c-button--focus-visible:focus {
+                  box-shadow: 0 0 0 1px {{ top_nav_text }}, 0 0 0 5px {{ alpha(top_nav_text, 0.3) }};
+                }
+                .p-top_nav__search {
+                  background: {{ mix(top_nav_bg, top_nav_text, 0.93) }};
+                  box-shadow: inset 0 0 0 1px {{ mix(top_nav_bg, top_nav_text, 0.75) }};
+                }
+                .p-top_nav__search:hover {
+                  background: {{ mix(top_nav_bg, top_nav_text, 0.9) }};
+                  box-shadow: inset 0 0 0 1px {{ mix(top_nav_bg, top_nav_text, 0.5) }};
+                }
+
+                .p-top_nav__help__badge {
+                  background: {{ mention_badge }};
+                  box-shadow: 0 0 0 2px {{ top_nav_bg }};
+                }
+                .p-top_nav__help__badge--dot {
+                  background: {{ top_nav_text }};
+                }
+
+                .p-ia_edu_cta,
+                .p-ia_edu_cta:hover {
+                  background: {{ mention_badge }};
+                }
+                .p-ia_edu_throbber circle {
+                  fill: {{ text_color }};
+                }
+                .p-top_nav__ia_edu_throbber circle {
+                  fill: {{ top_nav_text }};
+                }
+                .p-channel_sidebar__section_heading_ellipsis--showing_throbber {
+                  box-shadow: 0 0 1px 1px {{ text_color }};
+                }
+                .p-channel_sidebar__section_heading_ellipsis--showing_throbber .p-ia_edu_thobber__inner--square {
+                  fill: {{ column_bg }};
+                }
+                .p-channel_sidebar__section_heading_ellipsis--showing_throbber .p-ia_edu_throbber__pulse--square {
+                  fill: {{ text_color }};
+                }
+
+                .p-ia__view_header__sidebar_toggle_dot.p-ia__view_header__sidebar_toggle_dot--mentions {
+                  background: {{ mention_badge }};
+                }
+
+                /** Day 1: Setup Sidebar **/
+                .p-channel_sidebar__loading_spacer_section--bottom-border {
+                  border-color: {{ mix(text_color, column_bg, 0.1) }};
+                }
+                .p-channel_sidebar__channel.p-channel_sidebar__setup_channel_input {
+                  background: {{ column_bg }};
+                  color: {{ text_color }};
+                }
+                .p-channel_sidebar__setup_channel_input::placeholder,
+                .p-channel_sidebar__setup_prompt .c-icon {
+                  color: {{ mix(text_color, column_bg, 0.75) }};
+                }
+                .p-channel_sidebar__setup_channel_error_text {
+                  color: {{ text_color }};
+                }
+                .p-channel_sidebar__close_container:hover .p-channel_sidebar__setup_channel_input:not(:focus) {
+                  background: {{ hover_item }};
+                }
+                .p-channel_sidebar__setup_channel_input:focus,
+                .p-channel_sidebar__link--page_pbrowse-people.p-channel_sidebar__link--page_pbrowse-people--setup,
+                .p-ia__sidebar_header--v-team-creation-view {
+                  background: {{ mix(text_color, column_bg, 0.1) }};
+                  color: {{ text_color }};
+                }
+                .p-channel_sidebar__link--add-teammates, .p-channel_sidebar__link--add-teammates:hover {
+                  color: {{ text_color }};
+                }
+                .p-channel_type_button--selected:not(.p-channel_type_button--large-with-icon) {
+                  background: {{ mix(top_nav_bg, top_nav_text, 0.1) }};
+                  border: 1px solid {{ mix(top_nav_bg, top_nav_text, 0.1) }};
+                  color: {{ top_nav_bg }};
+                }
+
+                /** Day 1: Sidebar Setup Prompt**/
+                .p-channel_sidebar__setup_prompt {
+                  border-top: 1px solid {{ mix(text_color, column_bg, 0.1) }};
+                  color: {{ text_color }};
+                  background: {{ mix(text_color, column_bg, 0.05) }};
+                }
+                .p-channel_sidebar__setup_prompt a, .p-channel_sidebar__setup_prompt .c-link--button {
+                  color: {{ text_color }};
+                }
+
+                /** Message send failure indicator **/
+                .p-channel_sidebar__message_failure_suffix {
+                  color: {{ mention_badge }};
+                }
+
+                /** Golden Gate **/
+                .p-channel_sidebar__link .p-sidebar_link__icon--bold {
+                  color: {{ text_color }};
+                }
+                .p-channel_sidebar__link.p-channel_sidebar_header_link {
+                  background: {{ alpha(text_color, 0.1) }};
+                  color: {{ alpha(text_color, 0.8) }};
+                }
+                .p-channel_sidebar__link.p-channel_sidebar_header_link__discount {
+                  background: {{ alpha(text_color, 0.1) }};
+                  color: {{ alpha(text_color, 0.8) }};
+                }
+                .p-channel_sidebar__link.p-channel_sidebar_header_link--bright {
+                  background: {{ alpha(text_color, 0.2) }};
+                  color: {{ text_color }};
+                }
+                .p-channel_sidebar__link.p-channel_sidebar_header_link:hover {
+                  background: {{ hover_item }};
+                }
+                .p-channel_sidebar__close_container.p-channel_sidebar_header_link__container:hover * {
+                  background: {{ hover_item }};
+                }
+              </style>
+              <div class="p-channel_sidebar__list" style="position: relative;">
+                <div style="overflow: visible; height: 0px; width: 0px;">
+                  <div role="presentation">
+                    <div role="tree" aria-label="Channels and direct messages"
+                      aria-describedby="channel_sidebar_summary"
+                      class="c-virtual_list c-virtual_list--scrollbar p-channel_sidebar__static_list c-scrollbar"
+                      style="width: 260px; height: 704px;">
+                      <div data-qa="slack_kit_scrollbar" role="presentation" class="c-scrollbar__hider">
+                        <div role="presentation" class="c-scrollbar__child" style="width: 260px;">
+                          <div data-qa="slack_kit_list" class="c-virtual_list__scroll_container" role="presentation"
+                            style="position: relative; height: 836px;">
+                            <div aria-level="1" aria-setsize="6" aria-posinset="1"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="Vall_threads" data-qa="virtual-list-item" style="top: 12px;"><button
+                                class="c-button-unstyled p-channel_sidebar__link p-channel_sidebar__link--all-threads"
+                                role="presentation" data-sidebar-link-id="Vall_threads"
+                                data-qa-channel-sidebar-link-id="Vall_threads" tabindex="-1" type="button"><span
+                                  class="p-channel_sidebar__name"
+                                  data-qa="channel_sidebar_name_all_thread_link">Threads</span></button></div>
+                            <div aria-level="1" aria-setsize="6" aria-posinset="2"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="Pdms" data-qa="virtual-list-item" style="top: 40px;">
+                              <div class=""><button
+                                  class="c-button-unstyled p-channel_sidebar__link p-channel_sidebar__link--page p-channel_sidebar__link--page_pdms position_relative"
+                                  role="presentation" data-sidebar-link-id="Pdms" data-qa-channel-sidebar-link-id="Pdms"
+                                  tabindex="-1" aria-label="All direct messages" type="button"><i
+                                    class="c-icon p-channel_sidebar__link__icon c-icon--dm c-icon--inherit" type="dm"
+                                    aria-hidden="true"></i><span class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_page_pdms">All DMs</span></button></div>
                             </div>
-
-                            <a id="user_menu" style="bottom: 0px;" href="https://github.com/paracycle">
-                                <div id="current_user_avatar">
-                                    <span class="member_image thumb_48" style="background-image: url('/images/profile.jpg')"></span>
-                                </div>
-                                <span id="current_user_name" class="overflow_ellipsis">paracycle</span>
-                                <img id="connection_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABmFBMVEUAAAD////////////////////////////////////2+/LR5bKw1Hmfy1KUxz2VyD2izVKz1nnS5rP////A3JuOw0qKwkCNxD+QxT6Sxj6Txz6SxUnC3Jv1+fGXx2GDvkCGwECIwUCLwj+PxD6PxT+JwUCFwECZyGD2+vGSxWF9vEGAvkGDv0CMwz+Wx2GPw2F4ukJ7u0J+vUGBvkGHwUB8u0KSxGG31pp0uEN3uUJ5u0KFv0CCv0B6u0K415p5uU1yt0N/vUF1uEN8u0zG3bFttURwtkR5ukLH3rGWxnlqtERutUR2uUOZx3l6uVZos0VvtkRxt0Nzt0N8ulVisUVlskVns0VzuENmskVfsEVps0VztlZer0VhsEVjsUVstER1t1aOwXhcrkZdr0VgsEaQwnm/2a9YrUZbrka/2rDz+PFhr09XrEZksE6pzplUq0ZVrEZarUaqzpl0tWJRq0dWrEZ1tmJztWJOqUdSq0dxtGJMqEdNqUdQqkdytWKmzJhXrFBKqEdZrU+716+GvXhjr1dIp0hkr1dYtVOVAAAAFHRSTlMAV8/v/wCH+x/n////////////9kvBHZAAAAG7SURBVHgBvdOxjtNAEIDhGe/MZO3sxVaiIJkiSNdQUPJOeQlqXoCCIg/EU9BQHRKg5CT7ErzrHTa+aBOqaxC/tdLK+2kbj+H/hoWhlCmQr0HeyYxyM8mvkWHKoAfBS6cBWEeYugAzf4QGp1SV8DvU/ZjBdN7iud6hdnOTdl+TuALyrUPEwfdu3nc1ipr9AwdIFZPysJylRDfa6cZL2rfgMd9QjO8R0Y+/u7sa4LHZz4wN/MXEyw1hbK1VZdV7PZ1OyufzktsxXADCW5EkXq06Paan02Uoo3kHmAEzJ8HBN6v5qlkqaxTmCdAzQK8Noi6rXwCrJyutepUMAARnXS++3cvm2xvftR0PzAyQAXtwdNChifvFHppBdR003IDCIg6JDOse4DX8WIdo1TwfpaUgqWC9c4eqqg5HF20QZdAMmDlasdHWkrKR03J0A4iIXRTrpba29laiY8YMyOyMKYkXroyROZZuwVTyztAFJPmZKBGq+FxFVBr5BHr7ubd3GICfAM+88qDHHYe/BmbbIAaGKU/Fz10emDxyHxBhgJTg+DGP3O3QbltMBkd92F2H9sWxB772wo9z2z8FfwDHWbdKLDfq1AAAAABJRU5ErkJggg==" class="" style="opacity: 1;">
-                                <span id="connection_status">online</span>
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-
+                            <div aria-level="1" aria-setsize="6" aria-posinset="3"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="Pactivity" data-qa="virtual-list-item" style="top: 68px;">
+                              <div class=""><button
+                                  class="c-button-unstyled p-channel_sidebar__link p-channel_sidebar__link--page p-channel_sidebar__link--page_pactivity position_relative"
+                                  role="presentation" data-sidebar-link-id="Pactivity"
+                                  data-qa-channel-sidebar-link-id="Pactivity" tabindex="-1" type="button"><i
+                                    class="c-icon p-channel_sidebar__link__icon p-channel_sidebar__link__activity c-icon--mentions c-icon--inherit"
+                                    type="mentions" aria-hidden="true"></i><span class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_page_pactivity">Mentions &amp;
+                                    reactions</span></button></div>
+                            </div>
+                            <div aria-level="1" aria-setsize="6" aria-posinset="4"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="Psaved" data-qa="virtual-list-item" style="top: 96px;">
+                              <div class=""><button
+                                  class="c-button-unstyled p-channel_sidebar__link p-channel_sidebar__link--page p-channel_sidebar__link--page_psaved position_relative"
+                                  role="presentation" data-sidebar-link-id="Psaved"
+                                  data-qa-channel-sidebar-link-id="Psaved" tabindex="-1" type="button"><i
+                                    class="c-icon p-channel_sidebar__link__icon c-icon--bookmark c-icon--inherit"
+                                    type="bookmark" aria-hidden="true"></i><span class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_page_psaved">Saved items</span></button></div>
+                            </div>
+                            <div class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="morePages" data-qa="virtual-list-item" style="top: 124px;"><button
+                                class="c-button-unstyled p-channel_sidebar__section_heading p-channel_sidebar__section-heading--pages-drawer"
+                                aria-label="More pages" tabindex="-1" aria-haspopup="menu" aria-expanded="false"
+                                type="button"><i
+                                  class="c-icon p-channel_sidebar__section-heading--pages-drawer-icon c-icon--vertical-ellipsis c-icon--inherit c-icon--inline"
+                                  type="vertical-ellipsis" aria-hidden="true"></i>More</button></div>
+                            <div aria-expanded="true" aria-level="1" aria-label="Channels"
+                              aria-describedby="sectionHeading-L019EDR79A6-description channel-sections-reorder-description"
+                              aria-setsize="6" aria-posinset="5"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="sectionHeading-L019EDR79A6" data-qa="virtual-list-item"
+                              style="top: 160px;">
+                              <div class="p-channel_sidebar__section_heading p-channel_sidebar__drop_target_indicator"
+                                data-qa-channel-sidebar-section-heading="channels" data-qa="channels" draggable="true">
+                                <span role="presentation"
+                                  class="p-channel_sidebar__section_heading_expand_container p-channel_sidebar__section_heading_expand_container--show_more_feature"
+                                  aria-hidden="true"><i
+                                    class="c-icon p-channel_sidebar__section_heading_expand p-channel_sidebar__section_heading_expand--show_more_feature c-icon--caret-right c-icon--inherit c-icon--inline"
+                                    data-qa="channel-section-collapse" type="caret-right"
+                                    aria-hidden="true"></i></span><button
+                                  class="c-button-unstyled p-channel_sidebar__section_heading_label p-channel_sidebar__section_heading_label--clickable"
+                                  data-qa="channel_sidebar__section_heading_label__channels" tabindex="-1" delay="300"
+                                  data-sk="tooltip_parent" type="button"><span
+                                    class="p-channel_sidebar__section_heading_label_overflow">Channels</span></button>
+                                <div class="p-channel_sidebar__section_heading_right"><button
+                                    class="c-button-unstyled p-channel_sidebar__section_heading_right_item p-channel_sidebar__section_heading_plus p-channel_sidebar__section_heading_plus--hover-reveal"
+                                    aria-hidden="true" tabindex="-1" data-qa="channel_sidebar__plus__channels"
+                                    delay="300" aria-haspopup="menu" aria-expanded="false" data-sk="tooltip_parent"
+                                    type="button"></button></div>
+                              </div>
+                            </div>
+                            <div
+                              aria-label="Channels" class="p-channel_sidebar__static_list__item c-virtual_list__item"
+                              tabindex="-1" role="group" id="sectionHeadingAriaGroup-L019EDR79A6"
+                              data-qa="virtual-list-item" style="top: 196px;">
+                              <div id="sectionHeading-L019EDR79A6-description"
+                                class="p-channel_sidebar__group-description">Press Cmd Shift L to find or create a
+                                channel</div>
+                            </div>
+                            <div aria-level="2" aria-selected="true" aria-setsize="2" aria-posinset="1"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="0"
+                              role="treeitem" id="CDEADBEEF" data-qa="virtual-list-item" style="top: 196px;"><a
+                                data-user-count="0" data-section-channel-index="3"
+                                data-qa-channel-sidebar-channel="true"
+                                data-qa-channel-sidebar-channel-is-selected="true"
+                                data-qa-channel-sidebar-channel-is-muted="false"
+                                data-qa-channel-sidebar-channel-id="CDEADBEEF"
+                                data-qa-channel-sidebar-channel-type="channel"
+                                data-qa-channel-sidebar-is-starred="false" data-qa-channel-sidebar-is-you="false"
+                                tabindex="-1" role="presentation" aria-haspopup="menu" aria-expanded="false"
+                                class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--selected p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                draggable="true"><i
+                                  class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                  data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                  aria-hidden="true"></i><i
+                                  class="c-icon p-channel_sidebar__channel_icon_prefix p-channel_sidebar__channel_icon_prefix--comfy c-icon--channel-pane-hash c-icon--inherit c-icon--inline"
+                                  data-qa="sidebar-channel-icon-prefix" type="channel-pane-hash"
+                                  aria-hidden="true"></i><span dir="auto" class="p-channel_sidebar__name"
+                                  data-qa="channel_sidebar_name_general" aria-label="" delay="300"
+                                  data-sk="tooltip_parent">general</span>
+                                  <span class="p-channel_sidebar__badge c-mention_badge c-mention_badge--black" data-qa="mention_badge">8</span>
+                                  </a></div>
+                            <div aria-level="2" aria-setsize="2" aria-posinset="2"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="CC0FFEE11" data-qa="virtual-list-item" style="top: 224px;"><a
+                                data-user-count="0" data-section-channel-index="4"
+                                data-qa-channel-sidebar-channel="true"
+                                data-qa-channel-sidebar-channel-is-selected="false"
+                                data-qa-channel-sidebar-channel-is-muted="false"
+                                data-qa-channel-sidebar-channel-id="CC0FFEE11"
+                                data-qa-channel-sidebar-channel-type="channel"
+                                data-qa-channel-sidebar-is-starred="false" data-qa-channel-sidebar-is-you="false"
+                                tabindex="-1" role="presentation" aria-haspopup="menu" aria-expanded="false"
+                                class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                draggable="true"><i
+                                  class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                  data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                  aria-hidden="true"></i><i
+                                  class="c-icon p-channel_sidebar__channel_icon_prefix p-channel_sidebar__channel_icon_prefix--comfy c-icon--channel-pane-hash c-icon--inherit c-icon--inline"
+                                  data-qa="sidebar-channel-icon-prefix" type="channel-pane-hash"
+                                  aria-hidden="true"></i><span dir="auto" class="p-channel_sidebar__name"
+                                  data-qa="channel_sidebar_name_random" aria-label="" delay="300"
+                                  data-sk="tooltip_parent">random</span>
+                                <span class="p-channel_sidebar__badge c-mention_badge c-mention_badge--black" data-qa="mention_badge">3</span>
+                                </a></div>
+                            <div aria-level="2" class="p-channel_sidebar__static_list__item c-virtual_list__item"
+                              tabindex="-1" role="treeitem" id="addMoreChannels" data-qa="virtual-list-item"
+                              style="top: 252px;">
+                              <div class="p-channel_sidebar__close_container" aria-haspopup="menu"
+                                aria-expanded="false"><button
+                                  class="c-button-unstyled p-channel_sidebar__link p-channel_sidebar__link--dim p-channel_sidebar__link--add-more-items"
+                                  role="presentation" data-sidebar-link-id="Vadd_more_items_channel"
+                                  data-qa-channel-sidebar-link-id="Vadd_more_items_channel" tabindex="-1"
+                                  type="button"><i
+                                    class="c-icon p-channel_sidebar__channel_icon_prefix p-channel_sidebar__channel_icon_prefix--comfy c-icon--plus-small c-icon--inherit c-icon--inline"
+                                    data-qa="sidebar-channel-icon-prefix" type="plus-small" aria-hidden="true"></i><span
+                                    class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_sidebar_add_more_channel">Add channels</span></button>
+                              </div>
+                            </div>
+                            <div aria-expanded="true" aria-level="1" aria-label="Direct Messages"
+                              aria-describedby="sectionHeading-L0197MNHV38-description channel-sections-reorder-description"
+                              aria-setsize="6" aria-posinset="6"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="sectionHeading-L0197MNHV38" data-qa="virtual-list-item"
+                              style="top: 292px;">
+                              <div class="p-channel_sidebar__section_heading p-channel_sidebar__drop_target_indicator"
+                                data-qa-channel-sidebar-section-heading="direct_messages" data-qa="direct_messages"
+                                draggable="true"><span role="presentation"
+                                  class="p-channel_sidebar__section_heading_expand_container p-channel_sidebar__section_heading_expand_container--show_more_feature"
+                                  aria-hidden="true"><i
+                                    class="c-icon p-channel_sidebar__section_heading_expand p-channel_sidebar__section_heading_expand--show_more_feature c-icon--caret-right c-icon--inherit c-icon--inline"
+                                    data-qa="channel-section-collapse" type="caret-right"
+                                    aria-hidden="true"></i></span><button
+                                  class="c-button-unstyled p-channel_sidebar__section_heading_label p-channel_sidebar__section_heading_label--clickable"
+                                  data-qa="channel_sidebar__section_heading_label__direct_messages" tabindex="-1"
+                                  delay="300" data-sk="tooltip_parent" type="button"><span
+                                    class="p-channel_sidebar__section_heading_label_overflow">Direct
+                                    messages</span></button>
+                                <div class="p-channel_sidebar__section_heading_right"><button
+                                    class="c-button-unstyled p-channel_sidebar__section_heading_right_item p-channel_sidebar__section_heading_plus p-channel_sidebar__section_heading_plus--hover-reveal"
+                                    aria-hidden="true" tabindex="-1" data-qa="channel_sidebar__plus__direct_messages"
+                                    delay="300" data-sk="tooltip_parent" type="button"></button></div>
+                              </div>
+                            </div>
+                            <div
+                              aria-label="Direct Messages"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="group" id="sectionHeadingAriaGroup-L0197MNHV38" data-qa="virtual-list-item"
+                              style="top: 328px;">
+                              <div id="sectionHeading-L0197MNHV38-description"
+                                class="p-channel_sidebar__group-description">Press Cmd Shift K to find or create a
+                                direct message. Press delete to remove a direct message from the sidebar</div>
+                            </div>
+                            <div aria-level="2" aria-setsize="11" aria-posinset="1"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="DDM000001" data-qa="virtual-list-item" style="top: 328px;">
+                              <div class="p-channel_sidebar__close_container" data-qa="channel_item_container"><a
+                                  data-user-count="0" data-section-channel-index="0"
+                                  data-qa-channel-sidebar-channel="true"
+                                  data-qa-channel-sidebar-channel-is-selected="false"
+                                  data-qa-channel-sidebar-channel-is-muted="false"
+                                  data-qa-channel-sidebar-channel-id="DDM000001"
+                                  data-qa-channel-sidebar-channel-type="im" data-qa-channel-sidebar-is-starred="false"
+                                  data-qa-channel-sidebar-is-you="false" tabindex="-1" role="presentation"
+                                  aria-haspopup="menu" aria-expanded="false"
+                                  class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--im-slackbot p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                  draggable="true"><i
+                                    class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                    data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                    aria-hidden="true"></i>
+                                  <div
+                                    class="p-channel_sidebar__user_avatar p-channel_sidebar__user_avatar--hide-presence"
+                                    data-qa-hidden-presence="1"><span class="c-avatar"
+                                      data-qa="channel-prefix-im-avatar" style="height: 20px; width: 20px;"><img
+                                        src="/images/slackbot.jpeg"
+                                        class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                        style="height: 20px; width: 20px;"></span>
+                                    <div class="p-channel_sidebar__user_avatar_presence_bg"></div><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar p-channel_sidebar__presence_icon--on-avatar-border c-presence c-presence--active c-icon--heart"
+                                      type="heart" title="Active" aria-hidden="true" data-qa="presence_indicator"
+                                      data-qa-presence-self="false" data-qa-presence-active="true"
+                                      data-qa-presence-dnd="false"></i><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar c-presence c-presence--active c-icon--heart"
+                                      type="heart" title="Active" aria-hidden="true" data-qa="presence_indicator"
+                                      data-qa-presence-self="false" data-qa-presence-active="true"
+                                      data-qa-presence-dnd="false"></i>
+                                  </div><span dir="auto" class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_slackbot" aria-label="" delay="300"
+                                    data-sk="tooltip_parent"><span>Slackbot</span></span>
+                                </a><button class="c-button-unstyled p-channel_sidebar__close"
+                                  data-qa="channel_item_close" aria-hidden="true" tabindex="-1" type="button"><i
+                                    class="c-deprecated-icon c-icon--times" type="times"
+                                    aria-hidden="true"></i></button></div>
+                            </div>
+                            <div aria-level="2" aria-setsize="11" aria-posinset="2"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="DDM000002" data-qa="virtual-list-item" style="top: 356px;">
+                              <div class="p-channel_sidebar__close_container" data-qa="channel_item_container"><a
+                                  data-user-count="0" data-section-channel-index="1"
+                                  data-qa-channel-sidebar-channel="true"
+                                  data-qa-channel-sidebar-channel-is-selected="false"
+                                  data-qa-channel-sidebar-channel-is-muted="false"
+                                  data-qa-channel-sidebar-channel-id="DDM000002"
+                                  data-qa-channel-sidebar-channel-type="im" data-qa-channel-sidebar-is-starred="false"
+                                  data-qa-channel-sidebar-is-you="true" tabindex="-1" role="presentation"
+                                  aria-haspopup="menu" aria-expanded="false"
+                                  class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--im-you p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                  draggable="true"><i
+                                    class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                    data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                    aria-hidden="true"></i>
+                                  <div class="p-channel_sidebar__user_avatar" data-qa-hidden-presence="0"><span
+                                      class="c-avatar" data-qa="channel-prefix-im-avatar"
+                                      style="height: 20px; width: 20px;"><img
+                                        src="images/profile.jpg"
+                                        class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                        style="height: 20px; width: 20px;"></span>
+                                    <div class="p-channel_sidebar__user_avatar_presence_bg"></div><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar p-channel_sidebar__presence_icon--on-avatar-border c-presence c-presence--active c-icon--presence-online"
+                                      type="presence-online" title="Active" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="true"
+                                      data-qa-presence-active="true" data-qa-presence-dnd="false"></i><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar c-presence c-presence--active c-icon--presence-online"
+                                      type="presence-online" title="Active" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="true"
+                                      data-qa-presence-active="true" data-qa-presence-dnd="false"></i>
+                                  </div><span dir="auto" class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_ufuk" aria-label="" delay="300"
+                                    data-sk="tooltip_parent"><span>ufuk</span><span
+                                      class="p-channel_sidebar__member_label"
+                                      data-qa="channel_sidebar_name_you">you</span></span>
+                                </a><button class="c-button-unstyled p-channel_sidebar__close"
+                                  data-qa="channel_item_close" aria-hidden="true" tabindex="-1" type="button"><i
+                                    class="c-deprecated-icon c-icon--times" type="times"
+                                    aria-hidden="true"></i></button></div>
+                            </div>
+                            <div aria-level="2" aria-setsize="11" aria-posinset="3"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="DDM000003" data-qa="virtual-list-item" style="top: 384px;">
+                              <div class="p-channel_sidebar__close_container" data-qa="channel_item_container"><a
+                                  data-user-count="0" data-section-channel-index="2"
+                                  data-qa-channel-sidebar-channel="true"
+                                  data-qa-channel-sidebar-channel-is-selected="false"
+                                  data-qa-channel-sidebar-channel-is-muted="false"
+                                  data-qa-channel-sidebar-channel-id="DDM000003"
+                                  data-qa-channel-sidebar-channel-type="im" data-qa-channel-sidebar-is-starred="false"
+                                  data-qa-channel-sidebar-is-you="false" tabindex="-1" role="presentation"
+                                  aria-haspopup="menu" aria-expanded="false"
+                                  class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                  draggable="true"><i
+                                    class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                    data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                    aria-hidden="true"></i>
+                                  <div class="p-channel_sidebar__user_avatar" data-qa-hidden-presence="0"><span
+                                      class="c-avatar" data-qa="channel-prefix-im-avatar"
+                                      style="height: 20px; width: 20px;"><img
+                                        src="images/jack.jpg"
+                                        class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                        style="height: 20px; width: 20px;"></span>
+                                    <div class="p-channel_sidebar__user_avatar_presence_bg"></div><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar p-channel_sidebar__presence_icon--on-avatar-border c-presence c-presence--away c-icon--presence-offline"
+                                      type="presence-offline" title="Away" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="false"
+                                      data-qa-presence-active="false" data-qa-presence-dnd="false"></i><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar c-presence c-presence--away c-icon--presence-offline"
+                                      type="presence-offline" title="Away" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="false"
+                                      data-qa-presence-active="false" data-qa-presence-dnd="false"></i>
+                                  </div><span dir="auto" class="p-channel_sidebar__name p-channel_sidebar__name--away"
+                                    data-qa="channel_sidebar_name_jack" aria-label="" delay="300"
+                                    data-sk="tooltip_parent"><span>jack</span></span>
+                                </a><button class="c-button-unstyled p-channel_sidebar__close"
+                                  data-qa="channel_item_close" aria-hidden="true" tabindex="-1" type="button"><i
+                                    class="c-deprecated-icon c-icon--times" type="times"
+                                    aria-hidden="true"></i></button></div>
+                            </div>
+                            <div aria-level="2" aria-setsize="11" aria-posinset="4"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="DDM000004" data-qa="virtual-list-item" style="top: 412px;">
+                              <div class="p-channel_sidebar__close_container" data-qa="channel_item_container"><a
+                                  data-user-count="0" data-section-channel-index="3"
+                                  data-qa-channel-sidebar-channel="true"
+                                  data-qa-channel-sidebar-channel-is-selected="false"
+                                  data-qa-channel-sidebar-channel-is-muted="false"
+                                  data-qa-channel-sidebar-channel-id="DDM000004"
+                                  data-qa-channel-sidebar-channel-type="im" data-qa-channel-sidebar-is-starred="false"
+                                  data-qa-channel-sidebar-is-you="false" tabindex="-1" role="presentation"
+                                  aria-haspopup="menu" aria-expanded="false"
+                                  class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                  draggable="true"><i
+                                    class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                    data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                    aria-hidden="true"></i>
+                                  <div class="p-channel_sidebar__user_avatar" data-qa-hidden-presence="0"><span
+                                      class="c-avatar" data-qa="channel-prefix-im-avatar"
+                                      style="height: 20px; width: 20px;"><img
+                                        src="images/jane.jpg"
+                                        class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                        style="height: 20px; width: 20px;"></span>
+                                    <div class="p-channel_sidebar__user_avatar_presence_bg"></div><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar p-channel_sidebar__presence_icon--on-avatar-border c-presence c-presence--away c-icon--presence-dnd-offline"
+                                      type="presence-dnd-offline" title="Away, notifications snoozed" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="false"
+                                      data-qa-presence-active="false" data-qa-presence-dnd="true"></i><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar c-presence c-presence--away c-icon--presence-dnd-offline"
+                                      type="presence-dnd-offline" title="Away, notifications snoozed" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="false"
+                                      data-qa-presence-active="false" data-qa-presence-dnd="true"></i>
+                                  </div><span dir="auto" class="p-channel_sidebar__name p-channel_sidebar__name--away"
+                                    data-qa="channel_sidebar_name_jane" aria-label="" delay="300"
+                                    data-sk="tooltip_parent"><span>jane</span></span>
+                                    <span class="p-channel_sidebar__badge c-mention_badge c-mention_badge--black" data-qa="mention_badge">10</span>
+                                </a><button class="c-button-unstyled p-channel_sidebar__close"
+                                  data-qa="channel_item_close" aria-hidden="true" tabindex="-1" type="button"><i
+                                    class="c-deprecated-icon c-icon--times" type="times"
+                                    aria-hidden="true"></i></button></div>
+                            </div>
+                            <div aria-level="2" aria-setsize="11" aria-posinset="5"
+                              class="p-channel_sidebar__static_list__item c-virtual_list__item" tabindex="-1"
+                              role="treeitem" id="DDM000005" data-qa="virtual-list-item" style="top: 440px;">
+                              <div class="p-channel_sidebar__close_container" data-qa="channel_item_container"><a
+                                  data-user-count="0" data-section-channel-index="4"
+                                  data-qa-channel-sidebar-channel="true"
+                                  data-qa-channel-sidebar-channel-is-selected="false"
+                                  data-qa-channel-sidebar-channel-is-muted="false"
+                                  data-qa-channel-sidebar-channel-id="DDM000005"
+                                  data-qa-channel-sidebar-channel-type="im" data-qa-channel-sidebar-is-starred="false"
+                                  data-qa-channel-sidebar-is-you="false" tabindex="-1" role="presentation"
+                                  aria-haspopup="menu" aria-expanded="false"
+                                  class="c-link p-channel_sidebar__channel p-channel_sidebar__channel--show_more_feature p-channel_sidebar__channel--comfy"
+                                  draggable="true"><i
+                                    class="c-icon p-channel_sidebar__edit_mode_checkbox p-channel_sidebar__edit_mode_checkbox--not_editing c-icon--real-checkbox-empty c-icon--inherit c-icon--inline"
+                                    data-qa="edit-mode-checkbox-state" type="real-checkbox-empty"
+                                    aria-hidden="true"></i>
+                                  <div class="p-channel_sidebar__user_avatar" data-qa-hidden-presence="0"><span
+                                      class="c-avatar" data-qa="channel-prefix-im-avatar"
+                                      style="height: 20px; width: 20px;"><img
+                                        src="images/hanna.jpg"
+                                        class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                        style="height: 20px; width: 20px;"></span>
+                                    <div class="p-channel_sidebar__user_avatar_presence_bg"></div><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar p-channel_sidebar__presence_icon--on-avatar-border c-presence c-presence--active c-icon--presence-online"
+                                      type="presence-dnd-online" title="Active, notifications snoozed" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="false"
+                                      data-qa-presence-active="false" data-qa-presence-dnd="true"></i><i
+                                      class="c-icon p-channel_sidebar__presence_icon p-channel_sidebar__presence_icon--dim_enabled p-channel_sidebar__presence_icon--on-avatar c-presence c-presence--active c-icon--presence-online c-icon--presence-dnd"
+                                      type="presence-dnd-online" title="Active, notifications snoozed" aria-hidden="true"
+                                      data-qa="presence_indicator" data-qa-presence-self="false"
+                                      data-qa-presence-active="false" data-qa-presence-dnd="true"></i>
+                                  </div><span dir="auto" class="p-channel_sidebar__name p-channel_sidebar__name--away"
+                                    data-qa="channel_sidebar_name_hanna" aria-label="" delay="300"
+                                    data-sk="tooltip_parent"><span>hanna</span></span>
+                                </a><button class="c-button-unstyled p-channel_sidebar__close"
+                                  data-qa="channel_item_close" aria-hidden="true" tabindex="-1" type="button"><i
+                                    class="c-deprecated-icon c-icon--times" type="times"
+                                    aria-hidden="true"></i></button></div>
+                            </div>
+                            <div aria-level="2" class="p-channel_sidebar__static_list__item c-virtual_list__item"
+                              tabindex="-1" role="treeitem" id="addMoreDM" data-qa="virtual-list-item"
+                              style="top: 468px;">
+                              <div class="p-channel_sidebar__close_container" aria-haspopup="menu"
+                                aria-expanded="false"><button
+                                  class="c-button-unstyled p-channel_sidebar__link p-channel_sidebar__link--dim p-channel_sidebar__link--add-more-items"
+                                  role="presentation" data-sidebar-link-id="Vadd_more_items_dm"
+                                  data-qa-channel-sidebar-link-id="Vadd_more_items_dm" tabindex="-1" type="button"><i
+                                    class="c-icon p-channel_sidebar__channel_icon_prefix p-channel_sidebar__channel_icon_prefix--comfy c-icon--plus-small c-icon--inherit c-icon--inline"
+                                    data-qa="sidebar-channel-icon-prefix" type="plus-small" aria-hidden="true"></i><span
+                                    class="p-channel_sidebar__name"
+                                    data-qa="channel_sidebar_name_sidebar_add_more_dm">Add teammates</span></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="presentation" class="c-scrollbar__track">
+                        <div role="presentation" class="c-scrollbar__bar" tabindex="-1"
+                          style="height: 592.842px; transform: translateY(0px);"></div>
+                      </div>
                     </div>
-
-                    <div id="messages_container">
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="new_prefs_dialog" class="modal hide fade in" aria-hidden="false">
-        <div class="modal-header">
-            <h3>Select a sidebar theme to preview</h3>
-        </div>
-        <div class="modal-body" style="overflow-y: auto;">
-            <div id="prefs_themes" class="dialog_tab_pane active">
-                <%= yield %>
-            </div>
-        </div>
-            <div class="modal-footer">
-                <div id="prefs_themes_customize" class="clear_both" style="padding: 1rem 2rem 1rem 1.5rem;">
-    <!--                 <p class="bold clear_both small_bottom_margin">Custom Theme</p>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="column_bg" data-hex="#F8F8FA" style="background-color: #F8F8FA;"></span>
-                        <input type="text" name="color_column_bg_hex" class="color_hex monospace" value="#F8F8FA" maxlength="7"><br>
-                        <span class="input_note">Column BG</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="menu_bg" data-hex="#F8F8FA" style="background-color: #F8F8FA;"></span>
-                        <input type="text" name="color_menu_bg_hex" class="color_hex monospace" value="#F8F8FA" maxlength="7"><br>
-                        <span class="input_note">Menu BG</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="active_item" data-hex="#CAD1D9" style="background-color: #CAD1D9;"></span>
-                        <input type="text" name="color_active_item_hex" class="color_hex monospace" value="#CAD1D9" maxlength="7"><br>
-                        <span class="input_note">Active Item</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="active_item_text" data-hex="#FFFFFF" style="background-color: rgb(255, 255, 255);"></span>
-                        <input type="text" name="color_active_item_text_hex" class="color_hex monospace" value="#FFFFFF" maxlength="7"><br>
-                        <span class="input_note">Active Item Text</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="hover_item" data-hex="#FFFFFF" style="background-color: #FFFFFF;"></span>
-                        <input type="text" name="color_hover_item_hex" class="color_hex monospace" value="#FFFFFF" maxlength="7"><br>
-                        <span class="input_note">Hover Item</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="text_color" data-hex="#383F45" style="background-color: #383F45;"></span>
-                        <input type="text" name="color_text_color_hex" class="color_hex monospace" value="#383F45" maxlength="7"><br>
-                        <span class="input_note">Text Color</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="active_presence" data-hex="#60D156" style="background-color: #60D156;"></span>
-                        <input type="text" name="color_active_presence_hex" class="color_hex monospace" value="#60D156" maxlength="7"><br>
-                        <span class="input_note">Active Presence</span>
-                    </div>
-
-                    <div class="input-prepend">
-                        <span class="add-on color_swatch" data-theme-element="badge" data-hex="#FF8669" style="background-color: #FF8669;"></span>
-                        <input type="text" name="color_badge_hex" class="color_hex monospace" value="#FF8669" maxlength="7"><br>
-                        <span class="input_note">Mention Badge</span>
-                    </div> -->
-
-                    <p class="input_note no_bottom_margin">
-                        Copy and paste these values to your <strong>Slack</strong> settings
-                        <a target="_blank" href="https://get.slack.help/hc/en-us/articles/205166337-Customizing-your-Slack-theme"><strong>Sidebar Theme</strong></a> section:
-                    </p>
-                    <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="colors">
+                <div class="resize-triggers">
+                  <div class="expand-trigger">
+                    <div style="width: 261px; height: 705px;"></div>
+                  </div>
+                  <div class="contract-trigger"></div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="p-resizer p-resizer--default" style="left: 256px;"><input type="range"
+            aria-roledescription="vertical splitter" class="p-resizer__input" min="180" max="600" step="10"
+            aria-label="Width of the left column. Resize using your arrow keys or press Enter to use the default width."
+            value="260"></div>
+        <div role="main" aria-label="Channel general" class="p-workspace__primary_view">
+          <div class="p-workspace__primary_view_contents">
+            <div class="p-ia__view_header">
+              <div class="p-ia__view_header__info">
+                <div class="p-ia__view_header__title_and_channel_section">
+                  <div class="p-classic_nav__model__title__name p-classic_nav__no_drag"><button
+                      class="c-button-unstyled p-classic_nav__model__title__name__button" data-qa="channel_name"
+                      aria-haspopup="menu" aria-expanded="false" type="button"><i
+                        class="c-icon c-inline_channel_icon c-icon--hash-medium-bold c-icon--inherit"
+                        type="hash-medium-bold" aria-hidden="true"></i>general</button></div>
+                  <div class="p-channel_section_selector"><span><button
+                        class="c-button-unstyled p-channel_section_selector__star" data-qa="channel-header-star-button"
+                        aria-label="Star channel general" delay="150" data-sk="tooltip_parent" type="button"><i
+                          class="c-icon p-channel_section_selector__icon c-icon--star-o c-icon--inherit c-icon--inline"
+                          type="star-o" aria-hidden="true"></i></button></span></div>
+                </div>
+                <div class="p-ia__view_header__metadata">
+                  <div data-qa="channel_header__title__info"
+                    class="p-classic_nav__model__title__info p-classic_nav__no_drag">
+                    <div role="presentation"
+                      class="p-classic_nav__model__title__info__item p-classic_nav__model__title__info__topic">
+                      <div class="p-classic_nav__model__title__info__topic__text"><span
+                          class="p-classic_nav__model__title__info__topic__content" dir="auto">Company-wide
+                          announcements and work-based matters</span></div><button
+                        class="c-button-unstyled p-classic_nav__model__title__info__topic__edit"
+                        aria-label="Edit channel topic" type="button">Edit</button>
+                    </div><span class="p-classic_nav__model__title__info__sep" aria-hidden="true">|</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-ia__view_header__spacer"></div><span class="p-avatar_stack"><button class="c-button-unstyled p-ia__view_header__button" aria-label="Add people to #general"
+                  delay="150" data-sk="tooltip_parent" type="button"><i
+                    class="c-icon p-ia__view_header__button_icon c-icon--add-user" type="add-user"
+                    aria-hidden="true"></i></button></span><button class="c-button-unstyled p-ia__view_header__button"
+                data-qa="channel-details" type="button" aria-label="Show details for channel #general"
+                aria-expanded="false" delay="300" data-sk="tooltip_parent"><i
+                  class="c-icon p-ia__view_header__button_icon c-icon--info-circle" type="info-circle"
+                  aria-hidden="true"></i> </button>
+            </div>
+            <div class="p-file_drag_drop__container">
+              <div class="p-workspace__primary_view_body" style="position: relative">
+                <a href="https://github.com/paracycle/slackthemes" class="github-corner" aria-label="Fork me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                <div class="p-message_pane p-message_pane--classic-nav" data-qa="message_pane">
+                </div>
+              </div>
+              <div class="workspace__primary_view_footer">
+                <div class="p-message_pane_input" data-qa="message_input_container">
+                  <div class="p-message_pane_input_inner">
+                    <div class="p-notification_bar p-notification_bar--double_decker">
+                      <div class="p-notification_bar__section p-notification_bar__section--left">
+                        Not affiliated with <a href="https://slack.com/">Slack</a> in any way or form; but it is a great tool, use it.
+                      </div>
+                      <div class="p-notification_bar__section p-notification_bar__section--right p-notification_bar__section--is-visible"><span
+                          class="p-notification_bar__formatting" aria-hidden="true"><span
+                            class="p-notification_bar__send">
+                            Made with ♥ in Istanbul by <a href="https://twitter.com/paracycle"><b>Ufuk Kayserilioglu</b></a>                            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .p-workspace-layout {
+            grid-template-columns: 260px auto;
+            grid-template-areas: 'p-workspace__sidebar p-workspace__primary_view';
+          }
+        </style>
+      </div>
+      <div class="p-client__banners p-ia__workspace_banner"></div>
     </div>
-  </body>
+  </div>
+  <div aria-hidden="true" style="position:absolute" tabindex="0"></div>
+  <div class="c-sk-modal_portal">
+    <div
+      class="ReactModal__Overlay ReactModal__Overlay--after-open c-sk-overlay p-prefs_dialog p-prefs_dialog--dark p-prefs_dialog--peek_sidebar p-prefs_dialog__overlay--ia_layout"
+      style="padding: 28px; pointer-events: none; background: none;">
+      <div
+        class="ReactModal__Content ReactModal__Content--after-open c-sk-modal c-sk-modal--fixed p-prefs_dialog__modal p-prefs_dialog__modal--ia_layout"
+        tabindex="-1" role="dialog" aria-label="Preferences" style="max-width: 730px;">
+        <div class="c-sk-modal_header">
+          <div class="c-sk-modal_title_bar c-sk-modal_title_bar--pad_right p-prefs_dialog__title_bar">
+            <div class="c-sk-modal_title_bar__text">
+              <h1>Select a sidebar theme to preview</h1>
+            </div>
+          </div>
+        </div>
+        <div class="p-prefs_dialog__layout">
+          <div class="p-prefs_dialog__tabs c-tabs__tab_container--vertical" data-qa="tabs_full_height_class">
+            <div role="tabpanel"
+              class="p-prefs_dialog__panel c-tabs__tab_panel--vertical c-tabs__tab_panel c-tabs__tab_panel--active"
+              data-qa="tabs_content_container" id="sk-panelId-493" aria-label="Themes">
+              <div class="p-prefs_modal__theme_section" data-qa="prefs_section_container" data-qa-section="themes">
+                <fieldset class="c-fieldset">
+                  <div class="p-prefs_modal__radiogroup--theme">
+                    <%= yield %>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-sk-modal_footer c-sk-modal_footer--adaptive" style="border-top: 1px solid rgba(var(--sk_foreground_low,29,28,29),.13)">
+          <div class="p-ia_custom_theme_sharing" style="width: 100%">
+            <p class="p-ia_custom_theme_sharing__description">Copy and paste these values to share your custom theme with others</p>
+            <div class="p-ia_custom_theme_sharing__box">
+              <input aria-label="Copy and paste these values to share your custom theme with others" aria-describedby="" aria-invalid="false" aria-labelledby="" aria-required="false" class="c-input_text p-ia_custom_theme_sharing__input" placeholder="" type="text" ng-model="color_string">
+              <button class="c-button c-button--outline c-button--medium" type="button" ng-click="copyColors()">Copy</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="c-button-unstyled c-icon_button c-icon_button--light c-icon_button--size_medium c-sk-modal__close_button"
+          aria-label="Close" data-qa="sk_close_modal_button" type="button"><i class="c-icon c-icon--times" type="times"
+            aria-hidden="true"></i>
+        </button>
+
+<!--
+        <p class="input_note no_bottom_margin">
+          Copy and paste these values to your <strong>Slack</strong> settings
+        <a target="_blank" href="https://get.slack.help/hc/en-us/articles/205166337-Customizing-your-Slack-theme"><strong>Sidebar Theme</strong></a> section:
+        </p>
+        <input type="text" name="sidebar_theme_custom" id="sidebar_theme_custom" class="monospace subtle_silver no_top_margin" ng-model="color_string"> -->
+      </div>
+    </div>
+  </div>
+</body>
 </html>
