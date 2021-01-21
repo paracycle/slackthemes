@@ -256,3 +256,5 @@
 - { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify' }
 - { colors: '#100E0E,#C10800,#FFB400,#FFFFFF,#242121,#FFFFFF,#FF2B22,#FF2B22', name: 'RubyConf' }
 - { colors: '#111111,#191919,#EE0055,#FFFFFF,#2E2E2E,#FFFFFF,#FF512F,#FF512F,#111111,#FFFFFF', name: 'ShiftNudge' }
+- { colors: '#1A1D21,#F8F8FA,#1A1D21,#FFFFFF,#FFFFFF,#CCCCCC,#2288CC,#333333', name: 'Quietude Dark' }
+- { colors: '#FFFFFF,#F4F4F4,#FFFFFF,#333333,#FFFFFF,#333333,#2288CC,#999999', name: 'Quietude Light' }
