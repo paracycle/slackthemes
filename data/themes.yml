@@ -1,4 +1,4 @@
-- { colors: '#4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C', name: 'Aubergine' }
+- { colors: '#3F0E40,#350d36,#1164A3,#FFFFFF,#350D36,#FFFFFF,#2BAC76,#CD2553', name: 'Aubergine' }
 - { colors: '#1d1d1d,#000000,#0ba8ca,#FFFFFF,#075566,#FFFFFF,#0ba8ca,#EB4D5C', name: 'B-MIND' }
 - { colors: '#181818,#585858,#7cafc2,#f8f8f8,#b8b8b8,#f8f8f8,#f7ca88,#ab4642', name: 'Base16 Default Dark' }
 - { colors: '#F2F0EC,#E8E6DF,#F2777A,#FFFFFF,#B8B8B8,#515151,#99CC99,#66CCCC', name: 'Base16 Eighties Light' }
@@ -34,7 +34,7 @@
 - { colors: '#340027,#260024,#FF1962,#FFFFFF,#610047,#FFFFFF,#FF1962,#FF1962', name: 'Haunter' }
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
 - { colors: '#FFFFFF,#999999,#000000,#FFFFFF,#AAAAAA,#000000,#808080,#000000', name: 'High Contrast' }
-- { colors: '#F8F8FA,#F8F8FA,#CAD1D9,#FFFFFF,#FFFFFF,#383F45,#60D156,#FF8669', name: 'Hoth' }
+- { colors: '#F8F8FA,#F8F8FA,#2D9EE0,#FFFFFF,#FFFFFF,#383F45,#60D156,#DC5960', name: 'Hoth' }
 - { colors: '#F0DB4F,#F0DB4F,#323330,#FFFFFF,#e6cd2c,#323330,#323330,#323330', name: 'JavaScript' }
 - { colors: '#181818,#b65f49,#81A9C2,#ffffff,#384048,#CFCFBD,#A79AC6,#889962', name: 'Jellybeans' }
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
@@ -256,3 +256,4 @@
 - { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify' }
 - { colors: '#100E0E,#C10800,#FFB400,#FFFFFF,#242121,#FFFFFF,#FF2B22,#FF2B22', name: 'RubyConf' }
 - { colors: '#1D1F2B,#2C3849,#ACE2CC,#1D1F2B,#41455C,#FFFFFF,#C9E570,#FE8394', name: 'Monokai Pro' }
+- { colors: '#111111,#191919,#EE0055,#FFFFFF,#2E2E2E,#FFFFFF,#FF512F,#FF512F,#111111,#FFFFFF', name: 'ShiftNudge' }
