@@ -38,6 +38,7 @@
 - { colors: '#F0DB4F,#F0DB4F,#323330,#FFFFFF,#e6cd2c,#323330,#323330,#323330', name: 'JavaScript' }
 - { colors: '#181818,#b65f49,#81A9C2,#ffffff,#384048,#CFCFBD,#A79AC6,#889962', name: 'Jellybeans' }
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
+- { colors: '#2CA01C,#FFFFFF,#055393,#FFFFFF,#000000,#FFFFFF,#0077C5,#DB2E3F', name: 'Quickbooks'}
 - { colors: '#00AED8,#00AEDF,#C5CC13,#000000,#FBB040,#FFFFFF,#2DEBAE,#EE2B74', name: 'KKBOX' }
 - { colors: '#FFD552,#FFffff,#FFffff,#30322A,#ECEEF2,#30322A,#17B5DA,#17B5DA', name: 'KKTOWN' }
 - { colors: '#282828,#551127,#79092b,#f5f5f5,#111111,#cccccc,#f04b6e,#b40f42', name: 'KKTV' }
