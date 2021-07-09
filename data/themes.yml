@@ -44,6 +44,7 @@
 - { colors: '#40364D,#312a3c,#312A3C,#F58D8C,#312A3C,#a097ad,#F58D8C,#F58D8C', name: 'Kayako Minimal' }
 - { colors: '#F56262,#F56262,#424242,#F5F5F5,#ed5151,#F5F5F5,#F5F5F5,#424242', name: 'Laravel' }
 - { colors: '#FAFAFA,#FB503B,#FB503B,#FFFFFF,#F58F82,#1C1B1C,#FB503B,#424242', name: 'Laravel Light' }
+- { colors: '#000000,#2B2B30,#2C65FF,#FFFFFF,#2C65FF,#FFFFFF,#12A37B,#D43333', name: 'Lightform' }
 - { colors: '#0D2240,#00A8E1,#F7A800,#FFFFFF,#00A8E1,#FFFFFF,#00A8E1,#00A8E1', name: 'Milwaukee Dark' }
 - { colors: '#00A8E1,#0D2240,#F7A800,#FFFFFF,#0D2240,#FFFFFF,#F7A800,#0D2240', name: 'Milwaukee Mid' }
 - { colors: '#FFFFFF,#00A8E1,#0D2240,#FFFFFF,#F7A800,#0D2240,#F7A800,#00A8E1', name: 'Milwaukee Light' }
