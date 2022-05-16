@@ -17,10 +17,46 @@ app.config(['$stateProvider', '$urlRouterProvider',
 
 app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$location',
     function($scope, $stateParams, $state, $location) {
-        var themes = {
-          <%= themes.map do |theme|
-            "'#{theme.slug}': '#{theme.colors}'"
-          end.join ",\n" %>
+        $scope.alpha = function(color, alpha) {
+            if (!color) {
+                return "";
+            }
+            return chroma(color).alpha(alpha).css();
+        };
+
+        $scope.mix = function(color1, color2, ratio) {
+            if (!color1 || !color2) {
+                return "";
+            }
+            return chroma.mix(color2, color1, ratio, 'rgb').css();
+        };
+
+        $scope.add = function(color1, color2) {
+            if (!color1 || !color2) {
+                return "";
+            }
+            color1 = chroma(color1);
+            color2 = chroma(color2);
+
+            var color = color1.set('rgb.r', color1.get('rgb.r') + color2.get('rgb.r'))
+            color = color.set('rgb.g', color1.get('rgb.g') + color2.get('rgb.g'))
+            color = color.set('rgb.b', color1.get('rgb.b') + color2.get('rgb.b'))
+
+            return color.css();            
+        };
+
+        $scope.sub = function(color1, color2) {
+            if (!color1 || !color2) {
+                return "";
+            }
+            color1 = chroma(color1);
+            color2 = chroma(color2);
+
+            var color = color1.set('rgb.r', color1.get('rgb.r') - color2.get('rgb.r'))
+            color = color.set('rgb.g', color1.get('rgb.g') - color2.get('rgb.g'))
+            color = color.set('rgb.b', color1.get('rgb.b') - color2.get('rgb.b'))
+
+            return color.css();            
         };
 
         $scope.$on('$stateChangeSuccess', function() {
@@ -32,40 +68,86 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
                 return;
             }
             if (slug === 'custom') {
-                $scope.colors = $location.hash().split(',').map(function(part) {
+                var colors = $location.hash().split(',').map(function(part) {
                     return '#' + part;
-                }).join(',');
+                })
+
+                $scope.colors = {
+                    column_bg: colors[0],
+                    menu_bg: colors[1],
+                    active_item: colors[2],
+                    active_item_text: colors[3],
+                    hover_item: colors[4],
+                    text_color: colors[5],
+                    active_presence: colors[6],
+                    mention_badge: colors[7],
+                    top_nav_bg: colors[8] || colors[1],
+                    top_nav_text: colors[9] || colors[5]
+                }
 
                 return;
             }
-            $scope.colors = themes[$scope.slug];
+            element = document.getElementById($scope.slug);
+            $scope.colors = JSON.parse(element.dataset.colors);
             $state.go('theme', { slug: slug });
+            element.scrollIntoView({block: 'center', inline: 'nearest'});
         });
 
         $scope.$watch('colors', function(colors) {
             if (!colors) {
                 return;
             }
-            var parts = colors.split(',');
-            $scope.column_bg = parts[0];
-            $scope.menu_bg = parts[1];
-            $scope.active_item = parts[2];
-            $scope.active_item_text = parts[3];
-            $scope.hover_item = parts[4];
-            $scope.text_color = parts[5];
-            $scope.active_presence = parts[6];
-            $scope.mention_badge = parts[7];
+            $scope.column_bg = colors.column_bg;
+            $scope.menu_bg = colors.menu_bg;
+            $scope.active_item = colors.active_item;
+            $scope.active_item_text = colors.active_item_text;
+            $scope.hover_item = colors.hover_item;
+            $scope.text_color = colors.text_color;
+            $scope.active_presence = colors.active_presence;
+            $scope.mention_badge = colors.mention_badge;
+            $scope.top_nav_bg = colors.top_nav_bg;
+            $scope.top_nav_text = colors.top_nav_text;
+
+            $scope.color_string = [
+                colors.column_bg,
+                colors.menu_bg,
+                colors.active_item,
+                colors.active_item_text,
+                colors.hover_item,
+                colors.text_color,
+                colors.active_presence,
+                colors.mention_badge,
+                colors.top_nav_bg,
+                colors.top_nav_text
+            ].join(",");
 
             function updateHash() {
-                $location.hash(parts.map(function(part) {
-                    return part.replace('#', '');
-                }));
+                $location.hash(
+                    [
+                        colors.column_bg,
+                        colors.menu_bg,
+                        colors.active_item,
+                        colors.active_item_text,
+                        colors.hover_item,
+                        colors.text_color,
+                        colors.active_presence,
+                        colors.mention_badge,
+                        colors.top_nav_bg,
+                        colors.top_nav_text
+                    ].map(function(part) {
+                        return part.replace('#', '');
+                    })
+                );
             }
 
             if ($scope.slug === 'custom') {
                 updateHash();
-            } else if (colors !== themes[$scope.slug]) {
+            } else if (JSON.stringify(colors) !== document.getElementById($scope.slug).dataset.colors) {
                 $state.go('theme', { slug: 'custom' }).then(updateHash);
             }
         });
+
+        $scope.copyColors = function() {
+            clipboard.write($scope.color_string);
+        }
     }]);
