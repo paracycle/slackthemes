@@ -100,7 +100,8 @@
 - { colors: '#FFFFFF,#FDCE45,#FDCE45,#0F1216,#ECEEF2,#0F1216,#1FAE7D,#1FAE7D', name: 'Put.io' }
 - { colors: '#FFFFFF,#EDECEB,#DA552F,#FFFFFF,#FCF5E2,#534540,#DA552F,#FF8669', name: 'Product Hunt' }
 - { colors: '#2A2A49,#9292A8,#F25930,#FFFFFF,#9292A8,#EEEDEF,#F25930,#D5315C', name: 'Myplanet' }
-- { colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500', name: 'Reddit' }
+- { colors: '#F7F7F7,#CEE3F8,#B3CCE6,#FF3000,#B3CCE6,#336699,#38978D,#FF7500', name: 'Reddit Classic' }
+- { colors: '#FFFFFF,#0000FF,#FF4500,#FFFFFF,#BBC7CC,#000000,#70CE6D,#FF4500,#FF4500,#FFFFFF', name: 'Reddit' }
 - { colors: '#FFFFFF,#CC181E,#CC181E,#FFFFFF,#444444,#0D0D0D,#CC181E,#E04A4D', name: 'Youtube' }
 - { colors: '#F5F5F5,#FFFFFF,#FDBD39,#FFFFFF,#FECF33,#574751,#A4BF36,#EE6723', name: 'Zeplin' }
 - { colors: '#494949,#CB5599,#49C6B7,#FFFFFF,#898B8F,#FFFFFF,#9ECD75,#E6615D', name: 'Social Tables Pink' }
