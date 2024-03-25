@@ -80,10 +80,6 @@ GEM
       toml
       uglifier (~> 3.0)
       webrick
-    middleman-deploy (2.0.0.pre.alpha)
-      middleman-core (>= 3.2)
-      net-sftp
-      ptools
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -94,9 +90,6 @@ GEM
       time
     net-protocol (0.2.2)
       timeout
-    net-sftp (3.0.0)
-      net-ssh (>= 5.0.0, < 7.0.0)
-    net-ssh (6.1.0)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
       padrino-support (= 0.15.3)
@@ -104,7 +97,6 @@ GEM
     padrino-support (0.15.3)
     parallel (1.24.0)
     parslet (2.0.0)
-    ptools (1.4.0)
     public_suffix (5.0.4)
     rack (2.2.9)
     rack-livereload (0.3.17)
@@ -138,7 +130,6 @@ DEPENDENCIES
   dotenv
   middleman (~> 4.2)
   middleman-autoprefixer (~> 3.0)
-  middleman-deploy (~> 2.0.0.pre.alpha)
   middleman-livereload
   net-ftp (~> 0.3.4)
   slippyd-colorist
