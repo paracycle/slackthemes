@@ -16,3 +16,4 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem "dotenv"
 
 gem "slippyd-colorist", require: "colorist"
+gem "webrick"
