@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'middleman', '~> 4.2'
-gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-autoprefixer', '~> 3.0'
 
 # Live-reloading plugin
 gem "middleman-livereload"
@@ -17,3 +17,5 @@ gem "dotenv"
 
 gem "slippyd-colorist", require: "colorist"
 gem "webrick"
+
+gem "net-ftp", "~> 0.3.4"
