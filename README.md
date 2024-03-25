@@ -3,7 +3,7 @@
 <br /><strong>Slack Themes</strong>
 </p>
 <p align="center">
-<a href="https://travis-ci.org/paracycle/slackthemes" target="_blank"><img src="https://travis-ci.org/paracycle/slackthemes.svg?branch=master"></a>
+[![Build](https://github.com/paracycle/slackthemes/actions/workflows/build.yml/badge.svg)](https://github.com/paracycle/slackthemes/actions/workflows/build.yml)
 </p>
 
 
