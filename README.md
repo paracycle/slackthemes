@@ -2,9 +2,10 @@
 <a href="https://http://slackthemes.net" target="_blank"><img src="https://raw.githubusercontent.com/paracycle/slackthemes/master/source/favicon-32.png"></a>
 <br /><strong>Slack Themes</strong>
 </p>
-<p align="center">
+<div align="center">
+
 [![Build](https://github.com/paracycle/slackthemes/actions/workflows/build.yml/badge.svg)](https://github.com/paracycle/slackthemes/actions/workflows/build.yml)
-</p>
+</div>
 
 
 ### About the project
