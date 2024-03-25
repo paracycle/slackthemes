@@ -8,7 +8,6 @@ gem 'middleman-autoprefixer', '~> 2.7'
 # Live-reloading plugin
 gem "middleman-livereload"
 
-gem "middleman-pry"
 gem "middleman-deploy", '~> 2.0.0.pre.alpha'
 gem "middleman-google-analytics"
 
