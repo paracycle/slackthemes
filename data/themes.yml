@@ -250,7 +250,7 @@
 #- { colors: '#333336,#2e2e31,#666668,#ffffff,#8c8c8c,#d7d5d4,#8c8c8c,#8c8c8c', name: 'Mojave Dark Mode Grey' }
 - { colors: '#E3E6EA,#EDEFF1,#D1571C,#FFFFFF,#1DB3C5,#333232,#48B8AD,#D3561A', name: 'beNext' }
 - { colors: '#000000,#a8a8a8,#000000,#a6a6a6,#000000,#7d7d7d,#078500,#bf0000', name: 'mishaor' }
-- { colors: '#222222,#333333,#9FC65D,#FFFFFF,#4A5664,#F4F4F4,#9FC65D,#ffbc3b', name: 'Inpsyde' }
+- { colors: '#222222,#333333,#9FC65D,#FFFFFF,#4A5664,#F4F4F4,#9FC65D,#ffbc3b', name: 'Syde' }
 - { colors: '#2e4f7e,#2C3849,#203251,#FFFFFF,#456494,#FFFFFF,#a6c056,#e9ae4c', name: 'Visual Composer' }
 - { colors: '#323232,#E60A00,#E60A00,#FFFFFF,#505050,#F5F5F5,#E64600,#E60A00', name: '360Channel' }
 - { colors: '#000639,#3E313C,#108043,#FFFFFF,#173630,#FFFFFF,#50B83C,#9C6ADE', name: 'Shopify' }
