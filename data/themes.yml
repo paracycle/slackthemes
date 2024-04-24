@@ -35,6 +35,7 @@
 - { colors: '#383643,#383643,#EB4864,#FFFFFF,#383643,#FFFFFF,#EB4864,#EB4864', name: 'Hibari' }
 - { colors: '#FFFFFF,#999999,#000000,#FFFFFF,#AAAAAA,#000000,#808080,#000000', name: 'High Contrast' }
 - { colors: '#F8F8FA,#F8F8FA,#2D9EE0,#FFFFFF,#FFFFFF,#383F45,#60D156,#DC5960', name: 'Hoth' }
+- { colors: '#5382A1,#121016,#323330,#FFFFFF,#46738F,#323330,#323330,#323330', name: 'Java' }
 - { colors: '#F0DB4F,#F0DB4F,#323330,#FFFFFF,#e6cd2c,#323330,#323330,#323330', name: 'JavaScript' }
 - { colors: '#181818,#b65f49,#81A9C2,#ffffff,#384048,#CFCFBD,#A79AC6,#889962', name: 'Jellybeans' }
 - { colors: '#86A34E,#94AF63,#FFFFFF,#6D8B42,#94AF63,#FFFFFF,#FFB10A,#DFA044', name: 'Juice Bar' }
