@@ -1,3 +1,4 @@
+- { colors: '#DFEBEE,#043544,#3D5CC8,#FFFFFF,#FCB43D,#043544,#2AB2C1,#FB5C54,#19A87C,#FFFFFF', name: 'andculture' }
 - { colors: '#3F0E40,#350d36,#1164A3,#FFFFFF,#350D36,#FFFFFF,#2BAC76,#CD2553', name: 'Aubergine' }
 - { colors: '#1d1d1d,#000000,#0ba8ca,#FFFFFF,#075566,#FFFFFF,#0ba8ca,#EB4D5C', name: 'B-MIND' }
 - { colors: '#181818,#585858,#7cafc2,#f8f8f8,#b8b8b8,#f8f8f8,#f7ca88,#ab4642', name: 'Base16 Default Dark' }
