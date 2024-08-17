@@ -148,6 +148,24 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
         });
 
         $scope.copyColors = function() {
-            clipboard.write($scope.color_string);
-        }
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText($scope.color_string)
+                .then(function() {
+                    alert("Copied successfully!");
+                })
+                .catch(function(error) {
+                    console.error("Error copying text: ", error);
+                });
+            } else {
+                var tempInput = document.createElement("input");
+                tempInput.style.position = "absolute";
+                tempInput.style.left = "-9999px";
+                tempInput.value = $scope.color_string;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("Copied successfully!");
+            }
+        };
     }]);
