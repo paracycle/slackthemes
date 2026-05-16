@@ -73,9 +73,16 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
                 return;
             }
             if (slug === 'custom') {
-                var colors = $location.hash().split(',').map(function(part) {
+                var hash = $location.hash();
+                // If the hash is empty we just transitioned into /custom from a
+                // colors-watcher state change; the colors are already on $scope and
+                // updateHash() is queued to write them. Don't overwrite with garbage.
+                if (!hash) {
+                    return;
+                }
+                var colors = hash.split(',').map(function(part) {
                     return '#' + part;
-                })
+                });
 
                 $scope.colors = {
                     column_bg: colors[0],
@@ -150,6 +157,38 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             } else if (JSON.stringify(colors) !== document.getElementById($scope.slug).dataset.colors) {
                 $state.go('theme', { slug: 'custom' }).then(updateHash);
             }
+        });
+
+        $scope.$watch('color_string', function(color_string) {
+            if (!color_string) {
+                return;
+            }
+            var parts = color_string.split(',').map(function(part) {
+                return part.trim();
+            });
+            if (parts.length < 8) {
+                return;
+            }
+            var withHash = parts.map(function(part) {
+                return part.charAt(0) === '#' ? part : '#' + part;
+            });
+            var nextColors = {
+                column_bg:        withHash[0],
+                menu_bg:          withHash[1],
+                active_item:      withHash[2],
+                active_item_text: withHash[3],
+                hover_item:       withHash[4],
+                text_color:       withHash[5],
+                active_presence:  withHash[6],
+                mention_badge:    withHash[7],
+                top_nav_bg:       withHash[8] || withHash[1],
+                top_nav_text:     withHash[9] || withHash[5]
+            };
+            // Avoid feedback loop with the colors watcher, which writes back to color_string.
+            if ($scope.colors && JSON.stringify($scope.colors) === JSON.stringify(nextColors)) {
+                return;
+            }
+            $scope.colors = nextColors;
         });
 
         $scope.copyColors = function() {
