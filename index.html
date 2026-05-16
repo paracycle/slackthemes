@@ -7,6 +7,7 @@
   <meta name="author" content="Slack">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="google" content="notranslate">
+  <base href="/">
   <title>Slack Themes</title>
   <script>function isDesktop() { return /(Slack)/g.test(navigator.userAgent) } function getDesktopThemePreference() { return isDesktop() && "true" === window.localStorage.getItem("slack-client-theme-os-sync") ? window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" : null } function addDarkModeRuleToHead(e) { window.skFirstPaintStyle = document.createElement("style"), window.skFirstPaintStyle.type = "text/css", window.skFirstPaintStyle.appendChild(document.createTextNode(e)), document.head.appendChild(window.skFirstPaintStyle) } function applyTheme() { try { const e = getDesktopThemePreference(), t = null !== e ? e : window.localStorage.getItem("slack-client-theme"); if ("client" === document.documentElement.dataset.app) "dark" === t && addDarkModeRuleToHead("body { background-color: #1a1d21; }"); else if ("workflow-builder" === document.documentElement.dataset.app) "dark" === t && addDarkModeRuleToHead("body { background-color: #1a1d21; --sk_primary_background: 26, 29, 33; }"); else if ("docs" === document.documentElement.dataset.app) { const e = window.location.search.split("&"); let a = ""; for (let t = 0; t < e.length; t++) { const o = e[t].split("="); if (o && 2 === o.length && ("client_theme" === o[0] || "?client_theme" === o[0])) { a = o[1]; break } } "dark" !== t && "dark" !== a || addDarkModeRuleToHead("html { background-color: #1a1d21; --sk_primary_background: 26, 29, 33; }") } } catch (e) { } } window.skFirstPaintStyle = null, applyTheme()</script>
   <link href="/fonts/slack-icons-v2-efcc328.woff2" rel="preload" as="font" crossorigin="anonymous">
@@ -17,6 +18,31 @@
   <link href="stylesheets/client-boot-styles.13a0cc6.css" rel="stylesheet" />
   <link href="stylesheets/slack-kit-styles.a483c72.css" rel="stylesheet" />
   <link href="stylesheets/helper-styles.1ca91f7.css" rel="stylesheet" />
+
+  <!-- Start Single Page Apps for GitHub Pages -->
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script checks to see if a redirect is present in the query string,
+    // converts it back into the correct url and adds it to the
+    // browser's history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser's history for
+    // the single page app to route accordingly.
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <!-- End Single Page Apps for GitHub Pages -->
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" integrity="sha512-bIUdhwNdPRVsQ7a9X93M400wJTBZTp+L5JZFtGb7VJ0da/mQMB7x3EWEdmR2qfcon0WErjJZdCIXBLmtvd0grw==" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js" integrity="sha512-rVtt5MF4HMTRn87EXr5i0njGxx7WLC4A+zvy0bt8tASmGoSRbxbYRRQx24VkZ11/tKjBkURlAfngExqhaD4YYw==" crossorigin="anonymous"></script>
