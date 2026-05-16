@@ -2,8 +2,13 @@
 
 var app = angular.module('theme', ['ui.router']);
 
-app.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
+    function($stateProvider, $urlRouterProvider, $locationProvider) {
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: true,
+            rewriteLinks: false
+        });
         $stateProvider
             .state('theme', {
                 url: "/:slug",

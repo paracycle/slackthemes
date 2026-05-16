@@ -37,6 +37,9 @@ page '/*.txt', layout: false
 #   },
 # )
 
+# Skip layout for the SPA 404 fallback — it's a standalone redirect page.
+page '/404.html', layout: false
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
